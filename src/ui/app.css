@@ -1,0 +1,116 @@
+/* StickScope layout. Colours come from src/theme/tokens.css; no hard-coded colours except the transmitter look (tokens --tx*). */
+.wrap { width: 100%; box-sizing: border-box; max-width: 1240px; margin: 0 auto; padding: clamp(14px, 3vw, 28px) max(4vw, 14px) 40px; display: flex; flex-direction: column; gap: 14px; }
+.tagline { color: var(--ink-3); font-size: 14px; }
+.intro { color: var(--ink-2); }
+.foot { color: var(--ink-3); font-size: 13.5px; }
+h1 { font-size: clamp(26px, 4vw, 38px); line-height: 1.05; }
+.figurenav { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+.btn { text-decoration: none; display: inline-flex; align-items: center; gap: 6px; }
+
+/* browser */
+.catdesc { margin: 8px 0 12px; }
+.cards { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 14px; }
+.thumb { position: relative; aspect-ratio: 1000 / 460; border-radius: 8px; overflow: hidden; background: linear-gradient(var(--sky) 84%, var(--ground) 84%); }
+.thumb canvas { position: absolute; inset: 0; width: 100%; height: 100%; }
+.figure-card h3 { font-size: 26px; line-height: 1.1; display: flex; align-items: center; justify-content: space-between; gap: 8px; }
+.figure-card .go { width: 24px; height: 24px; color: var(--accent); transition: transform .15s; }
+.figure-card:hover .go { transform: translateX(3px); }
+.seg button .icon { width: 16px; height: 16px; vertical-align: -3px; }
+.figure-card { text-decoration: none; color: var(--ink); height: 100%; transition: border-color .15s; }
+.figure-card:hover { border-color: var(--accent); }
+
+/* trainer */
+.trainer { display: flex; flex-direction: column; gap: 14px; }
+.main { display: grid; grid-template-columns: minmax(0, 1.55fr) minmax(0, 1fr); gap: 14px; }
+@media (max-width: 860px) { .main { grid-template-columns: minmax(0, 1fr); } }
+.view { position: relative; border-radius: 16px; overflow: hidden; background: var(--sky); aspect-ratio: 16 / 11; touch-action: none; }
+@media (max-width: 600px) { .view { aspect-ratio: 1 / 1; } }
+.view > canvas { position: absolute; inset: 0; width: 100%; height: 100%; }
+.badge { position: absolute; left: 12px; top: 12px; background: var(--overlay); color: var(--on-overlay); font-weight: 600; font-size: 14px; padding: 6px 10px; border-radius: 8px; display: flex; align-items: center; gap: 8px; }
+.badge .sw { width: 12px; height: 12px; border-radius: 3px; display: inline-block; }
+.cam { position: absolute; right: 10px; bottom: 10px; display: flex; gap: 6px; }
+.cam button { min-height: 36px; padding: 0 10px; font-size: 13px; font-weight: 600; border: 0; border-radius: 8px; background: var(--surface); color: var(--ink); cursor: pointer; }
+.cam button[aria-pressed="true"] { background: var(--ink); color: var(--bg); }
+.viewhint { position: absolute; left: 12px; top: 48px; font-size: 13px; color: var(--ink-2); }
+/* small windows in the main view: flight path (top right) and control schematic (bottom left), each can be folded away */
+.pip { position: absolute; z-index: 2; pointer-events: none; }
+.pip canvas { display: block; width: 100%; height: auto; border-radius: 10px; }
+.pip-mini { right: 10px; top: 10px; width: 34%; max-width: 230px; }
+.pip-mini canvas { aspect-ratio: 16 / 10; border: 2px solid var(--overlay); }
+.pip-rs { left: 10px; bottom: 10px; width: 132px; }
+.pip-rs canvas { aspect-ratio: 132 / 136; background: var(--overlay); }
+.pip.closed, .pip:has(.pipbtn.closed) { width: auto; }
+.pipbtn { position: absolute; top: 4px; right: 4px; min-width: 26px; height: 26px; padding: 0 6px; border: 0; border-radius: 6px; background: var(--overlay); color: var(--on-overlay); font-weight: 700; font-size: 14px; line-height: 1; cursor: pointer; pointer-events: auto; }
+.pipbtn.closed { position: static; height: 30px; padding: 0 10px; font-size: 13px; font-weight: 600; }
+.pip-mini:has(.pipbtn.closed) { display: flex; justify-content: flex-end; }
+@media (max-width: 600px) { .ov { aspect-ratio: 4 / 3; } .pip-mini { width: 40%; } .pip-rs { width: 112px; left: 8px; bottom: 8px; } }
+
+.tx { background: var(--tx); border-radius: 22px; padding: 16px 16px 14px; color: var(--on-tx); display: flex; flex-direction: column; gap: 10px; }
+.txtop { display: flex; justify-content: space-between; align-items: center; font-size: 13px; color: var(--on-tx-2); }
+.txtop b { color: var(--on-overlay); font: 700 15px var(--display); letter-spacing: .3px; }
+.txtop.small { font-size: 12.5px; justify-content: flex-start; }
+.mode { display: flex; gap: 4px; }
+.mode button { min-height: 32px; padding: 0 10px; font-size: 13px; font-weight: 600; background: var(--tx-2); color: var(--on-tx); border: 0; border-radius: 8px; cursor: pointer; }
+.mode button[aria-pressed="true"] { background: var(--on-tx); color: var(--tx); }
+.sticks { position: relative; flex: 1; min-height: 200px; }
+.sticks canvas { position: absolute; inset: 0; width: 100%; height: 100%; }
+.vals { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; font-size: 14px; }
+.vals div { background: var(--tx-2); border-radius: 10px; padding: 6px 10px; line-height: 1.35; min-height: 3.6em; }
+.vals span { color: var(--on-tx-2); font-size: 12.5px; display: block; }
+
+.ctrl { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+.playbtn { min-width: 110px; justify-content: center; }
+.ctrl .btn[aria-pressed="true"] { border-color: var(--accent); color: var(--accent); }
+.ctrl .btn .icon { width: 18px; height: 18px; }
+.playbtn .icon { width: 18px; height: 18px; fill: currentColor; stroke: currentColor; }
+label.lp { display: flex; align-items: center; gap: 8px; font-weight: 500; min-height: 40px; }
+label.lp input { width: 20px; height: 20px; accent-color: var(--accent); }
+input[type="range"] { width: 100%; accent-color: var(--accent); height: 28px; }
+.tl { display: flex; flex-direction: column; }
+.marks { display: flex; font-size: 12.5px; color: var(--ink-3); }
+.marks span { border-left: 2px solid var(--line); padding-left: 5px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+
+.strip h2, .phasecard h2 { font-size: 20px; }
+.sk { position: relative; aspect-ratio: 1000 / 460; cursor: pointer; }
+@media (max-width: 600px) { .sk { aspect-ratio: 1000 / 600; } }
+.sk canvas { position: absolute; inset: 0; width: 100%; height: 100%; }
+.phases { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 10px; }
+.phases button { border: 1px solid var(--line); background: var(--surface); border-radius: 10px; padding: 8px 12px; font-weight: 600; cursor: pointer; color: var(--ink); }
+.phases button[aria-pressed="true"] { background: var(--accent); border-color: var(--accent); color: var(--on-accent); }
+.phasecard h2 { display: flex; gap: 10px; align-items: center; }
+.n { display: inline-grid; place-items: center; width: 30px; height: 30px; border-radius: 50%; background: var(--ink); color: var(--bg); font-size: 16px; flex: none; }
+.idea { color: var(--ink-2); margin: 0 0 10px; }
+.ov { position: relative; aspect-ratio: 16 / 7; border-radius: 12px; overflow: hidden; background: var(--sky); }
+.ov canvas { position: absolute; inset: 0; width: 100%; height: 100%; }
+
+/* instructions, confidence badges, notes */
+.instructions { margin: 6px 0 0; padding-left: 0; list-style: none; display: flex; flex-direction: column; gap: 8px; }
+.instructions li { display: flex; flex-direction: column; gap: 2px; }
+details.conf summary { cursor: pointer; font-size: 12.5px; color: var(--ink-3); list-style: none; display: inline-flex; align-items: center; gap: 6px; }
+details.conf summary::-webkit-details-marker { display: none; }
+.badge-level { display: inline-block; width: 10px; height: 10px; border-radius: 50%; background: var(--accent); flex: none; }
+.badge-level.disputed { background: var(--crit); }
+.badge-level.gap { background: var(--ink-3); }
+.badge-level.illustration { background: var(--deflect); }
+summary.badge-level { width: auto; height: auto; background: none; }
+summary.badge-level::before { content: ""; width: 10px; height: 10px; border-radius: 50%; background: var(--accent); display: inline-block; }
+.sources { margin: 4px 0 0; padding-left: 18px; font-size: 13px; }
+.note { border-radius: var(--radius); padding: 10px 12px; margin-top: 10px; border: 1px solid var(--line); background: var(--sunken); font-size: 14px; }
+.note.disputed { border-left: 4px solid var(--crit); }
+.note.gap { border-left: 4px solid var(--ink-3); }
+.note.illustration { border-left: 4px solid var(--deflect); background: var(--deflect-soft); }
+.note ul { margin: 4px 0 0; padding-left: 18px; }
+.reliability summary { cursor: pointer; font-weight: 600; }
+.reliability ul { list-style: none; padding: 0; display: flex; flex-direction: column; gap: 6px; }
+.reliability h3 { margin-top: 8px; font-size: 16px; }
+@media (prefers-reduced-motion: reduce) { * { scroll-behavior: auto !important; transition: none !important; } }
+
+/* version next to the logo, site footer, legal page */
+.ver { color: var(--ink-3); font-size: 12px; align-self: flex-end; margin: 0 0 4px -6px; }
+.sitefoot { width: 100%; box-sizing: border-box; max-width: 1240px; margin: 8px auto 0; padding: 18px max(4vw, 14px) 28px; border-top: 1px solid var(--line); display: flex; flex-wrap: wrap; gap: 8px 20px; color: var(--ink-3); font-size: 13.5px; }
+.sitefoot a { color: var(--ink-2); }
+.legal { max-width: 820px; display: block; }
+.legal h1 { font-size: 30px; margin: 28px 0 10px; }
+.legal h2 { font-size: 19px; margin: 20px 0 6px; }
+.legal p { margin: 0 0 10px; color: var(--ink); }
+.legal hr { border: 0; border-top: 1px solid var(--line); margin: 36px 0; }

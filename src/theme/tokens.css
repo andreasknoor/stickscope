@@ -1,0 +1,51 @@
+/* Design tokens, copied from TLMscope (see README.md). Light scheme, dark scheme from the system or chosen (data-theme). */
+:root {
+  --bg: #eef2f3;
+  --surface: #ffffff;
+  --sunken: #f5f8f9;
+  --ink: #13212a;
+  --ink-2: #4f606a;
+  --ink-3: #7b8b94;
+  --line: #d8e1e5;
+  --grid: #e7edf0;
+  --accent: #0d6a83;
+  --accent-soft: #dcedf2;
+  /* Text on a full accent background (the chosen option of a switch). */
+  --on-accent: #ffffff;
+  --good: #0ca30c;
+  --warn: #fab219;
+  --crit: #d03b3b;
+  /* StickScope only: a deflected control surface. Neutral colour at zero, this colour at full deflection. Not the warn colour. */
+  --deflect: #f5a300;
+  --deflect-soft: #fde9bd;
+  --scrim: rgba(10, 20, 26, .45);
+  /* StickScope scene: sky, ground and horizon of the 3D views (the dark values are in the lists below). */
+  --sky: #cfe4f2; --ground: #b9cfa3; --horizon: #9db886;
+  /* Overlays on the scene (badge, schematic) and the transmitter body: the same in both schemes. */
+  --overlay: rgba(20, 24, 28, .78); --on-overlay: #ffffff;
+  /* The logo tile is dark in both schemes so the white sticks and the amber knob stay high-contrast. */
+  --logo-tile: #08485c;
+  --tx: #23272c; --tx-2: #30353b; --on-tx: #e9edf0; --on-tx-2: #a9b3bb;
+  --display: var(--font-display), "Arial Narrow", system-ui, sans-serif;
+  --text: var(--font-body), system-ui, -apple-system, "Segoe UI", sans-serif;
+  --code: var(--font-mono), ui-monospace, Menlo, Consolas, monospace;
+  --radius: 10px;
+  color-scheme: light;
+}
+/* Keep both dark lists the same. */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0e1418; --surface: #151f25; --sunken: #111a1f; --ink: #e4ecef; --ink-2: #a3b3bb; --ink-3: #74858e;
+    --line: #25333b; --grid: #1e2a31; --accent: #52b6d2; --accent-soft: #17323b; --on-accent: #0b1a20;
+    --deflect: #ffb627; --deflect-soft: #3d2f0c; --scrim: rgba(0, 0, 0, .6);
+    --sky: #14283a; --ground: #1f2d22; --horizon: #2c4030;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0e1418; --surface: #151f25; --sunken: #111a1f; --ink: #e4ecef; --ink-2: #a3b3bb; --ink-3: #74858e;
+  --line: #25333b; --grid: #1e2a31; --accent: #52b6d2; --accent-soft: #17323b; --on-accent: #0b1a20;
+  --deflect: #ffb627; --deflect-soft: #3d2f0c; --scrim: rgba(0, 0, 0, .6);
+  --sky: #14283a; --ground: #1f2d22; --horizon: #2c4030;
+  color-scheme: dark;
+}

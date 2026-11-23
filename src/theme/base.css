@@ -1,0 +1,106 @@
+/* Base elements and small components, copied from TLMscope (see README.md). Import after tokens.css. */
+* { box-sizing: border-box; }
+html { height: 100%; }
+html, body { margin: 0; }
+body { min-height: 100%; background: var(--bg); color: var(--ink); font: 15px/1.45 var(--text); }
+button, select, input { font: inherit; color: inherit; }
+h1, h2, h3 { font-family: var(--display); font-weight: 600; margin: 0; text-wrap: balance; letter-spacing: .005em; }
+p { margin: 0; }
+a { color: var(--accent); }
+code { font-family: var(--code); font-size: .9em; background: var(--sunken); padding: 0 4px; border-radius: 4px; }
+.mono { font-family: var(--code); font-size: 12.5px; }
+.num { font-variant-numeric: tabular-nums; }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 4px; }
+
+/* top bar and wordmark */
+.top { position: sticky; top: 0; z-index: 5; background: var(--surface); border-bottom: 1px solid var(--line);
+  padding: 10px max(16px, env(safe-area-inset-right, 0px)) 10px max(16px, env(safe-area-inset-left, 0px));
+  display: flex; align-items: center; gap: 12px 18px; flex-wrap: wrap; }
+.brand { display: inline-flex; align-items: center; gap: 10px; text-decoration: none; color: var(--ink); }
+.wordmark { font: 500 23px/1 var(--display); letter-spacing: .01em; white-space: nowrap; }
+.wordmark b { font-weight: 700; letter-spacing: .03em; color: var(--accent); }
+.spacer { flex: 1; }
+.controls { display: flex; align-items: center; gap: 10px 12px; flex-wrap: wrap; }
+
+/* Switch: the chosen option is filled with the accent colour, so it is clear at a glance (also in sunlight). */
+.seg { display: inline-flex; border: 1px solid var(--line); border-radius: 8px; overflow: hidden; background: var(--surface); }
+.seg button { border: 0; background: none; padding: 5px 12px; cursor: pointer; color: var(--ink-2); font-weight: 600; font-size: 13.5px; }
+.seg button + button { border-left: 1px solid var(--line); }
+.seg button:hover:not([aria-pressed="true"]) { background: var(--sunken); color: var(--ink); }
+.seg button[aria-pressed="true"] { background: var(--accent); color: var(--on-accent); }
+.ctl { display: flex; align-items: center; gap: 8px; font-size: 12px; color: var(--ink-3); text-transform: uppercase; letter-spacing: .07em; }
+.toggle { display: inline-flex; align-items: center; gap: 8px; border: 1px solid var(--line); background: var(--sunken); border-radius: 8px; padding: 4px 10px 4px 6px; cursor: pointer; font-weight: 600; font-size: 13.5px; color: var(--ink-2); }
+.toggle .sw { width: 28px; height: 16px; border-radius: 8px; background: var(--line); position: relative; flex: none; }
+.toggle .sw::after { content: ""; position: absolute; top: 2px; left: 2px; width: 12px; height: 12px; border-radius: 50%; background: var(--surface); transition: left .15s; }
+.toggle[aria-pressed="true"] { color: var(--accent); }
+.toggle[aria-pressed="true"] .sw { background: var(--accent); }
+.toggle[aria-pressed="true"] .sw::after { left: 14px; }
+
+/* buttons and links */
+.btn { border: 1px solid var(--line); background: var(--surface); border-radius: 8px; padding: 6px 12px; cursor: pointer; font-weight: 600; color: var(--ink-2); }
+.btn:hover:not(:disabled) { border-color: var(--accent); color: var(--accent); }
+.btn:disabled { opacity: .4; cursor: default; }
+.btn.sm { padding: 3px 9px; font-size: 12.5px; }
+.btn.big { padding: 12px 22px; font-size: 17px; border-radius: 12px; }
+.btn.primary { background: var(--accent); border-color: var(--accent); color: var(--surface); }
+.btn.primary:hover:not(:disabled) { color: var(--surface); filter: brightness(1.1); }
+.iconbtn { border: 1px solid var(--line); background: var(--surface); color: var(--ink-2); border-radius: 8px; padding: 4px 7px; font-size: 12px; font-weight: 600; cursor: pointer; white-space: nowrap; }
+.iconbtn:hover:not(:disabled) { border-color: var(--accent); color: var(--accent); }
+.iconbtn:disabled { opacity: .5; cursor: default; }
+.linkbtn { border: 0; background: none; padding: 0; color: var(--accent); font-weight: 600; cursor: pointer; font-size: 13.5px; text-decoration: underline; text-underline-offset: 2px; }
+.linkbtn.inline { font-size: inherit; display: inline; }
+
+/* cards, labels, pills */
+.card { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 14px 16px; min-width: 0; display: flex; flex-direction: column; gap: 8px; }
+.card h3 { font-size: 17px; }
+.hint { font-size: 13.5px; color: var(--ink-2); }
+.lbl { font-size: 12.5px; text-transform: uppercase; letter-spacing: .07em; color: var(--ink-3); font-weight: 600; }
+.pill { display: inline-flex; align-items: center; gap: 6px; padding: 2px 9px; border-radius: 999px; font-size: 13px; font-weight: 600; background: var(--sunken); border: 1px solid var(--line); color: var(--ink-2); }
+.sectionhead { display: flex; align-items: baseline; gap: 10px; justify-content: space-between; flex-wrap: wrap; }
+.sectionhead h2 { font-size: 20px; }
+.sectionhead p { color: var(--ink-2); font-size: 14px; }
+.tabs { display: flex; gap: 2px; border-bottom: 1px solid var(--line); overflow-x: auto; }
+.tabs button { border: 0; background: none; padding: 9px 14px; cursor: pointer; font-weight: 600; color: var(--ink-2); border-bottom: 2px solid transparent; white-space: nowrap; }
+.tabs button[aria-selected="true"] { color: var(--accent); border-bottom-color: var(--accent); }
+
+/* "Show details": simple level first, exact values behind a click. */
+details.more { font-size: 13.5px; color: var(--ink-2); }
+details.more summary { cursor: pointer; color: var(--accent); font-weight: 600; list-style: none; }
+details.more summary::-webkit-details-marker { display: none; }
+details.more summary::before { content: "+ "; }
+details.more[open] summary::before { content: "− "; }
+.kv { display: grid; grid-template-columns: auto auto; gap: 2px 14px; margin: 6px 0 0; justify-content: start; }
+.kv dt { color: var(--ink-3); } .kv dd { margin: 0; font-variant-numeric: tabular-nums; color: var(--ink); }
+
+/* four-bar level meter (also usable for confidence levels) */
+.meter { display: inline-flex; gap: 3px; align-items: flex-end; height: 18px; flex: none; vertical-align: middle; }
+.meter i { width: 6px; border-radius: 2px; background: var(--grid); }
+.meter i:nth-child(1) { height: 7px; } .meter i:nth-child(2) { height: 10px; } .meter i:nth-child(3) { height: 14px; } .meter i:nth-child(4) { height: 18px; }
+
+/* alert */
+.alert { border-radius: var(--radius); padding: 12px 14px; display: flex; gap: 10px; align-items: flex-start; border: 1px solid var(--line); background: var(--surface); }
+.alert .ic { width: 22px; height: 22px; border-radius: 50%; display: grid; place-items: center; font-weight: 700; color: #fff; flex: none; font-size: 13px; }
+.alert b { display: block; }
+
+/* dialog. The height follows the visible viewport (dvh), so Safari's toolbars do not hide the dialog's end. */
+html:has(dialog:modal) { overflow: hidden; }
+dialog:modal { overscroll-behavior: contain; overflow-y: auto; -webkit-overflow-scrolling: touch; max-height: calc(100dvh - 32px); }
+dialog.helpdlg { border: 1px solid var(--line); border-radius: 14px; padding: 0; width: min(760px, calc(100% - 32px)); max-height: calc(100dvh - 48px); background: var(--surface); color: var(--ink); }
+dialog.helpdlg::backdrop { background: var(--scrim); }
+.helpdlg .hd { position: sticky; top: 0; background: var(--surface); display: flex; justify-content: space-between; align-items: center; gap: 12px; padding: 16px 20px 12px; border-bottom: 1px solid var(--line); }
+.helpdlg .hd h2 { font-size: 24px; }
+.helpdlg .bd { padding: 8px 20px 22px; display: flex; flex-direction: column; gap: 10px; }
+.helpdlg h3 { font-size: 18px; margin-top: 12px; }
+.helpdlg p { max-width: 68ch; }
+
+/* footer */
+body { display: flex; flex-direction: column; }
+.foot { display: flex; flex-wrap: wrap; gap: 4px 14px; justify-content: center; padding: 14px 16px calc(14px + env(safe-area-inset-bottom, 0px)); font-size: 12.5px; color: var(--ink-3); border-top: 1px solid var(--line); }
+.foot a { color: inherit; }
+.foot a:hover { color: var(--ink); }
+
+/* icon and spinner */
+.icon { width: 22px; height: 22px; flex: none; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+.spinner { width: 16px; height: 16px; border-radius: 50%; border: 2.5px solid var(--accent-soft); border-top-color: var(--accent); flex: none; animation: spin .8s linear infinite; }
+@keyframes spin { to { transform: rotate(360deg); } }
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; } .spinner { animation-duration: 2.4s; } }

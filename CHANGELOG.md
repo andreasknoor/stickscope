@@ -1,0 +1,14 @@
+# Changelog
+
+## 0.1
+
+- First version: seven figures (knife edge, elevator, harrier, hover, torque roll, rolling harrier, flat spin) with a 3D model and both transmitter sticks moving together in slow motion.
+- Manoeuvre browser with the categories beginner, advanced and pro; each figure card shows a small version of the figure at a glance.
+- Every instruction names its sources (at least two independent ones); disputed and missing parts are shown as such.
+- Control surfaces glow yellow-orange in proportion to their deflection, on the model, in the control schematic and in the flight-path overview.
+- Optional motor sound that follows the throttle (off by default).
+- Mode 1 / Mode 2 switch, playback speeds, phase buttons and a clickable figure strip.
+- English and German, light and dark theme.
+- StickScope has its own logo (two sticks) as icon and in the header.
+- The small windows in the main view (flight path, control schematic) can be folded away; the choice is remembered.
+- The flight path is shown large, with horizon, and as a small window in the top right of the main view.
