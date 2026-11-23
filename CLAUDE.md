@@ -32,6 +32,10 @@ Conventions kept in the animation (not all are confirmed by sources, see the fig
 
 Layers: figure data (`src/core/maneuvers/`) → animation model (`state.ts`: time → position, attitude, stick values, wobble) → views (`src/render/` canvas drawing, `src/ui/` React). `src/core` has no DOM. One clock (`player.ts`) drives model, sticks and highlights, so they cannot drift apart. The Mode 1 / Mode 2 switch only changes how stick values are assigned to the two sticks (`model/sticks.ts`), never the figure data. Highlight level is computed from the deflection (`model/highlight.ts`) and shared by model, schematic and overview. Position and attitude use PCHIP, sticks smoothstep. The HTML prototype `prototype/3d-maneuvers.html` (kept locally, gitignored, not in the public repository) was the functional and visual spec only; its manoeuvre content is not data.
 
+Runtime: `src/app/(en)` and `src/app/(de)/de` are two root layouts (`/` and `/de`, plus `/legal`) that render `src/ui/App.tsx`, a client shell with hash views (`#<figure-id>` opens a figure, `#<category>` or empty shows the browser; figure ids must not equal category ids). Settings (theme, stick mode, category, folded windows) and the hash are read through `useSyncExternalStore` stores in `src/ui/settings.ts`, so the server render uses the defaults. `Trainer.tsx` (loaded lazily, `ssr: false`) owns the single `requestAnimationFrame` loop: it draws six canvases through `src/render/*`, runs only while visible, and pushes React state only when a phase, side badge or readout string changes. Canvas colours are read from the CSS tokens via `CssColors`. The optional motor sound (`ui/motorSound.ts`, parameters in `core/model/motor.ts`) is created inside a click handler and is off on every load.
+
+i18n JSON files are edited directly and are the only copy of the texts; keep the keys of `en.json` and `de.json` identical (`src/i18n/i18n.test.ts` checks keys, markup and that every figure/phase/instruction/note in the data has a text).
+
 Adding a figure: see `README.md`.
 
 ## Language and wording
@@ -44,6 +48,7 @@ Adding a figure: see `README.md`.
 ## Deployment and versioning
 
 - Public GitHub repository, own Vercel project and domain, own CSP in `vercel.json` (`'self'` only). A new external host must be added to the CSP and described in the privacy policy (`src/app/(en)/legal/page.tsx`, German and English). Operator details for the imprint live only in `src/legal/contact.ts`; a placeholder there fails a test and blocks the build. See `docs/deployment.md`.
+- Live at https://stickscope.andreasknoor.com/ (Vercel, repo `andreasknoor/stickscope`, CI in `.github/workflows/ci.yml` runs lint, typecheck, test, build).
 - Every push to `main` builds and deploys to production. **Push only when the request explicitly says push or deploy.** Local commits only when asked or when an approved plan includes them. For "build", "fix" or "analyse": finish the work, run checks, then ask in one line whether to deploy as X.Y.
 - Bump the minor version in `package.json` with every deployed update; the major version changes only on the owner's explicit decision. Commits are titled `StickScope X.Y: …`. The version is shown small in the UI as `major.minor`.
 - Every deployed version gets an entry at the top of `CHANGELOG.md`, one short sentence per new feature or fix.
@@ -55,5 +60,5 @@ Adding a figure: see `README.md`.
 ## Working rules
 
 - Plan first, build after: the owner reviews a written plan before larger new parts.
-- Do not mention or build features that were not asked for. Parked ideas stay in `docs/drafts/` (not committed), not in code.
+- Do not mention or build features that were not asked for. Parked ideas and the prioritised to-do list stay in `docs/drafts/todo.md` (not committed), not in code.
 - `docs/drafts/`, `prototype/` and `prototypes/` are gitignored (local only, the repository is public); `docs/research`, `docs/verification` and `docs/deployment.md` are committed.
