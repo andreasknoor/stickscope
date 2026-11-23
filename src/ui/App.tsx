@@ -93,8 +93,12 @@ function Shell({ lang }: { lang: Lang }) {
         ) : (
           <Browser category={category} onCategory={(c) => { update({ category: c }); location.hash = c; }} />
         )}
-        <ReliabilityPanel />
-        {maneuver && <p className="foot">{t("footer.colours")}</p>}
+        {maneuver && (
+          <>
+            <ReliabilityPanel />
+            <p className="foot">{t("footer.colours")}</p>
+          </>
+        )}
       </main>
       <footer className="sitefoot">
         <span>{t("app.title")} {t("footer.by", { name: OPERATOR.name })}</span>
