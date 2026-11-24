@@ -42,8 +42,15 @@ npm run build        # static export to out/
 2. Add the sources to `src/core/maneuvers/sources.ts` with an `independenceGroup` each.
 3. Add `src/core/maneuvers/<id>.ts` (keyframes, phases, instructions with their sources, notes for disputed and missing parts) and register it in `src/core/maneuvers/index.ts` with its category.
 4. Add the English and German texts under `figures.<id>` in `src/i18n/en.json` and `de.json` (names, idea, phase titles, instructions, notes, illustration notes).
-5. Run `node scripts/make-verification.ts` to create `docs/verification/<id>.md`.
-6. `npm test` checks the rest: phases cover the duration, sticks stay in range, every instruction has two independent sources, every text exists in both languages.
+5. Mark glossary terms in the new texts: wrap the first occurrence per phase in the tag of the term id, e.g. `<aileron>aileron</aileron>` (German: `<aileron>Querruder</aileron>`). Tapping such a word opens its explanation. Tags may sit inside `<b>`; a test checks that every tag is a known term.
+6. Run `node scripts/make-verification.ts` to create `docs/verification/<id>.md`.
+7. `npm test` checks the rest: phases cover the duration, sticks stay in range, every instruction has two independent sources, every text exists in both languages.
+
+## Glossary
+
+- Terms live in `src/core/glossary.ts` (id, group, related terms) and as `glossary.terms.<id>.name` / `.text` in `en.json` and `de.json`. The glossary has no source rule: the explanations describe what a word means and are not flying instructions.
+- German names carry the English term in brackets (for example "Höhenruder (Elevator)"), so nobody has to switch languages to look a word up; a test checks this. English-only words that German pilots use as they are (Hover, Harrier) keep the English name.
+- To add a term: add it to `GLOSSARY`, write name and text in both languages, and (optionally) add a pattern for it in the figure texts as above.
 
 ## Notes
 

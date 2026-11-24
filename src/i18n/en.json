@@ -11,7 +11,8 @@
     "themeSystem": "System",
     "themeLight": "Light",
     "themeDark": "Dark",
-    "settings": "Settings"
+    "settings": "Settings",
+    "glossary": "Glossary"
   },
   "browser": {
     "title": "Choose a manoeuvre",
@@ -167,37 +168,37 @@
           "instructions": {
             "across": "Fly the pass across your front, left to right or right to left.",
             "height": "For the first attempts, start with plenty of height.",
-            "throttle": "Fly with medium to high throttle."
+            "throttle": "Fly with medium to high <throttle>throttle</throttle>."
           }
         },
         "entry": {
           "title": "Roll onto the side",
           "instructions": {
-            "quarter-roll": "Roll with the <b>aileron</b> from level flight until the wings are about vertical (a quarter turn).",
-            "rudder-opposite": "From upright flight, add <b>rudder opposite</b> to the roll: roll right, rudder left; roll left, rudder right.",
-            "two-steps": "While learning, practise the quarter roll first without rudder, and add the rudder once the bank is set."
+            "quarter-roll": "Roll with the <b><aileron>aileron</aileron></b> from level flight until the wings are about vertical (a quarter turn).",
+            "rudder-opposite": "From <upright>upright</upright> flight, add <b><rudder>rudder</rudder> opposite</b> to the roll: roll right, rudder left; roll left, rudder right.",
+            "two-steps": "While learning, practise the quarter roll first without rudder, and add the rudder once the <bank>bank</bank> is set."
           }
         },
         "hold": {
           "title": "Hold the knife edge",
           "instructions": {
-            "rudder-holds": "The <b>rudder</b> carries the model on its side. Without it, the model does not stay there.",
-            "rudder-cue": "Cue: canopy toward you, rudder stick toward the tail; belly toward you, rudder stick toward the nose.",
+            "rudder-holds": "The <b><rudder>rudder</rudder></b> carries the model on its side. Without it, the model does not stay there.",
+            "rudder-cue": "Cue: <canopy>canopy</canopy> toward you, rudder stick toward the tail; belly toward you, rudder stick toward the nose.",
             "rudder-amount": "How much rudder you need depends on the model and its speed. Faster flight needs less.",
-            "tuck": "Rudder makes the nose tuck. Which way depends on the model: toward the landing gear or toward the canopy.",
-            "tuck-elevator": "Correct the tuck with the <b>elevator</b>. If the nose tucks toward the landing gear, give a little up elevator.",
-            "roll-aileron": "If the model starts to roll, correct with a little <b>aileron</b>. The direction depends on the model.",
-            "throttle-height": "The <b>throttle</b> adds or removes height: if the model sinks, add throttle."
+            "tuck": "Rudder makes the nose tuck. Which way depends on the model: toward the <landingGear>landing gear</landingGear> or toward the canopy.",
+            "tuck-elevator": "Correct the tuck with the <b><elevator>elevator</elevator></b>. If the nose tucks toward the landing gear, give a little up elevator.",
+            "roll-aileron": "If the model starts to roll, correct with a little <b><aileron>aileron</aileron></b>. The direction depends on the model.",
+            "throttle-height": "The <b><throttle>throttle</throttle></b> adds or removes height: if the model sinks, add throttle."
           },
           "notes": {
             "altitude": "Sources disagree on what holds the height: some say the rudder does, others say the rudder only sets the nose angle and the throttle holds the height.",
-            "duration": "How long to hold the knife edge: the sources give no confirmed value."
+            "duration": "How long to hold the <knifeEdge>knife edge</knifeEdge>: the sources give no confirmed value."
           }
         },
         "exit": {
           "title": "Roll out",
           "instructions": {
-            "quarter-back": "Roll a quarter turn back with the <b>aileron</b> to upright, and take the rudder and elevator inputs off."
+            "quarter-back": "Roll a quarter turn back with the <b><aileron>aileron</aileron></b> to <upright>upright</upright>, and take the <rudder>rudder</rudder> and <elevator>elevator</elevator> inputs off."
           }
         }
       },
@@ -218,7 +219,7 @@
         "nose-up": {
           "title": "Nose up",
           "instructions": {
-            "slow-to-stall": "Slow the model down to the stall: cut or reduce the <b>throttle</b> and pull up elevator.",
+            "slow-to-stall": "Slow the model down to the <stall>stall</stall>: cut or reduce the <b><throttle>throttle</throttle></b> and pull up <elevator>elevator</elevator>.",
             "progressive": "Pull the elevator smoothly, not abruptly.",
             "from-downline": "You can also start from a short downline: pull full up <b>elevator</b> quickly to shed the speed."
           }
@@ -226,11 +227,11 @@
         "hold": {
           "title": "Hold the elevator",
           "instructions": {
-            "full-up": "Hold the <b>elevator</b> pulled fully, or almost fully.",
+            "full-up": "Hold the <b><elevator>elevator</elevator></b> pulled fully, or almost fully.",
             "steep-descent": "The model sinks on a steep to nearly vertical line.",
-            "throttle-little": "Add a little <b>throttle</b> to keep the nose up. Changing the throttle moves the nose up or down.",
-            "rudder-heading": "The <b>rudder</b> corrects the heading, left and right.",
-            "aileron-small": "Catch a rocking wing with small, brief <b>aileron</b> inputs."
+            "throttle-little": "Add a little <b><throttle>throttle</throttle></b> to keep the nose up. Changing the throttle moves the nose up or down.",
+            "rudder-heading": "The <b><rudder>rudder</rudder></b> corrects the heading, left and right.",
+            "aileron-small": "Catch a rocking wing with small, brief <b><aileron>aileron</aileron></b> inputs."
           },
           "notes": {
             "throttle": "Throttle in the hold: most sources add a little throttle, one source says idle.",
@@ -240,8 +241,8 @@
         "exit": {
           "title": "Exit",
           "instructions": {
-            "release": "To fly out, release the up <b>elevator</b> and add <b>throttle</b>.",
-            "into-harrier": "You can also exit into a harrier instead of flying out."
+            "release": "To fly out, release the up <b><elevator>elevator</elevator></b> and add <b><throttle>throttle</throttle></b>.",
+            "into-harrier": "You can also exit into a <harrier>harrier</harrier> instead of flying out."
           },
           "notes": {
             "min-height": "How low you may go before the exit: the sources give no confirmed value."
@@ -263,7 +264,7 @@
         "entry": {
           "title": "Nose up",
           "instructions": {
-            "reduce-and-pull": "Reduce the <b>throttle</b> while you feed in up elevator gradually.",
+            "reduce-and-pull": "Reduce the <b><throttle>throttle</throttle></b> while you feed in up <elevator>elevator</elevator> gradually.",
             "from-elevator": "Coming from an elevator: add throttle until the sinking stops and the model moves forward."
           },
           "notes": {
@@ -273,23 +274,23 @@
         "hold": {
           "title": "Hold the harrier",
           "instructions": {
-            "elevator-attitude": "The <b>elevator</b> holds the nose attitude. The <b>throttle</b> decides whether the model holds its height.",
+            "elevator-attitude": "The <b><elevator>elevator</elevator></b> holds the nose <attitude>attitude</attitude>. The <b><throttle>throttle</throttle></b> decides whether the model holds its height.",
             "angle": "Hold the nose about 45° up.",
-            "more-thrust": "The harrier needs clearly more thrust than ordinary slow flight.",
+            "more-thrust": "The <harrier>harrier</harrier> needs clearly more thrust than ordinary slow flight.",
             "throttle-pumps": "Use the throttle actively in short pumps instead of setting it once.",
-            "rudder-steers": "The <b>rudder</b> steers the heading.",
+            "rudder-steers": "The <b><rudder>rudder</rudder></b> steers the heading.",
             "rudder-rolls": "Rudder also rolls the model the same way: rudder left rolls it left.",
-            "torque-rudder": "With a standard propeller rotation, hold some right rudder against the propeller torque."
+            "torque-rudder": "With a standard <propeller>propeller</propeller> rotation, hold some right rudder against the propeller <torque>torque</torque>."
           },
           "notes": {
-            "aileron": "Aileron in the harrier: one manufacturer manual says to avoid it because it may snap the model. Other sources use small aileron inputs to keep the wings level.",
+            "aileron": "<aileron>Aileron</aileron> in the harrier: one manufacturer manual says to avoid it because it may snap the model. Other sources use small aileron inputs to keep the wings level.",
             "angle-value": "Nose angle: four sources say about 45 degrees, one says about 60 degrees or more, with the elevator held at maximum for most models."
           }
         },
         "exit": {
           "title": "Exit",
           "instructions": {
-            "throttle-up": "Raise the <b>throttle</b> toward full and lower the nose with the elevator so the model regains speed.",
+            "throttle-up": "Raise the <b><throttle>throttle</throttle></b> toward full and lower the nose with the <elevator>elevator</elevator> so the model regains speed.",
             "emergency": "If the figure goes wrong, go to full throttle."
           }
         }
@@ -302,9 +303,9 @@
         "prepare": {
           "title": "Preparation",
           "instructions": {
-            "simulator": "Practise on a flight simulator first.",
-            "safe-height": "Practise at a safe height and hold the hover only briefly at first.",
-            "large-throws": "Use large control throws."
+            "simulator": "Practise on a flight <simulator>simulator</simulator> first.",
+            "safe-height": "Practise at a safe height and hold the <hover>hover</hover> only briefly at first.",
+            "large-throws": "Use large control <throws>throws</throws>."
           },
           "notes": {
             "start-height": "Starting height: the sources give very different values, so none is shown."
@@ -313,7 +314,7 @@
         "pull-up": {
           "title": "Pull up",
           "instructions": {
-            "from-harrier": "Enter from a harrier: keep adding up elevator until the model is vertical."
+            "from-harrier": "Enter from a <harrier>harrier</harrier>: keep adding up <elevator>elevator</elevator> until the model is vertical."
           },
           "notes": {
             "entry-orientation": "Which way you fly at entry and which side of the model faces you: the sources do not say.",
@@ -323,14 +324,14 @@
         "hold": {
           "title": "Hold the hover",
           "instructions": {
-            "throttle-height": "The <b>throttle</b> controls the height: more power climbs, less power sinks.",
-            "throttle-bursts": "After each correction a short burst of throttle is needed. Holding high throttle makes the model climb out of the hover.",
-            "aileron-torque": "The propeller torque tries to turn the model about its long axis. <b>Aileron</b> against the torque stops it. In the models these sources describe, that is right aileron.",
-            "rudder-elevator": "<b>Rudder</b> and <b>elevator</b> keep the model vertical: rudder for left and right, elevator for forward and back.",
+            "throttle-height": "The <b><throttle>throttle</throttle></b> controls the height: more power climbs, less power sinks.",
+            "throttle-bursts": "After each correction a short burst of throttle is needed. Holding high throttle makes the model climb out of the <hover>hover</hover>.",
+            "aileron-torque": "The <propeller>propeller</propeller> <torque>torque</torque> tries to turn the model about its long axis. <b><aileron>Aileron</aileron></b> against the torque stops it. In the models these sources describe, that is right aileron.",
+            "rudder-elevator": "<b><rudder>Rudder</rudder></b> and <b><elevator>elevator</elevator></b> keep the model vertical: rudder for left and right, elevator for forward and back.",
             "small-early": "Corrections should be small, short and early, not held.",
             "belly-in-rudder": "With the belly toward you, push the rudder stick toward the wing that is dropping.",
             "exit-throttle": "To leave the hover, add <b>throttle</b>.",
-            "exit-elevator": "To leave the hover, push the <b>elevator</b> gently forward so the nose falls through the harrier attitude, then accelerate away."
+            "exit-elevator": "To leave the hover, push the <b>elevator</b> gently forward so the nose falls through the <harrier>harrier</harrier> <attitude>attitude</attitude>, then accelerate away."
           },
           "notes": {
             "elevator-direction": "Which way to move the elevator when the nose tilts toward or away from you: the sources do not say.",
@@ -339,7 +340,7 @@
         }
       },
       "illustration": {
-        "orientation": "The animation shows the model entering by flying away and pulling up, with the canopy toward you. The sources do not confirm this. It is an illustration, as are stick travel and timing."
+        "orientation": "The animation shows the model entering by flying away and pulling up, with the <canopy>canopy</canopy> toward you. The sources do not confirm this. It is an illustration, as are stick travel and timing."
       }
     },
     "torque-roll": {
@@ -349,43 +350,43 @@
         "hover": {
           "title": "Hover first",
           "instructions": {
-            "hover-first": "Learn the hover first.",
+            "hover-first": "Learn the <hover>hover</hover> first.",
             "calm-air": "Practise in calm air. Wind makes it much harder.",
             "height": "Practise with plenty of height.",
-            "simulator": "Practise on a flight simulator first."
+            "simulator": "Practise on a flight <simulator>simulator</simulator> first."
           }
         },
         "start": {
           "title": "Start the rotation",
           "instructions": {
-            "pull-vertical": "Pull the model to a fully vertical hover. The propeller carries it.",
-            "let-it-turn": "Do not counter the torque: in a clean hover the model starts to rotate by itself."
+            "pull-vertical": "Pull the model to a fully vertical <hover>hover</hover>. The <propeller>propeller</propeller> carries it.",
+            "let-it-turn": "Do not counter the <torque>torque</torque>: in a clean hover the model starts to rotate by itself."
           }
         },
         "rotate": {
           "title": "Let it turn",
           "instructions": {
-            "torque-turns": "The propeller torque makes the model rotate about its long axis.",
+            "torque-turns": "The <propeller>propeller</propeller> <torque>torque</torque> makes the model rotate about its long axis.",
             "turns-left": "The torque turns the model to the left.",
-            "rudder-elevator": "<b>Rudder</b> and <b>elevator</b> keep the long axis of the model vertical.",
-            "throttle-steps": "Adjust the <b>throttle</b> in small steps so the model neither climbs nor sinks.",
-            "large-throws": "Large control surfaces and large throws help.",
+            "rudder-elevator": "<b><rudder>Rudder</rudder></b> and <b><elevator>elevator</elevator></b> keep the long axis of the model vertical.",
+            "throttle-steps": "Adjust the <b><throttle>throttle</throttle></b> in small steps so the model neither climbs nor sinks.",
+            "large-throws": "Large control surfaces and large <throws>throws</throws> help.",
             "corrections-reverse": "As the model turns, the <b>elevator</b> and <b>rudder</b> corrections change direction: correct by which way the nose leans, not by the stick labels."
           }
         },
         "stop": {
           "title": "Stop the rotation",
           "instructions": {
-            "aileron-stops": "<b>Aileron</b> against the torque (right aileron) slows or stops the rotation."
+            "aileron-stops": "<b><aileron>Aileron</aileron></b> against the <torque>torque</torque> (right aileron) slows or stops the rotation."
           },
           "notes": {
-            "exit": "How to end the torque roll and leave the hover: the sources give no confirmed instruction."
+            "exit": "How to end the <torqueRoll>torque roll</torqueRoll> and leave the <hover>hover</hover>: the sources give no confirmed instruction."
           }
         }
       },
       "illustration": {
-        "orientation": "The animation shows a hover with the canopy toward you. The sources do not say which side faces you. It is an illustration, as are stick travel and timing.",
-        "viewpoint": "The sources say the torque turns the model to the left, but not from which viewpoint. The animation shows it rolling to the left as seen from behind the model."
+        "orientation": "The animation shows a <hover>hover</hover> with the <canopy>canopy</canopy> toward you. The sources do not say which side faces you. It is an illustration, as are stick travel and timing.",
+        "viewpoint": "The sources say the <torque>torque</torque> turns the model to the left, but not from which viewpoint. The animation shows it rolling to the left as seen from behind the model."
       }
     },
     "rolling-harrier": {
@@ -395,45 +396,45 @@
         "prepare": {
           "title": "Preparation",
           "instructions": {
-            "harrier-first": "Learn the plain harrier first, upright and inverted.",
-            "slow-rolls": "Practise slow rolls with rudder and elevator support before you try this.",
-            "high-rates": "Set large control travel on rudder and elevator and reduced exponential, so inputs respond without delay.",
+            "harrier-first": "Learn the plain <harrier>harrier</harrier> first, <upright>upright</upright> and <inverted>inverted</inverted>.",
+            "slow-rolls": "Practise slow rolls with <rudder>rudder</rudder> and <elevator>elevator</elevator> support before you try this.",
+            "high-rates": "Set large control travel on rudder and elevator and reduced <expo>exponential</expo>, so inputs respond without delay.",
             "advanced": "This is an advanced figure that needs a lot of practice."
           }
         },
         "entry": {
           "title": "Nose up and start the roll",
           "instructions": {
-            "from-harrier": "Start from an established nose-high harrier, then command full aileron and begin to roll.",
-            "attitude": "The sources give a nose-up attitude of roughly 35° to 60°."
+            "from-harrier": "Start from an established nose-high <harrier>harrier</harrier>, then command full <aileron>aileron</aileron> and begin to roll.",
+            "attitude": "The sources give a nose-up <attitude>attitude</attitude> of roughly 35° to 60°."
           }
         },
         "roll": {
           "title": "Keep rolling",
           "instructions": {
-            "aileron-full": "Hold <b>full aileron</b> in one direction for the whole roll and release it only at the exit.",
-            "alternate": "<b>Rudder</b> and <b>elevator</b> come in one after the other during each roll while the aileron stays fixed. The timing is the hard part.",
-            "rudder-knife": "The rudder works hardest when the model is on its side. Near upright and near inverted, the elevator does the work.",
+            "aileron-full": "Hold <b>full <aileron>aileron</aileron></b> in one direction for the whole roll and release it only at the exit.",
+            "alternate": "<b><rudder>Rudder</rudder></b> and <b><elevator>elevator</elevator></b> come in one after the other during each roll while the aileron stays fixed. The timing is the hard part.",
+            "rudder-knife": "The rudder works hardest when the model is on its side. Near <upright>upright</upright> and near <inverted>inverted</inverted>, the elevator does the work.",
             "elevator-sequence": "Toward inverted, give down elevator. Coming back round to upright, change to up elevator.",
-            "throttle-hold": "Use the <b>throttle</b> to hold height and keep the nose up: more power raises the nose, less lets it drop.",
+            "throttle-hold": "Use the <b><throttle>throttle</throttle></b> to hold height and keep the nose up: more power raises the nose, less lets it drop.",
             "timing-drift": "The timing of the rudder and elevator inputs decides which way the model drifts sideways.",
             "slow-roll": "If the roll gets slower, that is a sign of too little power: add throttle."
           },
           "notes": {
             "throttle-start": "Throttle at the start of the roll: one source adds a few clicks, one uses medium-to-low throttle, one cuts the power. There is no agreed rule.",
             "rudder-needed": "Is the rudder needed? Most sources use it. Some say rolling with elevator only works but looks poor, and one says it is not workable.",
-            "rudder-direction": "Which way the rudder goes relative to the roll direction: only one source says it (against the roll at the first knife edge, so right rudder for a left roll, then left rudder at the second). No second source confirms it, and none gives the amount."
+            "rudder-direction": "Which way the rudder goes relative to the roll direction: only one source says it (against the roll at the first <knifeEdge>knife edge</knifeEdge>, so right rudder for a left roll, then left rudder at the second). No second source confirms it, and none gives the amount."
           }
         },
         "exit": {
           "title": "Exit",
           "instructions": {
-            "exit-inputs": "Add <b>power</b>, release the <b>aileron</b> and reduce the elevator to return to normal forward flight."
+            "exit-inputs": "Add <b>power</b>, release the <b><aileron>aileron</aileron></b> and reduce the <elevator>elevator</elevator> to return to normal forward flight."
           }
         }
       },
       "illustration": {
-        "direction": "The animation rolls the model to the left, with the rudder toward the top of the model. Only one source gives a roll direction and a rudder direction (a left roll with right rudder at the first knife edge). Roll speed, stick travel and throttle are illustrations too."
+        "direction": "The animation rolls the model to the left, with the <rudder>rudder</rudder> toward the top of the model. Only one source gives a roll direction and a rudder direction (a left roll with right rudder at the first <knifeEdge>knife edge</knifeEdge>). Roll speed, stick travel and <throttle>throttle</throttle> are illustrations too."
       }
     },
     "flat-spin": {
@@ -443,57 +444,57 @@
         "prepare": {
           "title": "Preparation",
           "instructions": {
-            "height": "Start high. The exit needs more height than a conventional spin, because airspeed has to be rebuilt from a flat attitude.",
-            "models-differ": "Not every model flat spins, and models differ widely in how well they enter and recover.",
+            "height": "Start high. The exit needs more height than a conventional <spin>spin</spin>, because <airspeed>airspeed</airspeed> has to be rebuilt from a flat <attitude>attitude</attitude>.",
+            "models-differ": "Not every model <flatSpin>flat spins</flatSpin>, and models differ widely in how well they enter and recover.",
             "cg": "A rearward centre of gravity helps the model to flat spin.",
-            "throws": "Use large control throws on all controls.",
-            "simulator": "Practise on a flight simulator first. The real model may behave differently."
+            "throws": "Use large control <throws>throws</throws> on all controls.",
+            "simulator": "Practise on a flight <simulator>simulator</simulator> first. The real model may behave differently."
           }
         },
         "entry": {
           "title": "Entry",
           "instructions": {
-            "from-spin": "Start from an ordinary spin: slow the model, stall it, begin the spin, and only then flatten it.",
-            "bleed-speed": "Bleed off the speed: reduce the throttle toward idle and raise the nose until the model stalls.",
-            "full-inputs": "At entry the <b>elevator</b> is full up and the <b>rudder</b> is full toward the spin direction."
+            "from-spin": "Start from an ordinary <spin>spin</spin>: slow the model, <stall>stall</stall> it, begin the spin, and only then flatten it.",
+            "bleed-speed": "Bleed off the speed: reduce the <throttle>throttle</throttle> toward idle and raise the nose until the model stalls.",
+            "full-inputs": "At entry the <b><elevator>elevator</elevator></b> is full up and the <b><rudder>rudder</rudder></b> is full toward the spin direction."
           },
           "notes": {
-            "aileron-entry": "Aileron at entry: some sources say the same direction as the rudder, one says the opposite direction, one says it depends on the model."
+            "aileron-entry": "<aileron>Aileron</aileron> at entry: some sources say the same direction as the rudder, one says the opposite direction, one says it depends on the model."
           }
         },
         "flatten": {
           "title": "Flatten the spin",
           "instructions": {
-            "hold-inputs": "Once the spin is established, hold elevator and rudder at their large deflections while you tune the rest.",
-            "aileron-ease": "To flatten the spin, bring the <b>aileron</b> slowly toward neutral or toward the opposite side, never abruptly.",
-            "add-throttle": "Add some <b>throttle</b> to help flatten the spin and to keep the model from falling fast.",
+            "hold-inputs": "Once the <spin>spin</spin> is established, hold <elevator>elevator</elevator> and <rudder>rudder</rudder> at their large deflections while you tune the rest.",
+            "aileron-ease": "To flatten the spin, bring the <b><aileron>aileron</aileron></b> slowly toward neutral or toward the opposite side, never abruptly.",
+            "add-throttle": "Add some <b><throttle>throttle</throttle></b> to help flatten the spin and to keep the model from falling fast.",
             "tail-authority": "A little throttle gives the rudder and elevator more authority at the tail."
           }
         },
         "hold": {
           "title": "Hold the spin",
           "instructions": {
-            "throttle-height": "With throttle the model can hold its height or even climb. Without throttle it falls slowly."
+            "throttle-height": "With <throttle>throttle</throttle> the model can hold its height or even climb. Without throttle it falls slowly."
           },
           "notes": {
-            "spin-rate": "How to control the spin rate and how long to hold the spin: the sources give no confirmed instruction."
+            "spin-rate": "How to control the <spin>spin</spin> rate and how long to hold the spin: the sources give no confirmed instruction."
           }
         },
         "exit": {
           "title": "Exit",
           "instructions": {
             "release": "Centre or release the sticks. Some models then stop rotating on their own.",
-            "opposite-rudder": "If it keeps rotating, give <b>rudder</b> opposite to the rotation.",
+            "opposite-rudder": "If it keeps rotating, give <b><rudder>rudder</rudder></b> opposite to the rotation.",
             "more-turns": "Releasing the sticks does not always stop it at once. Several more turns are possible."
           },
           "notes": {
-            "exit-throttle": "Throttle during the exit: one source says idle until airspeed builds, but also that adding power speeds the recovery; two forum posters say power is what makes the exit possible.",
-            "recoverable": "Can a flat spin be exited at all? One wiki says a flat spin means losing the model. Other sources say the exit is routine with a suitable model and correct inputs."
+            "exit-throttle": "<throttle>Throttle</throttle> during the exit: one source says idle until <airspeed>airspeed</airspeed> builds, but also that adding power speeds the recovery; two forum posters say power is what makes the exit possible.",
+            "recoverable": "Can a <flatSpin>flat spin</flatSpin> be exited at all? One wiki says a flat spin means losing the model. Other sources say the exit is routine with a suitable model and correct inputs."
           }
         }
       },
       "illustration": {
-        "illustration": "The animation shows no aileron, because the sources disagree on its direction and amount. The spin direction (to the left), the throttle level and the stick travel are illustrations."
+        "illustration": "The animation shows no <aileron>aileron</aileron>, because the sources disagree on its direction and amount. The <spin>spin</spin> direction (to the left), the <throttle>throttle</throttle> level and the stick travel are illustrations."
       }
     },
     "loop": {
@@ -503,30 +504,30 @@
         "approach": {
           "title": "Approach",
           "instructions": {
-            "full-power": "Fly in straight and level with full <b>throttle</b>."
+            "full-power": "Fly in straight and level with full <b><throttle>throttle</throttle></b>."
           },
           "notes": {
-            "power": "Power: one source says any plane with an elevator and enough power can loop. Nothing is confirmed for motor gliders.",
+            "power": "Power: one source says any plane with an <elevator>elevator</elevator> and enough power can <loop>loop</loop>. Nothing is confirmed for <motorglider>motor gliders</motorglider>.",
             "min-height": "Minimum height: the sources give no confirmed value."
           }
         },
         "pull-up": {
           "title": "Pull up",
           "instructions": {
-            "up-elevator": "Pull the <b>elevator</b> smoothly and firmly to start the climb.",
-            "vertical-plane": "Keep the loop in one plane: small <b>rudder</b> and <b>aileron</b> corrections as needed."
+            "up-elevator": "Pull the <b><elevator>elevator</elevator></b> smoothly and firmly to start the climb.",
+            "vertical-plane": "Keep the <loop>loop</loop> in one plane: small <b><rudder>rudder</rudder></b> and <b><aileron>aileron</aileron></b> corrections as needed."
           }
         },
         "back": {
           "title": "Over the top and down",
           "instructions": {
-            "throttle-back": "On the way over and down, reduce the <b>throttle</b> so the model does not get too fast."
+            "throttle-back": "On the way over and down, reduce the <b><throttle>throttle</throttle></b> so the model does not get too fast."
           }
         },
         "exit": {
           "title": "Exit",
           "instructions": {
-            "level-out": "Come out of the loop level, at the height where you started."
+            "level-out": "Come out of the <loop>loop</loop> level, at the height where you started."
           }
         }
       }
@@ -541,8 +542,8 @@
         "approach": {
           "title": "Approach",
           "instructions": {
-            "start-high": "Start high enough to finish the half loop.",
-            "level-entry": "Fly in upright, straight and level."
+            "start-high": "Start high enough to finish the half <loop>loop</loop>.",
+            "level-entry": "Fly in <upright>upright</upright>, straight and level."
           },
           "notes": {
             "min-height": "How high is high enough: the sources give no confirmed value."
@@ -551,21 +552,21 @@
         "half-roll": {
           "title": "Half roll",
           "instructions": {
-            "half-roll": "Roll the model half a turn onto its back with the <b>aileron</b>.",
-            "reduce-throttle": "Reduce the <b>throttle</b>."
+            "half-roll": "Roll the model half a turn onto its back with the <b><aileron>aileron</aileron></b>.",
+            "reduce-throttle": "Reduce the <b><throttle>throttle</throttle></b>."
           }
         },
         "half-loop": {
           "title": "Half loop down",
           "instructions": {
-            "pull-at-once": "Pull the <b>elevator</b> straight after the roll, without flying inverted for long.",
+            "pull-at-once": "Pull the <b><elevator>elevator</elevator></b> straight after the roll, without flying <inverted>inverted</inverted> for long.",
             "altitude-for-speed": "The model trades height for speed: it gets faster on the way down."
           }
         },
         "exit": {
           "title": "Exit",
           "instructions": {
-            "level-reverse": "The model ends upright and level, flying the opposite way, lower than it started."
+            "level-reverse": "The model ends <upright>upright</upright> and level, flying the opposite way, lower than it started."
           }
         }
       }
@@ -575,7 +576,7 @@
       "idea": "The model turns once around its long axis and stays on a straight line.",
       "illustration": {
         "direction": "The sources do not say which way to roll. The animation rolls to the left.",
-        "rudder": "The animation shows no rudder, because only one source describes it."
+        "rudder": "The animation shows no <rudder>rudder</rudder>, because only one source describes it."
       },
       "phases": {
         "approach": {
@@ -587,24 +588,24 @@
         "roll-start": {
           "title": "Start the roll",
           "instructions": {
-            "aileron-rolls": "The <b>aileron</b> makes the roll. Hold it in the same direction until the roll is done.",
-            "up-elevator": "Add some up <b>elevator</b> in the first part of the roll."
+            "aileron-rolls": "The <b><aileron>aileron</aileron></b> makes the roll. Hold it in the same direction until the roll is done.",
+            "up-elevator": "Add some up <b><elevator>elevator</elevator></b> in the first part of the roll."
           },
           "notes": {
-            "elevator-order": "Order at the start: one source adds the up elevator first and then the aileron, another starts with the aileron and adds the up elevator past 45 degrees of bank.",
-            "rudder": "Rudder: only one source describes it in detail."
+            "elevator-order": "Order at the start: one source adds the up elevator first and then the aileron, another starts with the aileron and adds the up elevator past 45 degrees of <bank>bank</bank>.",
+            "rudder": "<rudder>Rudder</rudder>: only one source describes it in detail."
           }
         },
         "inverted": {
           "title": "Inverted",
           "instructions": {
-            "down-elevator-inverted": "When the model is inverted, release the up <b>elevator</b> and add a little down <b>elevator</b> so it does not lose height."
+            "down-elevator-inverted": "When the model is <inverted>inverted</inverted>, release the up <b><elevator>elevator</elevator></b> and add a little down <b>elevator</b> so it does not lose height."
           }
         },
         "finish": {
           "title": "Finish the roll",
           "instructions": {
-            "stop-upright": "Stop the roll when the model is upright again: bring the <b>aileron</b> back to centre."
+            "stop-upright": "Stop the roll when the model is <upright>upright</upright> again: bring the <b><aileron>aileron</aileron></b> back to centre."
           }
         },
         "exit": {
@@ -619,14 +620,14 @@
       "name": "Stall turn",
       "idea": "The model climbs straight up, pivots on the spot at the top, dives back down the same line and flies out the opposite way. Also called hammerhead.",
       "illustration": {
-        "direction": "The sources do not say to which side the model swings round. The animation swings it away from the pilot, with full left rudder.",
-        "aileron": "The animation shows no aileron, because only one source describes it."
+        "direction": "The sources do not say to which side the model swings round. The animation swings it away from the pilot, with full left <rudder>rudder</rudder>.",
+        "aileron": "The animation shows no <aileron>aileron</aileron>, because only one source describes it."
       },
       "phases": {
         "approach": {
           "title": "Approach",
           "instructions": {
-            "full-power": "Fly in with full <b>throttle</b>."
+            "full-power": "Fly in with full <b><throttle>throttle</throttle></b>."
           },
           "notes": {
             "min-height": "Minimum height: the sources give no confirmed value."
@@ -635,27 +636,27 @@
         "climb": {
           "title": "Climb",
           "instructions": {
-            "vertical-climb": "Pull a quarter loop into a vertical climb and keep the climb straight.",
-            "throttle-not-closed": "Reduce the <b>throttle</b> towards the top, but do not close it completely: the <b>rudder</b> needs airflow."
+            "vertical-climb": "Pull a quarter <loop>loop</loop> into a vertical climb and keep the climb straight.",
+            "throttle-not-closed": "Reduce the <b><throttle>throttle</throttle></b> towards the top, but do not close it completely: the <b><rudder>rudder</rudder></b> needs airflow."
           },
           "notes": {
-            "propwash": "Motor gliders: the sources rely on the propeller blowing air over the rudder. None says what to do with a stopped or folded propeller; one source says the rudder must then be used earlier, while the model still has forward speed."
+            "propwash": "<motorglider>Motor gliders</motorglider>: the sources rely on the <propeller>propeller</propeller> blowing air over the rudder. None says what to do with a stopped or folded propeller; one source says the rudder must then be used earlier, while the model still has forward speed."
           }
         },
         "pivot": {
           "title": "Pivot",
           "instructions": {
-            "full-rudder": "At the top, as the climb runs out, apply full <b>rudder</b>.",
+            "full-rudder": "At the top, as the climb runs out, apply full <b><rudder>rudder</rudder></b>.",
             "tight-pivot": "The model pivots almost on the spot."
           }
         },
         "dive": {
           "title": "Dive and pull out",
           "instructions": {
-            "dive-and-pull-out": "Let the model dive straight down, then pull out with the <b>elevator</b>."
+            "dive-and-pull-out": "Let the model dive straight down, then pull out with the <b><elevator>elevator</elevator></b>."
           },
           "notes": {
-            "throttle-dive": "Throttle in the dive: one source adds power when pulling out, another keeps the throttle closed until the dive has built up speed."
+            "throttle-dive": "<throttle>Throttle</throttle> in the dive: one source adds power when pulling out, another keeps the throttle closed until the dive has built up speed."
           }
         },
         "exit": {
@@ -670,41 +671,41 @@
       "name": "Inverted flight",
       "idea": "The model rolls onto its back, flies a straight line upside down and rolls back upright.",
       "illustration": {
-        "direction": "The sources do not say which way to roll. The animation rolls to the right and back the same way. How long the model stays inverted, and the stick travel, are illustrations too."
+        "direction": "The sources do not say which way to roll. The animation rolls to the right and back the same way. How long the model stays <inverted>inverted</inverted>, and the stick travel, are illustrations too."
       },
       "phases": {
         "approach": {
           "title": "Approach",
           "instructions": {
-            "level-add-power": "Start from straight and level flight and add some <b>throttle</b> if needed."
+            "level-add-power": "Start from straight and level flight and add some <b><throttle>throttle</throttle></b> if needed."
           }
         },
         "half-roll-in": {
           "title": "Half roll onto the back",
           "instructions": {
-            "half-roll": "Roll half a turn onto the back with the <b>aileron</b>.",
-            "centre-aileron": "When the wings are level, inverted, bring the <b>aileron</b> back to centre."
+            "half-roll": "Roll half a turn onto the back with the <b><aileron>aileron</aileron></b>.",
+            "centre-aileron": "When the wings are level, <inverted>inverted</inverted>, bring the <b>aileron</b> back to centre."
           }
         },
         "inverted": {
           "title": "Inverted",
           "instructions": {
-            "hold-elevator": "Push the <b>elevator</b> forward a little to hold the height.",
-            "reversed": "<b>Elevator</b> and <b>rudder</b> work the other way round from your view; the <b>aileron</b> does not.",
-            "push-amount": "Too much forward elevator stalls or dives the model, too little loses height.",
-            "stall-speed": "The stall speed is higher inverted: do not fly too slowly.",
-            "dihedral": "Models with dihedral or V-form want to roll back upright, so fly actively."
+            "hold-elevator": "Push the <b><elevator>elevator</elevator></b> forward a little to hold the height.",
+            "reversed": "<b>Elevator</b> and <b><rudder>rudder</rudder></b> work the other way round from your view; the <b><aileron>aileron</aileron></b> does not.",
+            "push-amount": "Too much forward elevator <stall>stalls</stall> or dives the model, too little loses height.",
+            "stall-speed": "The stall speed is higher <inverted>inverted</inverted>: do not fly too slowly.",
+            "dihedral": "Models with dihedral or V-form want to roll back <upright>upright</upright>, so fly actively."
           },
           "notes": {
             "duration": "How long to hold: one source says only 2 to 3 seconds at first; no second source.",
-            "motor-glider": "Motor gliders: no source covers them. One source says gliders and cambered trainers need a lot of forward elevator and speed inverted.",
+            "motor-glider": "<motorglider>Motor gliders</motorglider>: no source covers them. One source says gliders and cambered trainers need a lot of forward elevator and speed inverted.",
             "amount": "How much forward elevator: the sources give no value."
           }
         },
         "roll-out": {
           "title": "Roll back",
           "instructions": {
-            "roll-out": "Roll the model back upright with the <b>aileron</b>. Do not pull out of it.",
+            "roll-out": "Roll the model back <upright>upright</upright> with the <b><aileron>aileron</aileron></b>. Do not pull out of it.",
             "enough-height": "Practise with enough height to recover."
           }
         }
@@ -770,6 +771,346 @@
       "mistake": {
         "q": "I found a mistake or have a suggestion.",
         "a": "Please write to the e-mail address in the legal notice. Correctness is the main goal, so a hint with a source is especially welcome."
+      }
+    }
+  },
+  "glossary": {
+    "title": "Glossary",
+    "close": "Close",
+    "search": "Search terms",
+    "all": "All",
+    "empty": "No term found.",
+    "intro": "Short explanations of the words you meet in RC and 3D flying. Tap an underlined word in an instruction to see its explanation.",
+    "note": "These explanations describe what the words mean. They are not flying instructions.",
+    "more": "More in the glossary",
+    "seeAlso": "See also",
+    "count": "{count, plural, one {# term} other {# terms}}",
+    "groups": {
+      "controls": "Transmitter and controls",
+      "model": "Model and parts",
+      "flight": "Flight and attitude",
+      "figures": "Figures and manoeuvres"
+    },
+    "terms": {
+      "transmitter": {
+        "name": "Transmitter",
+        "text": "The handheld radio with the control sticks. It sends your stick movements to the receiver in the model."
+      },
+      "stick": {
+        "name": "Stick",
+        "text": "One of the two control levers on the transmitter. Each stick moves in two directions, so the two sticks give four controls: throttle, rudder, elevator and aileron."
+      },
+      "mode": {
+        "name": "Stick mode (Mode 1 / Mode 2)",
+        "text": "Which function sits on which stick. In Mode 2, the most common layout, the left stick has throttle and rudder and the right stick has elevator and aileron. In Mode 1, throttle and elevator swap places. You can switch the mode in the StickScope settings."
+      },
+      "throttle": {
+        "name": "Throttle",
+        "text": "Controls the motor power, from idle to full power. It is the only one of the four controls that does not move a control surface. In a hover or harrier the throttle holds the height."
+      },
+      "aileron": {
+        "name": "Aileron",
+        "text": "The control surfaces on the rear edge of the wings. They move in opposite directions and roll the model about its long axis."
+      },
+      "elevator": {
+        "name": "Elevator",
+        "text": "The control surface on the horizontal tail. It tilts the nose up or down (pitch). Pulling the stick toward you raises the nose."
+      },
+      "rudder": {
+        "name": "Rudder",
+        "text": "The control surface on the vertical tail. It swings the nose to the left or right (yaw). In 3D flying it also holds the model in a knife edge and turns it around at the top of a stall turn."
+      },
+      "expo": {
+        "name": "Expo (exponential)",
+        "text": "A transmitter setting that makes a control less sensitive around the stick centre, while full stick still gives full deflection. Small corrections become gentler, large inputs stay strong."
+      },
+      "dualRates": {
+        "name": "Dual rates",
+        "text": "A transmitter setting with two (or more) levels for the maximum control deflection, switched in flight. The high level is the one for 3D flying; the low level calms the model down, for example for take-off and landing."
+      },
+      "throws": {
+        "name": "Control throw",
+        "text": "How far a control surface moves from its neutral position. 3D models use large control surfaces and large throws, so they still respond when they fly very slowly."
+      },
+      "trim": {
+        "name": "Trim",
+        "text": "A small shift of the neutral position of a control, set so that the model flies straight and level with the sticks centred and hands off."
+      },
+      "mixing": {
+        "name": "Mixing",
+        "text": "Combining two controls so that one stick movement drives more than one servo, for example aileron together with rudder. Mixers are set up in the transmitter."
+      },
+      "servo": {
+        "name": "Servo",
+        "text": "The small motor unit that moves a control surface. It follows the signal from the receiver."
+      },
+      "receiver": {
+        "name": "Receiver",
+        "text": "The unit in the model that picks up the radio signal and passes it on to the servos and the speed controller."
+      },
+      "failsafe": {
+        "name": "Failsafe",
+        "text": "A setting that decides what the model does when the radio link is lost, for example throttle to idle. It is set up before the first flight."
+      },
+      "esc": {
+        "name": "Speed controller (ESC)",
+        "text": "The electronic unit that controls the speed of an electric motor from the throttle signal. ESC stands for electronic speed controller."
+      },
+      "simulator": {
+        "name": "Flight simulator",
+        "text": "Software on a computer or phone for practising with a virtual model, usually with a real transmitter plugged in. StickScope shows the manoeuvres; the simulator is where you try them."
+      },
+      "fuselage": {
+        "name": "Fuselage",
+        "text": "The main body of the model, to which wings and tail are attached."
+      },
+      "wing": {
+        "name": "Wing",
+        "text": "The surfaces that carry the model. The ailerons sit on their rear edge."
+      },
+      "tail": {
+        "name": "Tail (empennage)",
+        "text": "The rear group of surfaces: the horizontal stabilizer with the elevator and the vertical fin with the rudder."
+      },
+      "horizontalStabilizer": {
+        "name": "Horizontal stabilizer",
+        "text": "The fixed part of the tail that keeps the model stable in pitch. The elevator is hinged to its rear edge."
+      },
+      "fin": {
+        "name": "Fin (vertical stabilizer)",
+        "text": "The fixed vertical part of the tail that keeps the model stable in yaw. The rudder is hinged to its rear edge."
+      },
+      "canopy": {
+        "name": "Canopy",
+        "text": "The cover over the cockpit of the model, usually in a different colour. In StickScope the canopy tells you the top side: you see it when you look at the model from above."
+      },
+      "landingGear": {
+        "name": "Landing gear",
+        "text": "The wheels and struts the model takes off and lands on. They also serve as a direction cue: toward the landing gear means toward the underside (belly) of the model."
+      },
+      "propeller": {
+        "name": "Propeller",
+        "text": "The rotating blades that produce the thrust. In a hover the model hangs on its propeller."
+      },
+      "spinner": {
+        "name": "Spinner",
+        "text": "The cone that covers the hub of the propeller."
+      },
+      "cg": {
+        "name": "Centre of gravity (CG)",
+        "text": "The point where the model balances. Where it sits has a strong effect on how stable or lively the model flies. The manufacturer states a value for each model, and you set it by shifting weight such as the battery."
+      },
+      "wingLoading": {
+        "name": "Wing loading",
+        "text": "The weight of the model divided by its wing area. The lower it is, the slower the model can fly."
+      },
+      "thrustToWeight": {
+        "name": "Thrust-to-weight ratio",
+        "text": "How the thrust of the propeller compares to the weight of the model. At a ratio of about one or more, the model can hang on its propeller in a hover."
+      },
+      "wingspan": {
+        "name": "Wingspan",
+        "text": "The distance from one wing tip to the other. It is the usual measure of the size of a model."
+      },
+      "airfoil": {
+        "name": "Airfoil",
+        "text": "The cross-section shape of a wing."
+      },
+      "leadingEdge": {
+        "name": "Leading edge",
+        "text": "The front edge of a wing, tailplane or fin."
+      },
+      "trailingEdge": {
+        "name": "Trailing edge",
+        "text": "The rear edge of a wing, tailplane or fin, where the control surfaces sit."
+      },
+      "motorglider": {
+        "name": "Motor glider",
+        "text": "A glider with a motor, often with a folding propeller. Its weight, power and flight behaviour differ from a pure 3D model, so the instructions do not fit every motor glider."
+      },
+      "propwash": {
+        "name": "Propwash",
+        "text": "The air stream that the propeller blows back over the model. Control surfaces in this stream still work when the model itself is almost standing still."
+      },
+      "rollAxis": {
+        "name": "Roll (axis)",
+        "text": "Rotation about the long axis of the model, from nose to tail. The ailerons roll the model. Positive roll in StickScope means right wing down."
+      },
+      "pitch": {
+        "name": "Pitch",
+        "text": "Rotation of the nose up or down, about the axis along the wings. The elevator pitches the model."
+      },
+      "yaw": {
+        "name": "Yaw",
+        "text": "Rotation of the nose to the left or right, about the vertical axis. The rudder yaws the model."
+      },
+      "attitude": {
+        "name": "Attitude",
+        "text": "How the model is oriented in space: nose up or down, rolled, upright or inverted, regardless of where it is moving. Attitude and flight path are different things: a hovering model has a vertical attitude but hardly moves."
+      },
+      "bank": {
+        "name": "Bank",
+        "text": "A roll angle: the model leans to one side, with the wings not level."
+      },
+      "angleOfAttack": {
+        "name": "Angle of attack",
+        "text": "The angle between the wing and the oncoming air. Above a critical angle the air flow separates from the wing and the wing stalls."
+      },
+      "stall": {
+        "name": "Stall",
+        "text": "Loss of lift when the angle of attack gets too big (often at low speed). A stalled wing no longer carries the model, which sinks. Many 3D figures fly in or near the stall on purpose."
+      },
+      "postStall": {
+        "name": "Post-stall (high alpha)",
+        "text": "Flying beyond the stall angle, at a very high angle of attack and very low speed. The model is held up by the propeller and steered by large control surfaces. The harrier is an example."
+      },
+      "spin": {
+        "name": "Spin",
+        "text": "A stalled, rotating fall in which the model turns about a vertical axis while one wing is stalled more than the other. Recovery needs a specific control input."
+      },
+      "airspeed": {
+        "name": "Airspeed",
+        "text": "The speed of the model through the air, not over the ground. Control surfaces need airflow, so they get weak at low airspeed unless the propeller blows air over them."
+      },
+      "lift": {
+        "name": "Lift",
+        "text": "The upward force that the wings produce from the air flowing past them."
+      },
+      "drag": {
+        "name": "Drag",
+        "text": "The air resistance that slows the model down."
+      },
+      "thrust": {
+        "name": "Thrust",
+        "text": "The pull the propeller produces. More throttle gives more thrust."
+      },
+      "torque": {
+        "name": "Propeller torque",
+        "text": "The motor turns the propeller one way and the reaction turns the model the other way about its long axis. The torque roll uses this effect. The direction depends on the model; the propeller direction is not fixed."
+      },
+      "adverseYaw": {
+        "name": "Adverse yaw",
+        "text": "When rolling with the ailerons the nose briefly swings the opposite way, because the wing that goes down has more drag. The rudder, a mixer or aileron differential can counter it."
+      },
+      "straightLevel": {
+        "name": "Straight and level",
+        "text": "Flying in a straight line at constant height with the wings level."
+      },
+      "upright": {
+        "name": "Upright flight",
+        "text": "Normal flight, with the canopy facing up."
+      },
+      "inverted": {
+        "name": "Inverted flight",
+        "text": "Flight on the back, with the canopy facing down. To hold the nose up the elevator stick has to be pushed instead of pulled."
+      },
+      "pullPush": {
+        "name": "Pull / push",
+        "text": "Moving the elevator stick toward you (pull) or away from you (push). In upright flight pulling raises the nose and pushing lowers it."
+      },
+      "line": {
+        "name": "Upline / downline",
+        "text": "A straight stretch of the flight path that climbs (upline) or descends (downline), in many figures a vertical one."
+      },
+      "pullOut": {
+        "name": "Pull-out",
+        "text": "Ending a dive by pulling the elevator so the model returns to level flight."
+      },
+      "dive": {
+        "name": "Dive",
+        "text": "A steep descent."
+      },
+      "aerobatics": {
+        "name": "Aerobatics",
+        "text": "Flying figures that do not occur in normal flight, such as loops and rolls."
+      },
+      "threeD": {
+        "name": "3D flying",
+        "text": "A style of aerobatics in which the model flies very slowly, near or beyond the stall or hanging on its propeller, with oversized control surfaces and plenty of power. Hover, harrier and torque roll are 3D figures."
+      },
+      "loop": {
+        "name": "Loop",
+        "text": "The model flies a full circle in the vertical plane and levels out where it started."
+      },
+      "rollFigure": {
+        "name": "Roll (figure)",
+        "text": "The model turns once around its long axis and stays on a straight line."
+      },
+      "barrelRoll": {
+        "name": "Barrel roll",
+        "text": "A roll flown on a corkscrew path around an imaginary straight line, instead of on the line itself."
+      },
+      "snapRoll": {
+        "name": "Snap roll",
+        "text": "A very fast roll that starts with a sharp pull on the elevator together with rudder and aileron in the roll direction. The wing is stalled while the model turns."
+      },
+      "splitS": {
+        "name": "Split S",
+        "text": "From upright level flight the model rolls onto its back, then pulls through a half loop downwards. It ends level, flying the other way, lower than it started."
+      },
+      "immelmann": {
+        "name": "Immelmann",
+        "text": "A half loop upwards followed by a half roll at the top. The model ends upright, flying the other way, higher than it started. It is the counterpart of the split S."
+      },
+      "cubanEight": {
+        "name": "Cuban eight",
+        "text": "A figure eight made of two loop sections, each followed by a half roll on a diagonal line."
+      },
+      "rollingCircle": {
+        "name": "Rolling circle",
+        "text": "A loop flown while the model rolls continuously about its long axis."
+      },
+      "stallTurn": {
+        "name": "Stall turn (hammerhead)",
+        "text": "The model climbs straight up, pivots on the spot at the top, dives back down the same line and flies out the opposite way. Also called hammerhead."
+      },
+      "knifeEdge": {
+        "name": "Knife edge",
+        "text": "The model flies straight on its side. The rudder holds it there."
+      },
+      "hover": {
+        "name": "Hover",
+        "text": "The model hangs vertically on its propeller, almost standing in place. The throttle holds the height. Also called prop hang."
+      },
+      "harrier": {
+        "name": "Harrier",
+        "text": "Slow flight with the nose about 45° up, in post-stall. The elevator sets the nose attitude, the throttle holds the height."
+      },
+      "rollingHarrier": {
+        "name": "Rolling harrier",
+        "text": "A harrier in which the model also rolls continuously about its long axis while holding its height."
+      },
+      "torqueRoll": {
+        "name": "Torque roll",
+        "text": "A hover in which the model also turns about its long axis, driven by the propeller torque."
+      },
+      "flatSpin": {
+        "name": "Flat spin",
+        "text": "The model spins flat about the vertical axis, with power, while staying roughly level."
+      },
+      "elevatorFigure": {
+        "name": "Elevator (figure)",
+        "text": "The model sinks on a steep to nearly vertical line with the elevator pulled fully, nose high and stalled."
+      },
+      "tumble": {
+        "name": "Tumble",
+        "text": "The model somersaults end over end, about the axis along its wings, in a very small radius and with hardly any forward speed."
+      },
+      "tailslide": {
+        "name": "Tailslide",
+        "text": "The model slides backwards, tail first, in a vertical attitude."
+      },
+      "waterfall": {
+        "name": "Waterfall",
+        "text": "The model climbs vertically until it slides backwards tail first, then flips over into a dive."
+      },
+      "wall": {
+        "name": "Wall (pop-up)",
+        "text": "The model goes from level flight into a vertical attitude almost instantly, shedding its speed."
+      },
+      "lomcovak": {
+        "name": "Lomcovák (Lomcevak)",
+        "text": "A name for tumbling figures in which the tail swings over the nose. Sources describe several variants, so the exact figure differs from pilot to pilot."
       }
     }
   }

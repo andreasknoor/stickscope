@@ -11,7 +11,8 @@
     "themeSystem": "System",
     "themeLight": "Hell",
     "themeDark": "Dunkel",
-    "settings": "Einstellungen"
+    "settings": "Einstellungen",
+    "glossary": "Glossar"
   },
   "browser": {
     "title": "Figur wählen",
@@ -167,37 +168,37 @@
           "instructions": {
             "across": "Fliege quer vor dir vorbei, von links nach rechts oder umgekehrt.",
             "height": "Beginne die ersten Versuche mit reichlich Höhe.",
-            "throttle": "Fliege mit mittlerem bis hohem Gas."
+            "throttle": "Fliege mit mittlerem bis hohem <throttle>Gas</throttle>."
           }
         },
         "entry": {
           "title": "Auf die Seite rollen",
           "instructions": {
-            "quarter-roll": "Rolle aus dem Geradeausflug mit dem <b>Querruder</b>, bis die Flächen ungefähr senkrecht stehen (Vierteldrehung).",
-            "rudder-opposite": "Aus der Normallage gibst du <b>Seitenruder gegen</b> die Rollrichtung: rechts rollen, Seitenruder links; links rollen, Seitenruder rechts.",
-            "two-steps": "Zum Lernen übst du erst die Vierteldrehung ohne Seitenruder und gibst das Seitenruder dazu, sobald die Schräglage steht."
+            "quarter-roll": "Rolle aus dem Geradeausflug mit dem <b><aileron>Querruder</aileron></b>, bis die Flächen ungefähr senkrecht stehen (Vierteldrehung).",
+            "rudder-opposite": "Aus der <upright>Normallage</upright> gibst du <b><rudder>Seitenruder</rudder> gegen</b> die Rollrichtung: rechts rollen, Seitenruder links; links rollen, Seitenruder rechts.",
+            "two-steps": "Zum Lernen übst du erst die Vierteldrehung ohne Seitenruder und gibst das Seitenruder dazu, sobald die <bank>Schräglage</bank> steht."
           }
         },
         "hold": {
           "title": "Messerflug halten",
           "instructions": {
-            "rudder-holds": "Das <b>Seitenruder</b> trägt das Modell auf der Seite. Ohne Seitenruder bleibt es nicht dort.",
-            "rudder-cue": "Merkhilfe: Haube zu dir, Seitenruder-Knüppel zum Heck; Bauch zu dir, Seitenruder-Knüppel zur Nase.",
+            "rudder-holds": "Das <b><rudder>Seitenruder</rudder></b> trägt das Modell auf der Seite. Ohne Seitenruder bleibt es nicht dort.",
+            "rudder-cue": "Merkhilfe: <canopy>Haube</canopy> zu dir, Seitenruder-Knüppel zum Heck; Bauch zu dir, Seitenruder-Knüppel zur Nase.",
             "rudder-amount": "Wie viel Seitenruder nötig ist, hängt von Modell und Geschwindigkeit ab. Schneller braucht weniger.",
-            "tuck": "Das Seitenruder lässt die Nase wegkippen. Wohin, hängt vom Modell ab: zum Fahrwerk oder zur Haube.",
-            "tuck-elevator": "Korrigiere das Wegkippen mit dem <b>Höhenruder</b>. Kippt die Nase zum Fahrwerk, gib etwas Höhenruder (ziehen).",
-            "roll-aileron": "Beginnt das Modell zu rollen, korrigiere mit etwas <b>Querruder</b>. Die Richtung hängt vom Modell ab.",
-            "throttle-height": "Mit dem <b>Gas</b> holst du Höhe oder gibst sie ab: Sinkt das Modell, gib Gas."
+            "tuck": "Das Seitenruder lässt die Nase wegkippen. Wohin, hängt vom Modell ab: zum <landingGear>Fahrwerk</landingGear> oder zur Haube.",
+            "tuck-elevator": "Korrigiere das Wegkippen mit dem <b><elevator>Höhenruder</elevator></b>. Kippt die Nase zum Fahrwerk, gib etwas Höhenruder (ziehen).",
+            "roll-aileron": "Beginnt das Modell zu rollen, korrigiere mit etwas <b><aileron>Querruder</aileron></b>. Die Richtung hängt vom Modell ab.",
+            "throttle-height": "Mit dem <b><throttle>Gas</throttle></b> holst du Höhe oder gibst sie ab: Sinkt das Modell, gib Gas."
           },
           "notes": {
             "altitude": "Die Quellen sind sich nicht einig, was die Höhe hält: Einige sagen, das Seitenruder, andere sagen, das Seitenruder stellt nur den Nasenwinkel ein und das Gas hält die Höhe.",
-            "duration": "Wie lange der Messerflug gehalten wird: Die Quellen nennen keinen gesicherten Wert."
+            "duration": "Wie lange der <knifeEdge>Messerflug</knifeEdge> gehalten wird: Die Quellen nennen keinen gesicherten Wert."
           }
         },
         "exit": {
           "title": "Ausleiten",
           "instructions": {
-            "quarter-back": "Rolle mit dem <b>Querruder</b> eine Vierteldrehung zurück in die Normallage und nimm Seitenruder und Höhenruder zurück."
+            "quarter-back": "Rolle mit dem <b><aileron>Querruder</aileron></b> eine Vierteldrehung zurück in die <upright>Normallage</upright> und nimm <rudder>Seitenruder</rudder> und <elevator>Höhenruder</elevator> zurück."
           }
         }
       },
@@ -218,19 +219,19 @@
         "nose-up": {
           "title": "Nase hoch",
           "instructions": {
-            "slow-to-stall": "Bring das Modell bis zum Strömungsabriss langsam: <b>Gas</b> wegnehmen oder reduzieren und Höhenruder ziehen.",
+            "slow-to-stall": "Bring das Modell bis zum <stall>Strömungsabriss</stall> langsam: <b><throttle>Gas</throttle></b> wegnehmen oder reduzieren und <elevator>Höhenruder</elevator> ziehen.",
             "progressive": "Ziehe das Höhenruder gleichmäßig, nicht ruckartig.",
-            "from-downline": "Du kannst auch aus einer kurzen Fallinie einsteigen: Ziehe das <b>Höhenruder</b> schnell ganz, um die Fahrt abzubauen."
+            "from-downline": "Du kannst auch aus einer kurzen Fallinie einsteigen: Ziehe das <b>Höhenruder</b> schnell ganz, um die <airspeed>Fahrt</airspeed> abzubauen."
           }
         },
         "hold": {
           "title": "Elevator halten",
           "instructions": {
-            "full-up": "Halte das <b>Höhenruder</b> ganz oder fast ganz gezogen.",
+            "full-up": "Halte das <b><elevator>Höhenruder</elevator></b> ganz oder fast ganz gezogen.",
             "steep-descent": "Das Modell sinkt auf einer steilen bis fast senkrechten Linie.",
-            "throttle-little": "Gib etwas <b>Gas</b>, damit die Nase oben bleibt. Gasänderungen heben oder senken die Nase.",
-            "rudder-heading": "Das <b>Seitenruder</b> korrigiert die Richtung nach links und rechts.",
-            "aileron-small": "Fange einen wackelnden Flügel mit kleinen, kurzen <b>Querruder</b>-Ausschlägen ab."
+            "throttle-little": "Gib etwas <b><throttle>Gas</throttle></b>, damit die Nase oben bleibt. Gasänderungen heben oder senken die Nase.",
+            "rudder-heading": "Das <b><rudder>Seitenruder</rudder></b> korrigiert die Richtung nach links und rechts.",
+            "aileron-small": "Fange einen wackelnden Flügel mit kleinen, kurzen <b><aileron>Querruder</aileron></b>-Ausschlägen ab."
           },
           "notes": {
             "throttle": "Gas im Halten: Die meisten Quellen geben etwas Gas, eine Quelle sagt Leerlauf.",
@@ -240,8 +241,8 @@
         "exit": {
           "title": "Ausleiten",
           "instructions": {
-            "release": "Zum Ausleiten das <b>Höhenruder</b> zurücknehmen und <b>Gas</b> geben.",
-            "into-harrier": "Du kannst auch in einen Harrier ausleiten, statt wegzufliegen."
+            "release": "Zum Ausleiten das <b><elevator>Höhenruder</elevator></b> zurücknehmen und <b><throttle>Gas</throttle></b> geben.",
+            "into-harrier": "Du kannst auch in einen <harrier>Harrier</harrier> ausleiten, statt wegzufliegen."
           },
           "notes": {
             "min-height": "Wie tief du vor dem Ausleiten gehen darfst: Die Quellen nennen keinen gesicherten Wert."
@@ -257,13 +258,13 @@
           "title": "Vorbereitung",
           "instructions": {
             "height": "Übe mit reichlich Höhe.",
-            "rates": "Übe mit eingeschalteten hohen Ruderausschlägen."
+            "rates": "Übe mit eingeschalteten hohen <throws>Ruderausschlägen</throws>."
           }
         },
         "entry": {
           "title": "Nase hoch",
           "instructions": {
-            "reduce-and-pull": "Nimm das <b>Gas</b> zurück und gib dabei nach und nach Höhenruder (ziehen).",
+            "reduce-and-pull": "Nimm das <b><throttle>Gas</throttle></b> zurück und gib dabei nach und nach <elevator>Höhenruder</elevator> (ziehen).",
             "from-elevator": "Aus dem Elevator heraus: Gib Gas, bis das Sinken aufhört und das Modell nach vorn fliegt."
           },
           "notes": {
@@ -273,23 +274,23 @@
         "hold": {
           "title": "Harrier halten",
           "instructions": {
-            "elevator-attitude": "Das <b>Höhenruder</b> hält die Nasenlage. Das <b>Gas</b> entscheidet, ob das Modell die Höhe hält.",
+            "elevator-attitude": "Das <b><elevator>Höhenruder</elevator></b> hält die Nasenlage. Das <b><throttle>Gas</throttle></b> entscheidet, ob das Modell die Höhe hält.",
             "angle": "Halte die Nase etwa 45° hoch.",
-            "more-thrust": "Der Harrier braucht deutlich mehr Schub als normaler Langsamflug.",
+            "more-thrust": "Der <harrier>Harrier</harrier> braucht deutlich mehr Schub als normaler Langsamflug.",
             "throttle-pumps": "Bediene das Gas aktiv in kurzen Stößen, statt es einmal einzustellen.",
-            "rudder-steers": "Das <b>Seitenruder</b> steuert die Richtung.",
+            "rudder-steers": "Das <b><rudder>Seitenruder</rudder></b> steuert die Richtung.",
             "rudder-rolls": "Das Seitenruder rollt das Modell auch in dieselbe Richtung: Seitenruder links rollt nach links.",
-            "torque-rudder": "Bei üblicher Propellerdrehrichtung hältst du etwas Seitenruder rechts gegen das Propellermoment."
+            "torque-rudder": "Bei üblicher Propellerdrehrichtung hältst du etwas Seitenruder rechts gegen das <torque>Propellermoment</torque>."
           },
           "notes": {
-            "aileron": "Querruder im Harrier: Ein Herstellerhandbuch rät davon ab, weil das Modell abkippen kann. Andere Quellen halten die Flächen mit kleinen Querruder-Ausschlägen waagerecht.",
+            "aileron": "<aileron>Querruder</aileron> im Harrier: Ein Herstellerhandbuch rät davon ab, weil das Modell abkippen kann. Andere Quellen halten die Flächen mit kleinen Querruder-Ausschlägen waagerecht.",
             "angle-value": "Nasenwinkel: Vier Quellen sagen etwa 45 Grad, eine sagt etwa 60 Grad oder mehr, bei den meisten Modellen mit voll gezogenem Höhenruder."
           }
         },
         "exit": {
           "title": "Ausleiten",
           "instructions": {
-            "throttle-up": "Gib <b>Gas</b> bis fast Vollgas und senke die Nase mit dem Höhenruder, damit das Modell wieder Fahrt aufnimmt.",
+            "throttle-up": "Gib <b><throttle>Gas</throttle></b> bis fast Vollgas und senke die Nase mit dem <elevator>Höhenruder</elevator>, damit das Modell wieder <airspeed>Fahrt</airspeed> aufnimmt.",
             "emergency": "Geht die Figur schief, gib Vollgas."
           }
         }
@@ -302,9 +303,9 @@
         "prepare": {
           "title": "Vorbereitung",
           "instructions": {
-            "simulator": "Übe zuerst im Flugsimulator.",
-            "safe-height": "Übe in sicherer Höhe und halte den Hover zuerst nur kurz.",
-            "large-throws": "Nutze große Ruderausschläge."
+            "simulator": "Übe zuerst im <simulator>Flugsimulator</simulator>.",
+            "safe-height": "Übe in sicherer Höhe und halte den <hover>Hover</hover> zuerst nur kurz.",
+            "large-throws": "Nutze große <throws>Ruderausschläge</throws>."
           },
           "notes": {
             "start-height": "Starthöhe: Die Quellen nennen sehr unterschiedliche Werte, deshalb wird keiner gezeigt."
@@ -313,7 +314,7 @@
         "pull-up": {
           "title": "Hochziehen",
           "instructions": {
-            "from-harrier": "Gehe aus einem Harrier hinein: Gib weiter Höhenruder (ziehen), bis das Modell senkrecht steht."
+            "from-harrier": "Gehe aus einem <harrier>Harrier</harrier> hinein: Gib weiter <elevator>Höhenruder</elevator> (ziehen), bis das Modell senkrecht steht."
           },
           "notes": {
             "entry-orientation": "In welche Richtung du beim Einstieg fliegst und welche Seite des Modells zu dir zeigt: Die Quellen sagen es nicht.",
@@ -323,14 +324,14 @@
         "hold": {
           "title": "Hover halten",
           "instructions": {
-            "throttle-height": "Das <b>Gas</b> steuert die Höhe: Mehr Gas steigt, weniger sinkt.",
-            "throttle-bursts": "Nach jeder Korrektur braucht es einen kurzen Gasstoß. Dauerhaft viel Gas lässt das Modell aus dem Hover steigen.",
-            "aileron-torque": "Das Propellermoment will das Modell um die Längsachse drehen. <b>Querruder</b> gegen das Moment stoppt das. Bei den Modellen in den Quellen ist das Querruder rechts.",
-            "rudder-elevator": "<b>Seitenruder</b> und <b>Höhenruder</b> halten das Modell senkrecht: Seitenruder für links und rechts, Höhenruder für vor und zurück.",
+            "throttle-height": "Das <b><throttle>Gas</throttle></b> steuert die Höhe: Mehr Gas steigt, weniger sinkt.",
+            "throttle-bursts": "Nach jeder Korrektur braucht es einen kurzen Gasstoß. Dauerhaft viel Gas lässt das Modell aus dem <hover>Hover</hover> steigen.",
+            "aileron-torque": "Das <torque>Propellermoment</torque> will das Modell um die Längsachse drehen. <b><aileron>Querruder</aileron></b> gegen das Moment stoppt das. Bei den Modellen in den Quellen ist das Querruder rechts.",
+            "rudder-elevator": "<b><rudder>Seitenruder</rudder></b> und <b><elevator>Höhenruder</elevator></b> halten das Modell senkrecht: Seitenruder für links und rechts, Höhenruder für vor und zurück.",
             "small-early": "Korrekturen sollen klein, kurz und früh sein, nicht gehalten.",
             "belly-in-rudder": "Zeigt der Bauch zu dir, schiebe den Seitenruder-Knüppel zur Seite des absinkenden Flügels.",
             "exit-throttle": "Zum Verlassen des Hovers gib <b>Gas</b>.",
-            "exit-elevator": "Zum Verlassen des Hovers drücke das <b>Höhenruder</b> sanft, sodass die Nase durch die Harrier-Lage nach unten fällt, und beschleunige dann."
+            "exit-elevator": "Zum Verlassen des Hovers drücke das <b>Höhenruder</b> sanft, sodass die Nase durch die <harrier>Harrier</harrier>-Lage nach unten fällt, und beschleunige dann."
           },
           "notes": {
             "elevator-direction": "Wie das Höhenruder bei einer Neigung der Nase zu dir oder von dir weg bewegt wird: Die Quellen sagen es nicht.",
@@ -339,7 +340,7 @@
         }
       },
       "illustration": {
-        "orientation": "Die Animation zeigt das Hineinfliegen durch Wegfliegen und Hochziehen, die Haube zu dir. Die Quellen bestätigen das nicht. Es ist eine Darstellung, ebenso Knüppelweg und Tempo."
+        "orientation": "Die Animation zeigt das Hineinfliegen durch Wegfliegen und Hochziehen, die <canopy>Haube</canopy> zu dir. Die Quellen bestätigen das nicht. Es ist eine Darstellung, ebenso Knüppelweg und Tempo."
       }
     },
     "torque-roll": {
@@ -349,26 +350,26 @@
         "hover": {
           "title": "Erst der Hover",
           "instructions": {
-            "hover-first": "Lerne zuerst den Hover.",
+            "hover-first": "Lerne zuerst den <hover>Hover</hover>.",
             "calm-air": "Übe bei ruhiger Luft. Wind macht es deutlich schwerer.",
             "height": "Übe mit reichlich Höhe.",
-            "simulator": "Übe zuerst im Flugsimulator."
+            "simulator": "Übe zuerst im <simulator>Flugsimulator</simulator>."
           }
         },
         "start": {
           "title": "Drehung starten",
           "instructions": {
-            "pull-vertical": "Ziehe das Modell in einen ganz senkrechten Hover. Der Propeller trägt es.",
+            "pull-vertical": "Ziehe das Modell in einen ganz senkrechten <hover>Hover</hover>. Der <propeller>Propeller</propeller> trägt es.",
             "let-it-turn": "Wirke dem Moment nicht entgegen: In einem sauberen Hover beginnt das Modell von selbst zu drehen."
           }
         },
         "rotate": {
           "title": "Drehen lassen",
           "instructions": {
-            "torque-turns": "Das Propellermoment dreht das Modell um die Längsachse.",
+            "torque-turns": "Das <torque>Propellermoment</torque> dreht das Modell um die Längsachse.",
             "turns-left": "Das Moment dreht das Modell nach links.",
-            "rudder-elevator": "<b>Seitenruder</b> und <b>Höhenruder</b> halten die Längsachse des Modells senkrecht.",
-            "throttle-steps": "Passe das <b>Gas</b> in kleinen Schritten an, damit das Modell weder steigt noch sinkt.",
+            "rudder-elevator": "<b><rudder>Seitenruder</rudder></b> und <b><elevator>Höhenruder</elevator></b> halten die Längsachse des Modells senkrecht.",
+            "throttle-steps": "Passe das <b><throttle>Gas</throttle></b> in kleinen Schritten an, damit das Modell weder steigt noch sinkt.",
             "large-throws": "Große Ruderflächen und große Ausschläge helfen.",
             "corrections-reverse": "Wenn sich das Modell dreht, wechseln die Korrekturen mit <b>Höhenruder</b> und <b>Seitenruder</b> die Richtung: Korrigiere danach, wohin die Nase kippt, nicht nach der Knüppelrichtung."
           }
@@ -376,15 +377,15 @@
         "stop": {
           "title": "Drehung stoppen",
           "instructions": {
-            "aileron-stops": "<b>Querruder</b> gegen das Moment (Querruder rechts) bremst oder stoppt die Drehung."
+            "aileron-stops": "<b><aileron>Querruder</aileron></b> gegen das Moment (Querruder rechts) bremst oder stoppt die Drehung."
           },
           "notes": {
-            "exit": "Wie man die Drehung beendet und den Hover verlässt: Die Quellen geben keine gesicherte Anleitung."
+            "exit": "Wie man die Drehung beendet und den <hover>Hover</hover> verlässt: Die Quellen geben keine gesicherte Anleitung."
           }
         }
       },
       "illustration": {
-        "orientation": "Die Animation zeigt einen Hover mit der Haube zu dir. Die Quellen sagen nicht, welche Seite zu dir zeigt. Es ist eine Darstellung, ebenso Knüppelweg und Tempo.",
+        "orientation": "Die Animation zeigt einen <hover>Hover</hover> mit der <canopy>Haube</canopy> zu dir. Die Quellen sagen nicht, welche Seite zu dir zeigt. Es ist eine Darstellung, ebenso Knüppelweg und Tempo.",
         "viewpoint": "Die Quellen sagen, das Moment drehe das Modell nach links, aber nicht aus welcher Sicht. Die Animation zeigt eine Linksdrehung, von hinten auf das Modell gesehen."
       }
     },
@@ -395,45 +396,45 @@
         "prepare": {
           "title": "Vorbereitung",
           "instructions": {
-            "harrier-first": "Lerne zuerst den normalen Harrier, aufrecht und auf dem Rücken.",
-            "slow-rolls": "Übe vorher langsame Rollen mit Unterstützung durch Seitenruder und Höhenruder.",
-            "high-rates": "Stelle große Ausschläge an Seitenruder und Höhenruder und geringes Expo ein, damit die Eingaben ohne Verzögerung wirken.",
+            "harrier-first": "Lerne zuerst den normalen <harrier>Harrier</harrier>, <upright>aufrecht</upright> und auf dem Rücken.",
+            "slow-rolls": "Übe vorher langsame Rollen mit Unterstützung durch <rudder>Seitenruder</rudder> und <elevator>Höhenruder</elevator>.",
+            "high-rates": "Stelle große Ausschläge an Seitenruder und Höhenruder und geringes <expo>Expo</expo> ein, damit die Eingaben ohne Verzögerung wirken.",
             "advanced": "Das ist eine fortgeschrittene Figur, die viel Übung braucht."
           }
         },
         "entry": {
           "title": "Nase hoch, Rolle starten",
           "instructions": {
-            "from-harrier": "Starte aus einem stabilen Harrier mit hoher Nase, gib dann vollen Querruderausschlag und beginne zu rollen.",
+            "from-harrier": "Starte aus einem stabilen <harrier>Harrier</harrier> mit hoher Nase, gib dann vollen <aileron>Querruderausschlag</aileron> und beginne zu rollen.",
             "attitude": "Die Quellen nennen eine Nasenlage von etwa 35° bis 60° nach oben."
           }
         },
         "roll": {
           "title": "Weiterrollen",
           "instructions": {
-            "aileron-full": "Halte <b>vollen Querruderausschlag</b> in eine Richtung für die ganze Rolle und löse ihn erst beim Ausleiten.",
-            "alternate": "<b>Seitenruder</b> und <b>Höhenruder</b> kommen in jeder Rolle nacheinander dazu, während das Querruder festbleibt. Das Timing ist der schwierige Teil.",
-            "rudder-knife": "Das Seitenruder arbeitet am stärksten, wenn das Modell auf der Seite liegt. Nahe der Normal- und der Rückenlage macht das Höhenruder die Arbeit.",
-            "elevator-sequence": "Auf den Rücken zu gibst du Höhenruder drücken. Auf dem Rückweg zur Normallage wechselst du auf Höhenruder ziehen.",
-            "throttle-hold": "Halte mit dem <b>Gas</b> die Höhe und die Nase oben: Mehr Gas hebt die Nase, weniger lässt sie sinken.",
+            "aileron-full": "Halte <b>vollen <aileron>Querruderausschlag</aileron></b> in eine Richtung für die ganze Rolle und löse ihn erst beim Ausleiten.",
+            "alternate": "<b><rudder>Seitenruder</rudder></b> und <b><elevator>Höhenruder</elevator></b> kommen in jeder Rolle nacheinander dazu, während das Querruder festbleibt. Das Timing ist der schwierige Teil.",
+            "rudder-knife": "Das Seitenruder arbeitet am stärksten, wenn das Modell auf der Seite liegt. Nahe der Normal- und der <inverted>Rückenlage</inverted> macht das Höhenruder die Arbeit.",
+            "elevator-sequence": "Auf den Rücken zu gibst du Höhenruder drücken. Auf dem Rückweg zur <upright>Normallage</upright> wechselst du auf Höhenruder ziehen.",
+            "throttle-hold": "Halte mit dem <b><throttle>Gas</throttle></b> die Höhe und die Nase oben: Mehr Gas hebt die Nase, weniger lässt sie sinken.",
             "timing-drift": "Das Timing der Seitenruder- und Höhenruder-Eingaben entscheidet, in welche Richtung das Modell seitlich wegdriftet.",
             "slow-roll": "Wird die Rolle langsamer, ist das ein Zeichen für zu wenig Leistung: Gib Gas."
           },
           "notes": {
             "throttle-start": "Gas zu Beginn der Rolle: Eine Quelle gibt ein paar Klicks mehr, eine nutzt mittleres bis niedriges Gas, eine nimmt das Gas weg. Es gibt keine einheitliche Regel.",
             "rudder-needed": "Braucht man das Seitenruder? Die meisten Quellen nutzen es. Manche sagen, mit Höhenruder allein gehe es, sehe aber schlecht aus, eine sagt, es funktioniere nicht.",
-            "rudder-direction": "In welche Richtung das Seitenruder im Verhältnis zur Rollrichtung geht: Nur eine Quelle sagt es (am ersten Messerflug gegen die Rolle, also rechtes Seitenruder bei einer Linksrolle, am zweiten dann links). Keine zweite Quelle bestätigt es, und keine nennt den Betrag."
+            "rudder-direction": "In welche Richtung das Seitenruder im Verhältnis zur Rollrichtung geht: Nur eine Quelle sagt es (am ersten <knifeEdge>Messerflug</knifeEdge> gegen die Rolle, also rechtes Seitenruder bei einer Linksrolle, am zweiten dann links). Keine zweite Quelle bestätigt es, und keine nennt den Betrag."
           }
         },
         "exit": {
           "title": "Ausleiten",
           "instructions": {
-            "exit-inputs": "Gib <b>Gas</b>, löse das <b>Querruder</b> und nimm das Höhenruder zurück, um in den normalen Geradeausflug zurückzukehren."
+            "exit-inputs": "Gib <b><throttle>Gas</throttle></b>, löse das <b><aileron>Querruder</aileron></b> und nimm das <elevator>Höhenruder</elevator> zurück, um in den normalen Geradeausflug zurückzukehren."
           }
         }
       },
       "illustration": {
-        "direction": "Die Animation rollt das Modell nach links, mit dem Seitenruder zur Oberseite des Modells. Nur eine Quelle nennt eine Rollrichtung und eine Seitenruder-Richtung (Linksrolle mit rechtem Seitenruder am ersten Messerflug). Rollgeschwindigkeit, Knüppelweg und Gas sind ebenfalls Darstellung."
+        "direction": "Die Animation rollt das Modell nach links, mit dem <rudder>Seitenruder</rudder> zur Oberseite des Modells. Nur eine Quelle nennt eine Rollrichtung und eine Seitenruder-Richtung (Linksrolle mit rechtem Seitenruder am ersten <knifeEdge>Messerflug</knifeEdge>). Rollgeschwindigkeit, Knüppelweg und <throttle>Gas</throttle> sind ebenfalls Darstellung."
       }
     },
     "flat-spin": {
@@ -443,37 +444,37 @@
         "prepare": {
           "title": "Vorbereitung",
           "instructions": {
-            "height": "Starte hoch. Das Ausleiten braucht mehr Höhe als ein normaler Trudler, weil die Fahrt aus der flachen Lage neu aufgebaut werden muss.",
-            "models-differ": "Nicht jedes Modell trudelt flach, und Modelle unterscheiden sich stark darin, wie gut sie ein- und ausleiten.",
-            "cg": "Ein weit hinten liegender Schwerpunkt hilft dem Modell beim Flachtrudeln.",
-            "throws": "Nutze große Ruderausschläge an allen Rudern.",
-            "simulator": "Übe zuerst im Flugsimulator. Das echte Modell kann sich anders verhalten."
+            "height": "Starte hoch. Das Ausleiten braucht mehr Höhe als ein normaler Trudler, weil die <airspeed>Fahrt</airspeed> aus der flachen Lage neu aufgebaut werden muss.",
+            "models-differ": "Nicht jedes Modell <spin>trudelt</spin> flach, und Modelle unterscheiden sich stark darin, wie gut sie ein- und ausleiten.",
+            "cg": "Ein weit hinten liegender Schwerpunkt hilft dem Modell beim <flatSpin>Flachtrudeln</flatSpin>.",
+            "throws": "Nutze große <throws>Ruderausschläge</throws> an allen Rudern.",
+            "simulator": "Übe zuerst im <simulator>Flugsimulator</simulator>. Das echte Modell kann sich anders verhalten."
           }
         },
         "entry": {
           "title": "Einleiten",
           "instructions": {
             "from-spin": "Starte aus einem normalen Trudler: Modell langsam machen, überziehen, den Trudler beginnen und erst dann flachziehen.",
-            "bleed-speed": "Nimm die Fahrt weg: Gas Richtung Leerlauf und Nase hoch, bis das Modell abreißt.",
-            "full-inputs": "Beim Einleiten ist das <b>Höhenruder</b> ganz gezogen und das <b>Seitenruder</b> ganz in Drehrichtung."
+            "bleed-speed": "Nimm die <airspeed>Fahrt</airspeed> weg: <throttle>Gas</throttle> Richtung Leerlauf und Nase hoch, bis das Modell abreißt.",
+            "full-inputs": "Beim Einleiten ist das <b><elevator>Höhenruder</elevator></b> ganz gezogen und das <b><rudder>Seitenruder</rudder></b> ganz in Drehrichtung."
           },
           "notes": {
-            "aileron-entry": "Querruder beim Einleiten: Einige Quellen sagen gleiche Richtung wie das Seitenruder, eine sagt die Gegenrichtung, eine sagt, es hänge vom Modell ab."
+            "aileron-entry": "<aileron>Querruder</aileron> beim Einleiten: Einige Quellen sagen gleiche Richtung wie das Seitenruder, eine sagt die Gegenrichtung, eine sagt, es hänge vom Modell ab."
           }
         },
         "flatten": {
           "title": "Trudler flachziehen",
           "instructions": {
-            "hold-inputs": "Hast du den Trudler, halte Höhenruder und Seitenruder bei den großen Ausschlägen, während du den Rest abstimmst.",
-            "aileron-ease": "Zum Flachziehen führst du das <b>Querruder</b> langsam Richtung Neutral oder zur Gegenseite, nie abrupt.",
-            "add-throttle": "Gib etwas <b>Gas</b>, damit der Trudler flach wird und das Modell nicht schnell fällt.",
+            "hold-inputs": "Hast du den Trudler, halte <elevator>Höhenruder</elevator> und <rudder>Seitenruder</rudder> bei den großen Ausschlägen, während du den Rest abstimmst.",
+            "aileron-ease": "Zum Flachziehen führst du das <b><aileron>Querruder</aileron></b> langsam Richtung Neutral oder zur Gegenseite, nie abrupt.",
+            "add-throttle": "Gib etwas <b><throttle>Gas</throttle></b>, damit der Trudler flach wird und das Modell nicht schnell fällt.",
             "tail-authority": "Etwas Gas gibt Seitenruder und Höhenruder am Heck mehr Wirkung."
           }
         },
         "hold": {
           "title": "Trudler halten",
           "instructions": {
-            "throttle-height": "Mit Gas kann das Modell die Höhe halten oder sogar steigen. Ohne Gas sinkt es langsam."
+            "throttle-height": "Mit <throttle>Gas</throttle> kann das Modell die Höhe halten oder sogar steigen. Ohne Gas sinkt es langsam."
           },
           "notes": {
             "spin-rate": "Wie man die Drehgeschwindigkeit steuert und wie lange man den Trudler hält: Die Quellen geben keine gesicherte Anleitung."
@@ -483,17 +484,17 @@
           "title": "Ausleiten",
           "instructions": {
             "release": "Nimm die Knüppel in die Mitte oder lass sie los. Manche Modelle hören dann von selbst auf zu drehen.",
-            "opposite-rudder": "Dreht es weiter, gib <b>Seitenruder</b> gegen die Drehrichtung.",
+            "opposite-rudder": "Dreht es weiter, gib <b><rudder>Seitenruder</rudder></b> gegen die Drehrichtung.",
             "more-turns": "Das Loslassen stoppt nicht immer sofort. Es können noch einige Umdrehungen folgen."
           },
           "notes": {
-            "exit-throttle": "Gas beim Ausleiten: Eine Quelle sagt Leerlauf, bis Fahrt aufgebaut ist, schreibt aber auch, dass Gas das Ausleiten beschleunigt; zwei Forenbeiträge sagen, Gas macht das Ausleiten erst möglich.",
-            "recoverable": "Lässt sich ein flacher Trudler überhaupt beenden? Ein Wiki sagt, flaches Trudeln bedeute den Verlust des Modells. Andere Quellen sagen, mit passendem Modell und richtigen Eingaben sei das Ausleiten Routine."
+            "exit-throttle": "<throttle>Gas</throttle> beim Ausleiten: Eine Quelle sagt Leerlauf, bis <airspeed>Fahrt</airspeed> aufgebaut ist, schreibt aber auch, dass Gas das Ausleiten beschleunigt; zwei Forenbeiträge sagen, Gas macht das Ausleiten erst möglich.",
+            "recoverable": "Lässt sich ein flacher Trudler überhaupt beenden? Ein Wiki sagt, flaches <spin>Trudeln</spin> bedeute den Verlust des Modells. Andere Quellen sagen, mit passendem Modell und richtigen Eingaben sei das Ausleiten Routine."
           }
         }
       },
       "illustration": {
-        "illustration": "Die Animation zeigt kein Querruder, weil die Quellen bei Richtung und Betrag nicht übereinstimmen. Drehrichtung (nach links), Gasstellung und Knüppelweg sind eine Darstellung."
+        "illustration": "Die Animation zeigt kein <aileron>Querruder</aileron>, weil die Quellen bei Richtung und Betrag nicht übereinstimmen. Drehrichtung (nach links), Gasstellung und Knüppelweg sind eine Darstellung."
       }
     },
     "loop": {
@@ -503,24 +504,24 @@
         "approach": {
           "title": "Anflug",
           "instructions": {
-            "full-power": "Fliege geradeaus und waagerecht mit vollem <b>Gas</b> an."
+            "full-power": "Fliege geradeaus und waagerecht mit vollem <b><throttle>Gas</throttle></b> an."
           },
           "notes": {
-            "power": "Leistung: Eine Quelle sagt, jedes Flugzeug mit Höhenruder und genug Leistung kann einen Looping fliegen. Für Motorsegler ist nichts bestätigt.",
+            "power": "Leistung: Eine Quelle sagt, jedes Flugzeug mit <elevator>Höhenruder</elevator> und genug Leistung kann einen <loop>Looping</loop> fliegen. Für <motorglider>Motorsegler</motorglider> ist nichts bestätigt.",
             "min-height": "Mindesthöhe: Die Quellen nennen keinen gesicherten Wert."
           }
         },
         "pull-up": {
           "title": "Hochziehen",
           "instructions": {
-            "up-elevator": "Ziehe das <b>Höhenruder</b> gleichmäßig und bestimmt, um den Steigflug einzuleiten.",
-            "vertical-plane": "Halte den Looping in einer Ebene: Korrigiere bei Bedarf mit kleinen <b>Seitenruder</b>- und <b>Querruder</b>-Ausschlägen."
+            "up-elevator": "Ziehe das <b><elevator>Höhenruder</elevator></b> gleichmäßig und bestimmt, um den Steigflug einzuleiten.",
+            "vertical-plane": "Halte den <loop>Looping</loop> in einer Ebene: Korrigiere bei Bedarf mit kleinen <b><rudder>Seitenruder</rudder></b>- und <b><aileron>Querruder</aileron></b>-Ausschlägen."
           }
         },
         "back": {
           "title": "Über den Kopf und abwärts",
           "instructions": {
-            "throttle-back": "Nimm auf dem Weg über den Kopf und abwärts <b>Gas</b> zurück, damit das Modell nicht zu schnell wird."
+            "throttle-back": "Nimm auf dem Weg über den Kopf und abwärts <b><throttle>Gas</throttle></b> zurück, damit das Modell nicht zu schnell wird."
           }
         },
         "exit": {
@@ -541,8 +542,8 @@
         "approach": {
           "title": "Anflug",
           "instructions": {
-            "start-high": "Beginne hoch genug, um den halben Looping zu Ende zu fliegen.",
-            "level-entry": "Fliege aufrecht, geradeaus und waagerecht an."
+            "start-high": "Beginne hoch genug, um den halben <loop>Looping</loop> zu Ende zu fliegen.",
+            "level-entry": "Fliege <upright>aufrecht</upright>, geradeaus und waagerecht an."
           },
           "notes": {
             "min-height": "Wie hoch genug ist: Die Quellen nennen keinen gesicherten Wert."
@@ -551,21 +552,21 @@
         "half-roll": {
           "title": "Halbe Rolle",
           "instructions": {
-            "half-roll": "Rolle das Modell mit dem <b>Querruder</b> eine halbe Umdrehung auf den Rücken.",
-            "reduce-throttle": "Nimm <b>Gas</b> zurück."
+            "half-roll": "Rolle das Modell mit dem <b><aileron>Querruder</aileron></b> eine halbe Umdrehung auf den Rücken.",
+            "reduce-throttle": "Nimm <b><throttle>Gas</throttle></b> zurück."
           }
         },
         "half-loop": {
           "title": "Halber Looping abwärts",
           "instructions": {
-            "pull-at-once": "Ziehe das <b>Höhenruder</b> sofort nach der Rolle, ohne lange auf dem Rücken zu fliegen.",
-            "altitude-for-speed": "Das Modell tauscht Höhe gegen Fahrt: Es wird auf dem Weg nach unten schneller."
+            "pull-at-once": "Ziehe das <b><elevator>Höhenruder</elevator></b> sofort nach der Rolle, ohne lange auf dem Rücken zu fliegen.",
+            "altitude-for-speed": "Das Modell tauscht Höhe gegen <airspeed>Fahrt</airspeed>: Es wird auf dem Weg nach unten schneller."
           }
         },
         "exit": {
           "title": "Ausleiten",
           "instructions": {
-            "level-reverse": "Das Modell endet aufrecht und waagerecht, in Gegenrichtung und tiefer als am Anfang."
+            "level-reverse": "Das Modell endet <upright>aufrecht</upright> und waagerecht, in Gegenrichtung und tiefer als am Anfang."
           }
         }
       }
@@ -575,7 +576,7 @@
       "idea": "Das Modell dreht sich einmal um die Längsachse und bleibt dabei auf einer geraden Linie.",
       "illustration": {
         "direction": "Die Quellen sagen nicht, in welche Richtung gerollt wird. Die Animation rollt nach links.",
-        "rudder": "Die Animation zeigt kein Seitenruder, weil nur eine Quelle es beschreibt."
+        "rudder": "Die Animation zeigt kein <rudder>Seitenruder</rudder>, weil nur eine Quelle es beschreibt."
       },
       "phases": {
         "approach": {
@@ -587,24 +588,24 @@
         "roll-start": {
           "title": "Rolle einleiten",
           "instructions": {
-            "aileron-rolls": "Das <b>Querruder</b> rollt das Modell. Halte es in derselben Richtung, bis die Rolle fertig ist.",
-            "up-elevator": "Ziehe im ersten Teil der Rolle etwas <b>Höhenruder</b>."
+            "aileron-rolls": "Das <b><aileron>Querruder</aileron></b> rollt das Modell. Halte es in derselben Richtung, bis die Rolle fertig ist.",
+            "up-elevator": "Ziehe im ersten Teil der Rolle etwas <b><elevator>Höhenruder</elevator></b>."
           },
           "notes": {
-            "elevator-order": "Reihenfolge am Anfang: Eine Quelle gibt zuerst Höhenruder und dann Querruder, eine andere beginnt mit dem Querruder und zieht das Höhenruder ab etwa 45 Grad Schräglage.",
-            "rudder": "Seitenruder: Nur eine Quelle beschreibt es genauer."
+            "elevator-order": "Reihenfolge am Anfang: Eine Quelle gibt zuerst Höhenruder und dann Querruder, eine andere beginnt mit dem Querruder und zieht das Höhenruder ab etwa 45 Grad <bank>Schräglage</bank>.",
+            "rudder": "<rudder>Seitenruder</rudder>: Nur eine Quelle beschreibt es genauer."
           }
         },
         "inverted": {
           "title": "Rückenflug",
           "instructions": {
-            "down-elevator-inverted": "Nimm auf dem Rücken das gezogene <b>Höhenruder</b> zurück und gib ein wenig gedrücktes <b>Höhenruder</b>, damit das Modell keine Höhe verliert."
+            "down-elevator-inverted": "Nimm auf dem Rücken das gezogene <b><elevator>Höhenruder</elevator></b> zurück und gib ein wenig gedrücktes <b>Höhenruder</b>, damit das Modell keine Höhe verliert."
           }
         },
         "finish": {
           "title": "Rolle beenden",
           "instructions": {
-            "stop-upright": "Beende die Rolle, wenn das Modell wieder aufrecht liegt: Nimm das <b>Querruder</b> zurück in die Mitte."
+            "stop-upright": "Beende die Rolle, wenn das Modell wieder <upright>aufrecht</upright> liegt: Nimm das <b><aileron>Querruder</aileron></b> zurück in die Mitte."
           }
         },
         "exit": {
@@ -619,14 +620,14 @@
       "name": "Männchen (Stall Turn)",
       "idea": "Das Modell steigt senkrecht, dreht oben auf der Stelle, stürzt auf derselben Linie wieder ab und fliegt in Gegenrichtung weg. Auch Hammerhead genannt.",
       "illustration": {
-        "direction": "Die Quellen sagen nicht, zu welcher Seite das Modell wegdreht. Die Animation dreht es mit vollem Seitenruder links vom Piloten weg.",
-        "aileron": "Die Animation zeigt kein Querruder, weil nur eine Quelle es beschreibt."
+        "direction": "Die Quellen sagen nicht, zu welcher Seite das Modell wegdreht. Die Animation dreht es mit vollem <rudder>Seitenruder</rudder> links vom Piloten weg.",
+        "aileron": "Die Animation zeigt kein <aileron>Querruder</aileron>, weil nur eine Quelle es beschreibt."
       },
       "phases": {
         "approach": {
           "title": "Anflug",
           "instructions": {
-            "full-power": "Fliege mit vollem <b>Gas</b> an."
+            "full-power": "Fliege mit vollem <b><throttle>Gas</throttle></b> an."
           },
           "notes": {
             "min-height": "Mindesthöhe: Die Quellen nennen keinen gesicherten Wert."
@@ -636,26 +637,26 @@
           "title": "Steigflug",
           "instructions": {
             "vertical-climb": "Ziehe einen Viertelkreis in den senkrechten Steigflug und halte ihn gerade.",
-            "throttle-not-closed": "Nimm zum Ende hin <b>Gas</b> zurück, aber nicht ganz: Das <b>Seitenruder</b> braucht Luftstrom."
+            "throttle-not-closed": "Nimm zum Ende hin <b><throttle>Gas</throttle></b> zurück, aber nicht ganz: Das <b><rudder>Seitenruder</rudder></b> braucht Luftstrom."
           },
           "notes": {
-            "propwash": "Motorsegler: Die Quellen setzen voraus, dass der Propeller Luft über das Seitenruder bläst. Zu einem stehenden oder eingeklappten Propeller sagt keine etwas; eine Quelle schreibt, dann müsse das Seitenruder früher gegeben werden, solange das Modell noch Fahrt hat."
+            "propwash": "<motorglider>Motorsegler</motorglider>: Die Quellen setzen voraus, dass der <propeller>Propeller</propeller> Luft über das Seitenruder bläst. Zu einem stehenden oder eingeklappten Propeller sagt keine etwas; eine Quelle schreibt, dann müsse das Seitenruder früher gegeben werden, solange das Modell noch <airspeed>Fahrt</airspeed> hat."
           }
         },
         "pivot": {
           "title": "Drehen",
           "instructions": {
-            "full-rudder": "Gib oben, wenn der Steigflug ausläuft, vollen <b>Seitenruder</b>-Ausschlag.",
+            "full-rudder": "Gib oben, wenn der Steigflug ausläuft, vollen <b><rudder>Seitenruder</rudder></b>-Ausschlag.",
             "tight-pivot": "Das Modell dreht fast auf der Stelle."
           }
         },
         "dive": {
           "title": "Sturz und Abfangen",
           "instructions": {
-            "dive-and-pull-out": "Lass das Modell senkrecht nach unten stürzen und fange es dann mit dem <b>Höhenruder</b> ab."
+            "dive-and-pull-out": "Lass das Modell senkrecht nach unten stürzen und fange es dann mit dem <b><elevator>Höhenruder</elevator></b> ab."
           },
           "notes": {
-            "throttle-dive": "Gas im Sturz: Eine Quelle gibt beim Abfangen Gas, eine andere hält das Gas zu, bis der Sturz genug Fahrt aufgebaut hat."
+            "throttle-dive": "<throttle>Gas</throttle> im Sturz: Eine Quelle gibt beim Abfangen Gas, eine andere hält das Gas zu, bis der Sturz genug <airspeed>Fahrt</airspeed> aufgebaut hat."
           }
         },
         "exit": {
@@ -676,35 +677,35 @@
         "approach": {
           "title": "Anflug",
           "instructions": {
-            "level-add-power": "Beginne im geraden, waagerechten Flug und gib bei Bedarf etwas <b>Gas</b>."
+            "level-add-power": "Beginne im geraden, waagerechten Flug und gib bei Bedarf etwas <b><throttle>Gas</throttle></b>."
           }
         },
         "half-roll-in": {
           "title": "Halbe Rolle auf den Rücken",
           "instructions": {
-            "half-roll": "Rolle das Modell mit dem <b>Querruder</b> eine halbe Umdrehung auf den Rücken.",
+            "half-roll": "Rolle das Modell mit dem <b><aileron>Querruder</aileron></b> eine halbe Umdrehung auf den Rücken.",
             "centre-aileron": "Wenn die Flächen auf dem Rücken waagerecht sind, nimm das <b>Querruder</b> zurück in die Mitte."
           }
         },
         "inverted": {
           "title": "Rückenflug",
           "instructions": {
-            "hold-elevator": "Drücke das <b>Höhenruder</b> ein wenig, um die Höhe zu halten.",
-            "reversed": "<b>Höhenruder</b> und <b>Seitenruder</b> wirken aus deiner Sicht umgekehrt, das <b>Querruder</b> nicht.",
+            "hold-elevator": "Drücke das <b><elevator>Höhenruder</elevator></b> ein wenig, um die Höhe zu halten.",
+            "reversed": "<b>Höhenruder</b> und <b><rudder>Seitenruder</rudder></b> wirken aus deiner Sicht umgekehrt, das <b><aileron>Querruder</aileron></b> nicht.",
             "push-amount": "Zu viel gedrücktes Höhenruder lässt das Modell abreißen oder abkippen, zu wenig verliert Höhe.",
             "stall-speed": "Die Abrissgeschwindigkeit ist auf dem Rücken höher: Fliege nicht zu langsam.",
-            "dihedral": "Modelle mit Dihedral oder V-Form wollen zurück in die Normallage, steuere deshalb aktiv."
+            "dihedral": "Modelle mit Dihedral oder V-Form wollen zurück in die <upright>Normallage</upright>, steuere deshalb aktiv."
           },
           "notes": {
             "duration": "Wie lange man hält: Eine Quelle sagt, am Anfang nur 2 bis 3 Sekunden; keine zweite Quelle.",
-            "motor-glider": "Motorsegler: Keine Quelle behandelt sie. Eine Quelle sagt, Segler und gewölbte Trainer brauchen auf dem Rücken viel gedrücktes Höhenruder und Geschwindigkeit.",
+            "motor-glider": "<motorglider>Motorsegler</motorglider>: Keine Quelle behandelt sie. Eine Quelle sagt, Segler und gewölbte Trainer brauchen auf dem Rücken viel gedrücktes Höhenruder und Geschwindigkeit.",
             "amount": "Wie viel Höhenruder gedrückt wird: Die Quellen nennen keinen Wert."
           }
         },
         "roll-out": {
           "title": "Zurückrollen",
           "instructions": {
-            "roll-out": "Rolle das Modell mit dem <b>Querruder</b> wieder aufrecht. Ziehe nicht heraus.",
+            "roll-out": "Rolle das Modell mit dem <b><aileron>Querruder</aileron></b> wieder <upright>aufrecht</upright>. Ziehe nicht heraus.",
             "enough-height": "Übe mit genug Höhe, um das Modell abzufangen."
           }
         }
@@ -770,6 +771,346 @@
       "mistake": {
         "q": "Mir ist ein Fehler aufgefallen oder ich habe einen Vorschlag.",
         "a": "Schreib bitte an die E-Mail-Adresse im Impressum. Richtigkeit ist das wichtigste Ziel, deshalb ist ein Hinweis mit Quelle besonders willkommen."
+      }
+    }
+  },
+  "glossary": {
+    "title": "Glossar",
+    "close": "Schließen",
+    "search": "Begriffe suchen",
+    "all": "Alle",
+    "empty": "Kein Begriff gefunden.",
+    "intro": "Kurze Erklärungen zu den Wörtern, die dir beim RC- und 3D-Fliegen begegnen. Tippe in einer Anleitung auf ein unterstrichenes Wort, um die Erklärung zu sehen.",
+    "note": "Diese Erklärungen beschreiben, was die Wörter bedeuten. Sie sind keine Flug-Anleitungen.",
+    "more": "Mehr im Glossar",
+    "seeAlso": "Siehe auch",
+    "count": "{count, plural, one {# Begriff} other {# Begriffe}}",
+    "groups": {
+      "controls": "Sender und Steuerung (Transmitter and controls)",
+      "model": "Modell und Aufbau (Model and parts)",
+      "flight": "Flug und Fluglage (Flight and attitude)",
+      "figures": "Figuren und Manöver (Figures and manoeuvres)"
+    },
+    "terms": {
+      "transmitter": {
+        "name": "Sender (Transmitter)",
+        "text": "Die Fernsteuerung, die du in den Händen hältst, mit den Steuerknüppeln. Sie schickt deine Knüppelbewegungen an den Empfänger (Receiver) im Modell."
+      },
+      "stick": {
+        "name": "Steuerknüppel (Stick)",
+        "text": "Einer der beiden Hebel am Sender (Transmitter). Jeder Knüppel lässt sich in zwei Richtungen bewegen, die zwei Knüppel ergeben zusammen vier Steuerfunktionen: Gas (Throttle), Seitenruder (Rudder), Höhenruder (Elevator) und Querruder (Aileron)."
+      },
+      "mode": {
+        "name": "Mode 1 / Mode 2 (Stick mode)",
+        "text": "Die Knüppelbelegung: welche Funktion auf welchem Knüppel liegt. Bei Mode 2, der verbreitetsten Belegung, hat der linke Knüppel Gas (Throttle) und Seitenruder (Rudder), der rechte Höhenruder (Elevator) und Querruder (Aileron). Bei Mode 1 tauschen Gas und Höhenruder die Plätze. Den Mode stellst du in den Einstellungen von StickScope um."
+      },
+      "throttle": {
+        "name": "Gas (Throttle)",
+        "text": "Regelt die Motorleistung von Leerlauf bis Vollgas. Es ist die einzige der vier Steuerfunktionen, die kein Ruder bewegt. Im Hover und im Harrier hält das Gas die Höhe."
+      },
+      "aileron": {
+        "name": "Querruder (Aileron)",
+        "text": "Die Ruder an der Hinterkante der Tragflächen (Wing). Sie schlagen gegensinnig aus und rollen das Modell um die Längsachse (Roll axis)."
+      },
+      "elevator": {
+        "name": "Höhenruder (Elevator)",
+        "text": "Das Ruder am Höhenleitwerk (Horizontal stabilizer). Es neigt die Nase nach oben oder unten (Nicken, Pitch). Ziehen am Knüppel hebt die Nase, Drücken senkt sie."
+      },
+      "rudder": {
+        "name": "Seitenruder (Rudder)",
+        "text": "Das Ruder am Seitenleitwerk (Fin). Es schwenkt die Nase nach links oder rechts (Gieren, Yaw). Im 3D-Flug hält es das Modell außerdem im Messerflug (Knife edge) und dreht es oben im Männchen (Stall turn) herum."
+      },
+      "expo": {
+        "name": "Expo (Exponential)",
+        "text": "Eine Sendereinstellung, die eine Steuerfunktion um die Knüppelmitte unempfindlicher macht, während der volle Ausschlag am Anschlag erhalten bleibt. Kleine Korrekturen werden sanfter, große Eingaben bleiben kräftig."
+      },
+      "dualRates": {
+        "name": "Dual Rates",
+        "text": "Eine Sendereinstellung mit zwei (oder mehr) Stufen für den maximalen Ruderausschlag, im Flug umschaltbar. Die hohe Stufe ist die für den 3D-Flug, die niedrige beruhigt das Modell, zum Beispiel für Start und Landung."
+      },
+      "throws": {
+        "name": "Ruderausschlag (Control throw)",
+        "text": "Wie weit ein Ruder aus der Neutralstellung ausschlägt. 3D-Modelle haben große Ruder und große Ausschläge, damit sie auch bei sehr langsamem Flug noch reagieren."
+      },
+      "trim": {
+        "name": "Trimmung (Trim)",
+        "text": "Eine kleine Verschiebung der Neutralstellung einer Steuerfunktion, damit das Modell bei mittig stehenden, losgelassenen Knüppeln geradeaus fliegt."
+      },
+      "mixing": {
+        "name": "Mischer (Mixing)",
+        "text": "Die Kopplung zweier Funktionen, sodass eine Knüppelbewegung mehrere Servos ansteuert, zum Beispiel Querruder (Aileron) zusammen mit Seitenruder (Rudder). Mischer stellt man im Sender ein."
+      },
+      "servo": {
+        "name": "Servo",
+        "text": "Der kleine Motor, der ein Ruder bewegt. Er folgt dem Signal des Empfängers (Receiver)."
+      },
+      "receiver": {
+        "name": "Empfänger (Receiver)",
+        "text": "Das Gerät im Modell, das das Funksignal aufnimmt und an die Servos und den Fahrtregler (ESC) weitergibt."
+      },
+      "failsafe": {
+        "name": "Failsafe",
+        "text": "Eine Einstellung, die festlegt, was das Modell tut, wenn die Funkverbindung abbricht, zum Beispiel Gas (Throttle) auf Leerlauf. Sie wird vor dem ersten Flug eingestellt."
+      },
+      "esc": {
+        "name": "Fahrtregler (ESC, Electronic speed controller)",
+        "text": "Die Elektronik, die die Drehzahl eines Elektromotors nach dem Gassignal regelt."
+      },
+      "simulator": {
+        "name": "Flugsimulator (Flight simulator)",
+        "text": "Software für Computer oder Handy zum Üben mit einem virtuellen Modell, meist mit angeschlossenem echtem Sender (Transmitter). StickScope zeigt die Figuren, im Simulator probierst du sie aus."
+      },
+      "fuselage": {
+        "name": "Rumpf (Fuselage)",
+        "text": "Der Hauptkörper des Modells, an dem Tragflächen (Wing) und Leitwerk (Tail) sitzen."
+      },
+      "wing": {
+        "name": "Tragfläche, Fläche (Wing)",
+        "text": "Die Flächen, die das Modell tragen. An ihrer Hinterkante sitzen die Querruder (Aileron)."
+      },
+      "tail": {
+        "name": "Leitwerk (Tail, empennage)",
+        "text": "Die hintere Gruppe von Flächen: Höhenleitwerk (Horizontal stabilizer) mit Höhenruder (Elevator) und Seitenleitwerk (Fin) mit Seitenruder (Rudder)."
+      },
+      "horizontalStabilizer": {
+        "name": "Höhenleitwerk, Höhenflosse (Horizontal stabilizer)",
+        "text": "Der feststehende Teil des Leitwerks (Tail), der das Modell im Nicken stabilisiert. An seiner Hinterkante ist das Höhenruder (Elevator) angeschlagen."
+      },
+      "fin": {
+        "name": "Seitenleitwerk, Seitenflosse (Fin, vertical stabilizer)",
+        "text": "Der feststehende, senkrechte Teil des Leitwerks (Tail), der das Modell im Gieren stabilisiert. An seiner Hinterkante ist das Seitenruder (Rudder) angeschlagen."
+      },
+      "canopy": {
+        "name": "Haube, Kabinenhaube (Canopy)",
+        "text": "Die Abdeckung des Cockpits, meist in anderer Farbe. In StickScope erkennst du an der Haube die Oberseite des Modells: Du siehst sie, wenn du von oben auf das Modell schaust."
+      },
+      "landingGear": {
+        "name": "Fahrwerk (Landing gear)",
+        "text": "Die Räder und Streben, auf denen das Modell startet und landet. Sie helfen auch bei der Richtungsangabe: Zum Fahrwerk hin heißt zur Unterseite (Bauch) des Modells hin."
+      },
+      "propeller": {
+        "name": "Propeller (Luftschraube)",
+        "text": "Die rotierenden Blätter, die den Schub (Thrust) erzeugen. Im Hover (Hover) hängt das Modell am Propeller."
+      },
+      "spinner": {
+        "name": "Spinner",
+        "text": "Die Kappe, die die Propellernabe abdeckt."
+      },
+      "cg": {
+        "name": "Schwerpunkt (Centre of gravity, CG)",
+        "text": "Der Punkt, an dem das Modell im Gleichgewicht ist. Seine Lage beeinflusst stark, wie stabil oder wendig das Modell fliegt. Der Hersteller nennt für jedes Modell einen Wert, eingestellt wird er durch Verschieben von Gewicht, etwa dem Akku."
+      },
+      "wingLoading": {
+        "name": "Flächenbelastung (Wing loading)",
+        "text": "Das Gewicht des Modells geteilt durch die Flügelfläche. Je niedriger sie ist, desto langsamer kann das Modell fliegen."
+      },
+      "thrustToWeight": {
+        "name": "Schub-Gewichts-Verhältnis (Thrust-to-weight ratio)",
+        "text": "Wie der Schub (Thrust) des Propellers im Vergleich zum Gewicht des Modells ist. Ab einem Verhältnis von etwa eins kann das Modell im Hover (Hover) am Propeller hängen."
+      },
+      "wingspan": {
+        "name": "Spannweite (Wingspan)",
+        "text": "Der Abstand von einer Flügelspitze zur anderen. Sie ist das übliche Maß für die Größe eines Modells."
+      },
+      "airfoil": {
+        "name": "Profil (Airfoil)",
+        "text": "Die Querschnittsform einer Tragfläche (Wing)."
+      },
+      "leadingEdge": {
+        "name": "Nasenleiste, Vorderkante (Leading edge)",
+        "text": "Die Vorderkante einer Tragfläche (Wing), eines Höhenleitwerks oder einer Seitenflosse."
+      },
+      "trailingEdge": {
+        "name": "Endleiste, Hinterkante (Trailing edge)",
+        "text": "Die Hinterkante einer Tragfläche (Wing), eines Höhenleitwerks oder einer Seitenflosse. Dort sitzen die Ruder."
+      },
+      "motorglider": {
+        "name": "Motorsegler (Motor glider)",
+        "text": "Ein Segelflugzeug mit Motor, oft mit Klapppropeller. Gewicht, Leistung und Flugverhalten unterscheiden sich von einem reinen 3D-Modell, deshalb passen die Anleitungen nicht auf jeden Motorsegler."
+      },
+      "propwash": {
+        "name": "Propellerstrahl (Propwash)",
+        "text": "Der Luftstrom, den der Propeller nach hinten über das Modell bläst. Ruder in diesem Luftstrom wirken auch dann noch, wenn das Modell selbst fast stillsteht."
+      },
+      "rollAxis": {
+        "name": "Rollen, Längsachse (Roll axis)",
+        "text": "Die Drehung um die Längsachse des Modells, von der Nase zum Heck. Das Querruder (Aileron) rollt das Modell. Positives Rollen heißt in StickScope: rechte Fläche nach unten."
+      },
+      "pitch": {
+        "name": "Nicken, Querachse (Pitch)",
+        "text": "Die Drehung der Nase nach oben oder unten, um die Achse entlang der Tragflächen. Das Höhenruder (Elevator) nickt das Modell."
+      },
+      "yaw": {
+        "name": "Gieren, Hochachse (Yaw)",
+        "text": "Die Drehung der Nase nach links oder rechts, um die senkrechte Achse. Das Seitenruder (Rudder) giert das Modell."
+      },
+      "attitude": {
+        "name": "Fluglage, Lage (Attitude)",
+        "text": "Wie das Modell im Raum ausgerichtet ist: Nase oben oder unten, gerollt, aufrecht oder auf dem Rücken, unabhängig davon, wohin es sich bewegt. Fluglage und Flugbahn sind verschieden: Ein Modell im Hover (Hover) liegt senkrecht, bewegt sich aber kaum."
+      },
+      "bank": {
+        "name": "Schräglage (Bank)",
+        "text": "Ein Rollwinkel: Das Modell neigt sich zur Seite, die Flächen sind nicht waagerecht."
+      },
+      "angleOfAttack": {
+        "name": "Anstellwinkel (Angle of attack)",
+        "text": "Der Winkel zwischen der Tragfläche (Wing) und der anströmenden Luft. Über einem kritischen Winkel reißt die Strömung an der Fläche ab, und die Fläche überzieht (Stall)."
+      },
+      "stall": {
+        "name": "Strömungsabriss, Überziehen (Stall)",
+        "text": "Der Verlust des Auftriebs (Lift), wenn der Anstellwinkel (Angle of attack) zu groß wird (oft bei niedriger Fahrt). Eine überzogene Fläche trägt das Modell nicht mehr, es sackt durch. Viele 3D-Figuren fliegen mit Absicht im oder nahe am Strömungsabriss."
+      },
+      "postStall": {
+        "name": "Überzogener Flug, Post-Stall (Post-stall, high alpha)",
+        "text": "Das Fliegen jenseits des kritischen Anstellwinkels, mit sehr hohem Anstellwinkel (Angle of attack) und sehr niedriger Fahrt. Das Modell wird vom Propeller getragen und mit großen Rudern gesteuert. Der Harrier ist ein Beispiel."
+      },
+      "spin": {
+        "name": "Trudeln (Spin)",
+        "text": "Ein überzogener, drehender Fall, bei dem sich das Modell um eine senkrechte Achse dreht, weil eine Fläche stärker abgerissen ist als die andere. Zum Ausleiten braucht es eine bestimmte Steuereingabe."
+      },
+      "airspeed": {
+        "name": "Fahrt, Fluggeschwindigkeit (Airspeed)",
+        "text": "Die Geschwindigkeit des Modells durch die Luft, nicht über Grund. Ruder brauchen Luftstrom, bei niedriger Fahrt werden sie schwächer, außer der Propeller bläst Luft über sie (Propellerstrahl, Propwash)."
+      },
+      "lift": {
+        "name": "Auftrieb (Lift)",
+        "text": "Die Kraft nach oben, die die Tragflächen (Wing) aus der vorbeiströmenden Luft erzeugen."
+      },
+      "drag": {
+        "name": "Luftwiderstand (Drag)",
+        "text": "Der Widerstand der Luft, der das Modell bremst."
+      },
+      "thrust": {
+        "name": "Schub (Thrust)",
+        "text": "Die Zugkraft, die der Propeller erzeugt. Mehr Gas (Throttle) gibt mehr Schub."
+      },
+      "torque": {
+        "name": "Propellermoment, Drehmoment (Propeller torque)",
+        "text": "Der Motor dreht den Propeller in die eine Richtung, und die Gegenkraft dreht das Modell in die andere um die Längsachse (Roll axis). Der Torque Roll nutzt diesen Effekt. Die Richtung hängt vom Modell ab, die Drehrichtung des Propellers ist nicht festgelegt."
+      },
+      "adverseYaw": {
+        "name": "Negatives Wendemoment (Adverse yaw)",
+        "text": "Beim Rollen mit dem Querruder (Aileron) schwenkt die Nase kurz in die Gegenrichtung, weil die Fläche, die nach unten geht, mehr Widerstand hat. Seitenruder (Rudder), Mischer (Mixing) oder Querruder-Differenzierung können das ausgleichen."
+      },
+      "straightLevel": {
+        "name": "Geradeausflug, waagerechter Flug (Straight and level)",
+        "text": "Das Fliegen auf gerader Linie in gleichbleibender Höhe mit waagerechten Flächen."
+      },
+      "upright": {
+        "name": "Normallage, aufrechter Flug (Upright flight)",
+        "text": "Der normale Flug mit der Haube (Canopy) nach oben."
+      },
+      "inverted": {
+        "name": "Rückenflug, Rückenlage (Inverted flight)",
+        "text": "Flug auf dem Rücken, mit der Haube (Canopy) nach unten. Um die Nase oben zu halten, muss man den Höhenruder-Knüppel drücken statt ziehen."
+      },
+      "pullPush": {
+        "name": "Ziehen / Drücken (Pull / push)",
+        "text": "Den Höhenruder-Knüppel (Elevator) zu dir hin (Ziehen) oder von dir weg (Drücken) bewegen. Im aufrechten Flug hebt Ziehen die Nase und Drücken senkt sie."
+      },
+      "line": {
+        "name": "Steig- und Fallinie (Upline / downline)",
+        "text": "Ein gerades Stück der Flugbahn, das steigt (Steiglinie, Upline) oder fällt (Fallinie, Downline), in vielen Figuren senkrecht."
+      },
+      "pullOut": {
+        "name": "Abfangen (Pull-out)",
+        "text": "Das Beenden eines Sturzes, indem man das Höhenruder (Elevator) zieht und das Modell wieder in den Geradeausflug zurückkehrt."
+      },
+      "dive": {
+        "name": "Sturz, Sturzflug (Dive)",
+        "text": "Ein steiler Abwärtsflug."
+      },
+      "aerobatics": {
+        "name": "Kunstflug (Aerobatics)",
+        "text": "Das Fliegen von Figuren, die im normalen Flug nicht vorkommen, zum Beispiel Looping (Loop) und Rolle (Roll)."
+      },
+      "threeD": {
+        "name": "3D-Flug (3D flying)",
+        "text": "Ein Kunstflugstil, bei dem das Modell sehr langsam fliegt, nahe am oder jenseits des Strömungsabrisses (Stall) oder am Propeller hängend, mit übergroßen Rudern und reichlich Leistung. Hover, Harrier und Torque Roll sind 3D-Figuren."
+      },
+      "loop": {
+        "name": "Looping (Loop)",
+        "text": "Das Modell fliegt einen vollen Kreis in der senkrechten Ebene und ist danach wieder waagerecht."
+      },
+      "rollFigure": {
+        "name": "Rolle (Roll)",
+        "text": "Das Modell dreht sich einmal um die Längsachse (Roll axis) und bleibt dabei auf einer geraden Linie."
+      },
+      "barrelRoll": {
+        "name": "Faßrolle (Barrel roll)",
+        "text": "Eine Rolle, die auf einer Korkenzieherbahn um eine gedachte Gerade geflogen wird, statt auf der Geraden selbst."
+      },
+      "snapRoll": {
+        "name": "Gerissene Rolle (Snap roll)",
+        "text": "Eine sehr schnelle Rolle, die mit einem kräftigen Ziehen am Höhenruder (Elevator) zusammen mit Seitenruder (Rudder) und Querruder (Aileron) in Rollrichtung eingeleitet wird. Die Fläche ist dabei überzogen (Stall)."
+      },
+      "splitS": {
+        "name": "Abschwung (Split S)",
+        "text": "Aus dem aufrechten Geradeausflug rollt das Modell auf den Rücken und zieht dann durch einen halben Looping (Loop) nach unten. Es endet waagerecht, in Gegenrichtung und tiefer als am Anfang."
+      },
+      "immelmann": {
+        "name": "Immelmann (Immelmann turn)",
+        "text": "Ein halber Looping (Loop) nach oben, gefolgt von einer halben Rolle oben. Das Modell endet aufrecht, in Gegenrichtung und höher als am Anfang. Er ist das Gegenstück zum Abschwung (Split S)."
+      },
+      "cubanEight": {
+        "name": "Kubanische Acht (Cuban eight)",
+        "text": "Eine liegende Acht aus zwei Loopingteilen (Loop), die jeweils von einer halben Rolle (Roll) auf einer schrägen Linie gefolgt werden."
+      },
+      "rollingCircle": {
+        "name": "Rollender Kreis (Rolling circle)",
+        "text": "Ein Looping (Loop), bei dem sich das Modell dauernd um die Längsachse (Roll axis) rollt."
+      },
+      "stallTurn": {
+        "name": "Männchen (Stall turn, Hammerhead)",
+        "text": "Das Modell steigt senkrecht, dreht oben auf der Stelle, stürzt auf derselben Linie wieder ab und fliegt in Gegenrichtung weg. Auch Hammerhead genannt."
+      },
+      "knifeEdge": {
+        "name": "Messerflug (Knife edge)",
+        "text": "Das Modell fliegt geradeaus auf der Seite. Das Seitenruder (Rudder) hält es dort."
+      },
+      "hover": {
+        "name": "Hover",
+        "text": "Das Modell hängt senkrecht am Propeller und steht fast auf der Stelle. Das Gas (Throttle) hält die Höhe. Im Deutschen auch Schwebeflug genannt (Prop hang)."
+      },
+      "harrier": {
+        "name": "Harrier",
+        "text": "Langsamflug mit der Nase etwa 45° hoch, im überzogenen Flug (Post-stall). Das Höhenruder (Elevator) stellt die Nasenlage ein, das Gas (Throttle) hält die Höhe."
+      },
+      "rollingHarrier": {
+        "name": "Rolling Harrier",
+        "text": "Ein Harrier, bei dem das Modell sich zusätzlich dauernd um die Längsachse (Roll axis) rollt und dabei die Höhe hält."
+      },
+      "torqueRoll": {
+        "name": "Torque Roll",
+        "text": "Ein Hover (Hover), bei dem sich das Modell zusätzlich um die Längsachse (Roll axis) dreht, angetrieben vom Propellermoment (Propeller torque)."
+      },
+      "flatSpin": {
+        "name": "Flachtrudeln (Flat spin)",
+        "text": "Das Modell dreht sich mit Motor flach um die Hochachse (Yaw axis) und bleibt dabei ungefähr waagerecht."
+      },
+      "elevatorFigure": {
+        "name": "Elevator-Figur (Elevator figure)",
+        "text": "Das Modell sinkt auf einer steilen bis fast senkrechten Linie mit voll gezogenem Höhenruder (Elevator), Nase hoch und überzogen (Stall)."
+      },
+      "tumble": {
+        "name": "Tumble",
+        "text": "Das Modell überschlägt sich um die Achse entlang der Tragflächen (Pitch), auf sehr kleinem Radius und mit kaum Fahrt nach vorn."
+      },
+      "tailslide": {
+        "name": "Tailslide",
+        "text": "Das Modell rutscht in senkrechter Lage rückwärts, mit dem Heck voran (Rückwärtsrutschen)."
+      },
+      "waterfall": {
+        "name": "Waterfall",
+        "text": "Das Modell steigt senkrecht, bis es rückwärts mit dem Heck voran rutscht, und kippt dann in einen Sturz (Dive)."
+      },
+      "wall": {
+        "name": "Wall (Pop-up)",
+        "text": "Das Modell geht fast schlagartig aus dem Geradeausflug in die senkrechte Lage und verliert dabei seine Fahrt (Airspeed)."
+      },
+      "lomcovak": {
+        "name": "Lomcovák (Lomcevak)",
+        "text": "Ein Name für taumelnde Figuren, bei denen das Heck über die Nase kippt. Die Quellen beschreiben mehrere Varianten, die genaue Figur ist daher von Pilot zu Pilot verschieden."
       }
     }
   }

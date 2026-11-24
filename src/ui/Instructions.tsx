@@ -3,8 +3,8 @@
 import { useTranslations } from "next-intl";
 import { sourceById } from "../core/maneuvers/sources.ts";
 import type { Maneuver, Phase } from "../core/maneuvers/types.ts";
+import { rich } from "./Term.tsx";
 
-const rich = { b: (chunks: React.ReactNode) => <b>{chunks}</b> };
 
 /** The source list of an instruction or note: title, author, link, and when it was read. */
 function SourceList({ ids }: { ids: string[] }) {
@@ -46,7 +46,7 @@ export function PhaseCard({ maneuver, index }: { maneuver: Maneuver; index: numb
       </ul>
       {(phase.notes ?? []).map((n) => (
         <div key={n.id} className={`note ${n.kind}`}>
-          <b>{ui(n.kind)}:</b> {t(`notes.${n.id}`)}
+          <b>{ui(n.kind)}:</b> {t.rich(`notes.${n.id}`, rich)}
           {n.kind === "disputed" && n.sources && (
             <details className="conf">
               <summary>{ui("sources")}</summary>
@@ -68,7 +68,7 @@ export function IllustrationNotes({ maneuver }: { maneuver: Maneuver }) {
     <div className="note illustration">
       <b>{ui("illustration")}:</b>
       <ul>
-        {maneuver.illustrationNotes.map((n) => <li key={n}>{t(n)}</li>)}
+        {maneuver.illustrationNotes.map((n) => <li key={n}>{t.rich(n, rich)}</li>)}
       </ul>
     </div>
   );

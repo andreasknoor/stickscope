@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.12
+
+- New glossary (header button "Glossary" / "Glossar"): 80 terms for RC and 3D flying in four groups (transmitter and controls, model and parts, flight and attitude, figures), searchable. German names always show the English term in brackets.
+- Tap an underlined word in an instruction, note or illustration notice to see its explanation, with a link to the glossary entry.
+
 ## 0.11
 
 - Speed cues in the main 3D view: fixed particles in the air and a trail behind the model show how fast it flies. Both are on by default and can be switched off in the view.

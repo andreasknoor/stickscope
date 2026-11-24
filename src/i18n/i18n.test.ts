@@ -1,6 +1,7 @@
 import { describe, expect, it } from "vitest";
 import { MANEUVERS } from "../core/maneuvers/index.ts";
 import { CATEGORIES } from "../core/maneuvers/categories.ts";
+import { GLOSSARY_IDS } from "../core/glossary.ts";
 import de from "./de.json";
 import en from "./en.json";
 
@@ -28,12 +29,14 @@ describe("translations", () => {
     for (const [k, v] of flat(en)) expect(placeholders(deMap.get(k) ?? ""), k).toEqual(placeholders(v));
   });
 
-  it("use the same markup in both languages, and only the bold tag", () => {
-    const tags = (s: string) => [...s.matchAll(/<(\/?\w+)>/g)].map((m) => m[1]).sort();
+  it("use the same bold markup in both languages, and only the bold tag or a glossary term tag", () => {
+    const tags = (s: string) => [...s.matchAll(/<(\/?\w+)>/g)].map((m) => m[1]);
+    const bold = (s: string) => tags(s).filter((x) => x === "b" || x === "/b").sort();
     const deMap = new Map(flat(de));
+    const allowed = ["b", ...GLOSSARY_IDS];
     for (const [k, v] of flat(en)) {
-      expect(tags(deMap.get(k) ?? ""), k).toEqual(tags(v));
-      for (const tag of tags(v)) expect(["b", "/b"], `${k}: <${tag}>`).toContain(tag);
+      expect(bold(deMap.get(k) ?? ""), k).toEqual(bold(v));
+      for (const lang of [v, deMap.get(k) ?? ""]) for (const tag of tags(lang)) expect(allowed, `${k}: <${tag}>`).toContain(tag.replace("/", ""));
     }
   });
 

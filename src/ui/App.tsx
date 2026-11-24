@@ -18,6 +18,9 @@ import { ReliabilityPanel } from "./Instructions.tsx";
 import { OPERATOR, REPO_URL } from "../legal/contact.ts";
 import { hashStore, settingsDialog, settingsStore } from "./settings.ts";
 import { SettingsDialog } from "./SettingsDialog.tsx";
+import { GlossaryDialog } from "./GlossaryDialog.tsx";
+import { TermPopover } from "./Term.tsx";
+import { glossaryDialog } from "./glossaryStore.ts";
 
 // The animation parts are heavy: load them after the page shell has painted.
 const Trainer = dynamic(() => import("./Trainer.tsx").then((m) => m.Trainer), { ssr: false, loading: () => <div className="card" aria-busy="true">…</div> });
@@ -62,6 +65,7 @@ function Shell({ lang }: { lang: Lang }) {
         <small className="ver num">v{process.env.NEXT_PUBLIC_APP_VERSION ?? "dev"}</small>
         <span className="tagline">{t("app.subtitle")}</span>
         <span className="spacer" />
+        <button className="btn sm" onClick={() => glossaryDialog.open()} aria-label={t("header.glossary")} title={t("header.glossary")}>{t("header.glossary")}</button>
         <button className="btn sm gear" onClick={() => settingsDialog.set(true)} aria-label={t("header.settings")} title={t("header.settings")}><Icon name="gear" /></button>
       </header>
       <main className="wrap">
@@ -100,6 +104,8 @@ function Shell({ lang }: { lang: Lang }) {
         <a href={lang === "en" ? "/legal" : "/de/legal"}>{t("footer.legal")}</a>
       </footer>
       <SettingsDialog lang={lang} hash={hash} />
+      <GlossaryDialog lang={lang} />
+      <TermPopover />
     </>
   );
 }
