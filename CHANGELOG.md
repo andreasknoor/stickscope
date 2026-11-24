@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.3
+
+- The settings gear now has the same shape as in TLMscope.
+
 ## 0.2
 
 - Settings (language, colour scheme, stick mode) moved into a settings dialog; the header only shows a gear icon. The stick mode label at the transmitter opens it too.
