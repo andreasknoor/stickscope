@@ -141,7 +141,8 @@
     "by": "von {name}",
     "source": "Quellcode",
     "legal": "Impressum & Datenschutz",
-    "colours": "Oberseite grün mit Haube, Unterseite rot. Die Ruder am Modell schlagen so aus, wie du steuerst. Ein Ruder mit Ausschlag leuchtet gelb-orange (kräftiger = mehr Ausschlag) und glimmt etwa eine Sekunde nach, auch im Ruder-Schema (▲ = Hinterkante hoch, ▼ = runter). Gelbe Wellen an den Knüppeln sind ständige kleine Korrekturen."
+    "colours": "Oberseite grün mit Haube, Unterseite rot. Die Ruder am Modell schlagen so aus, wie du steuerst. Ein Ruder mit Ausschlag leuchtet gelb-orange (kräftiger = mehr Ausschlag) und glimmt etwa eine Sekunde nach, auch im Ruder-Schema (▲ = Hinterkante hoch, ▼ = runter). Gelbe Wellen an den Knüppeln sind ständige kleine Korrekturen.",
+    "faq": "FAQ"
   },
   "sources": {
     "title": "Quellen",
@@ -491,5 +492,57 @@
     "theme": "Farbschema",
     "mode": "Knüppelbelegung",
     "modeHint": "Mode 2: Gas links. Mode 1: Gas rechts."
+  },
+  "faq": {
+    "title": "Häufige Fragen",
+    "back": "Zurück zu StickScope",
+    "metaTitle": "FAQ – StickScope",
+    "metaDescription": "Antworten auf häufige Fragen zu StickScope: Woher die Anleitungen stammen, was das gelb-orange Leuchten bedeutet, Mode 1 und Mode 2 und Datenschutz.",
+    "items": {
+      "what": {
+        "q": "Was ist StickScope?",
+        "a": "StickScope ist ein kostenloser Trainer für RC-Piloten. Zu jeder Figur bewegen sich ein 3D-Modell und beide Senderknüppel gemeinsam in Zeitlupe, sodass du siehst, welche Knüppelbewegung zu welchem Flug führt. Es läuft im Browser, du musst nichts installieren."
+      },
+      "sources": {
+        "q": "Woher stammen die Anleitungen?",
+        "a": "Jede Anweisung ist durch mindestens zwei unabhängige Quellen bestätigt, zum Beispiel von verschiedenen Autoren oder Verlagen. Die Quellen stehen bei jeder Figur. Wo sich Quellen widersprechen oder nichts sagen, steht ein Hinweis auf der Seite, statt zu raten."
+      },
+      "real": {
+        "q": "Sind die Animationen gemessene Flugdaten?",
+        "a": "Nein. Flugbahn, Knüppelweg und Zeitablauf sind eine Illustration, damit sich die Bewegung gut verfolgen lässt. Teile der Animation, die die Quellen nicht bestätigen, sind auf der Figurenseite als Illustration gekennzeichnet."
+      },
+      "glow": {
+        "q": "Was bedeutet das gelb-orange Leuchten?",
+        "a": "Ein ausgeschlagenes Ruder leuchtet gelb-orange, am Modell, im Ruderschema und in der Flugweg-Übersicht. Je stärker das Leuchten, desto größer der Ausschlag. Das Leuchten klingt etwa eine Sekunde lang ab."
+      },
+      "mode": {
+        "q": "Wie wechsle ich zwischen Mode 1 und Mode 2?",
+        "a": "Öffne die Einstellungen über das Zahnrad oben rechts oder tippe auf die Mode-Anzeige über den Knüppeln. Der Schalter ändert nur, welcher Knüppel welche Funktion zeigt. Die Figur selbst bleibt gleich."
+      },
+      "simulator": {
+        "q": "Kann ich damit eine Figur lernen?",
+        "a": "StickScope zeigt, was die Knüppel tun. Erst die Figur ansehen, dann im Simulator nachfliegen."
+      },
+      "phone": {
+        "q": "Geht das auch am Handy?",
+        "a": "Ja, im Browser von Handy oder Tablet. Zieh in der 3D-Ansicht mit dem Finger, um das Modell von jeder Seite zu betrachten."
+      },
+      "sound": {
+        "q": "Was ist das Motorgeräusch?",
+        "a": "Ein optionaler Ton, der dem Gas folgt. Er ist bei jedem Besuch aus und wird in deinem Browser erzeugt."
+      },
+      "privacy": {
+        "q": "Sammelt StickScope Daten?",
+        "a": "Es gibt kein Benutzerkonto, keine Cookies, keine Besucherzählung und keine Analyse. Deine Auswahl (Farbschema, Knüppelbelegung, letzte Kategorie, offene Fenster) bleibt nur in deinem Browser. Einzelheiten stehen in der Datenschutzerklärung."
+      },
+      "more": {
+        "q": "Welche Figuren gibt es, und kommen weitere?",
+        "a": "Die Figuren sind in Anfänger, Fortgeschrittene und Profis eingeteilt und werden im Figurenbrowser ausgewählt. Der Umfang wächst Schritt für Schritt."
+      },
+      "mistake": {
+        "q": "Mir ist ein Fehler aufgefallen oder ich habe einen Vorschlag.",
+        "a": "Schreib bitte an die E-Mail-Adresse im Impressum. Richtigkeit ist das wichtigste Ziel, deshalb ist ein Hinweis mit Quelle besonders willkommen."
+      }
+    }
   }
 }

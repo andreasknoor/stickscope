@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.4
+
+- Links shared in messengers and social networks now show a large preview image with the logo, in English and German.
+- Pages tell search engines their canonical address and their other language (hreflang); sitemap, robots file, web app manifest and home-screen icons added.
+- New FAQ page in English (`/faq`) and German (`/de/faq`), linked in the footer.
+
 ## 0.3
 
 - The settings gear now has the same shape as in TLMscope.

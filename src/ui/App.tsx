@@ -95,6 +95,7 @@ function Shell({ lang }: { lang: Lang }) {
       <footer className="sitefoot">
         <span>{t("app.title")} {t("footer.by", { name: OPERATOR.name })}</span>
         <a href={REPO_URL} target="_blank" rel="noopener noreferrer">{t("footer.source")}</a>
+        <a href={lang === "en" ? "/faq" : "/de/faq"}>{t("footer.faq")}</a>
         <a href={lang === "en" ? "/legal" : "/de/legal"}>{t("footer.legal")}</a>
       </footer>
       <SettingsDialog lang={lang} hash={hash} />

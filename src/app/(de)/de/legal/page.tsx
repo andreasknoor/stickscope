@@ -1,12 +1,8 @@
-import type { Metadata } from "next";
+import { buildMetadata } from "@/seo/meta";
 import Link from "next/link";
 import { LegalDe } from "@/legal/LegalDe";
 
-export const metadata: Metadata = {
-  title: "Impressum & Datenschutz · StickScope",
-  description: "Impressum und Datenschutzerklärung von StickScope.",
-  alternates: { languages: { en: "/legal" } },
-};
+export const metadata = buildMetadata({ lang: "de", id: "legal", title: "Impressum & Datenschutz · StickScope", description: "Impressum und Datenschutzerklärung von StickScope." });
 
 export default function LegalPage() {
   return (

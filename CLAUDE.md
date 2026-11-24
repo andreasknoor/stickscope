@@ -36,6 +36,8 @@ Runtime: `src/app/(en)` and `src/app/(de)/de` are two root layouts (`/` and `/de
 
 i18n JSON files are edited directly and are the only copy of the texts; keep the keys of `en.json` and `de.json` identical (`src/i18n/i18n.test.ts` checks keys, markup and that every figure/phase/instruction/note in the data has a text).
 
+Link previews, canonical/hreflang, sitemap, manifest and the FAQ come from `src/seo/` (see `docs/deployment.md`); every new page needs an entry in `site.ts` (`PAGE_IDS`) and `buildMetadata`.
+
 Adding a figure: see `README.md`.
 
 ## Language and wording

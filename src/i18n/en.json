@@ -141,7 +141,8 @@
     "by": "by {name}",
     "source": "Source code",
     "legal": "Imprint & privacy",
-    "colours": "Top side teal with the canopy, underside coral. The control surfaces move as the sticks move. A control surface with deflection glows yellow-orange (stronger = more deflection) and fades for about a second, also in the control schematic (▲ = trailing edge up, ▼ = down). Yellow waves at the sticks are constant small corrections."
+    "colours": "Top side teal with the canopy, underside coral. The control surfaces move as the sticks move. A control surface with deflection glows yellow-orange (stronger = more deflection) and fades for about a second, also in the control schematic (▲ = trailing edge up, ▼ = down). Yellow waves at the sticks are constant small corrections.",
+    "faq": "FAQ"
   },
   "sources": {
     "title": "Sources",
@@ -491,5 +492,57 @@
     "theme": "Colour scheme",
     "mode": "Stick mode",
     "modeHint": "Mode 2: throttle on the left stick. Mode 1: throttle on the right stick."
+  },
+  "faq": {
+    "title": "Frequently asked questions",
+    "back": "Back to StickScope",
+    "metaTitle": "FAQ – StickScope",
+    "metaDescription": "Answers to common questions about StickScope: where the instructions come from, what the yellow-orange glow means, Mode 1 and Mode 2, and privacy.",
+    "items": {
+      "what": {
+        "q": "What is StickScope?",
+        "a": "StickScope is a free trainer for RC pilots. For each manoeuvre a 3D model and both transmitter sticks move together in slow motion, so you can see which stick movement leads to which flight. It runs in your browser, there is nothing to install."
+      },
+      "sources": {
+        "q": "Where do the instructions come from?",
+        "a": "Every instruction is confirmed by at least two independent sources, for example different authors or publishers. The sources are listed with each figure. Where sources disagree or say nothing, the page shows a note instead of guessing."
+      },
+      "real": {
+        "q": "Is the animation measured flight data?",
+        "a": "No. The flight path, the stick travel and the timing are an illustration that makes the movement easy to follow. Parts of the animation that the sources do not confirm are marked as Illustration on the figure page."
+      },
+      "glow": {
+        "q": "What does the yellow-orange glow mean?",
+        "a": "A control surface that is deflected glows yellow-orange, on the model, in the control schematic and in the flight-path overview. The stronger the glow, the more deflection. The glow fades for about a second."
+      },
+      "mode": {
+        "q": "How do I switch between Mode 1 and Mode 2?",
+        "a": "Open the settings with the gear icon at the top right, or tap the mode label above the sticks. The switch only changes which stick shows which function. The figure itself stays the same."
+      },
+      "simulator": {
+        "q": "Can I learn a manoeuvre with StickScope?",
+        "a": "StickScope shows what the sticks do. Watch the figure first, then fly it in your simulator."
+      },
+      "phone": {
+        "q": "Does it work on a phone?",
+        "a": "Yes, in the browser of your phone or tablet. Drag in the 3D view to look at the model from any side."
+      },
+      "sound": {
+        "q": "What is the motor sound?",
+        "a": "An optional sound that follows the throttle. It is off on every visit and is generated in your browser."
+      },
+      "privacy": {
+        "q": "Does StickScope collect data?",
+        "a": "There is no account, no cookies, no visitor counting and no analytics. Your choices (colour scheme, stick mode, last category, open windows) are stored only in your browser. Details are in the privacy policy."
+      },
+      "more": {
+        "q": "Which manoeuvres are there, and will there be more?",
+        "a": "The figures are sorted into beginner, advanced and pro and chosen in the manoeuvre browser. The set grows step by step."
+      },
+      "mistake": {
+        "q": "I found a mistake or have a suggestion.",
+        "a": "Please write to the e-mail address in the legal notice. Correctness is the main goal, so a hint with a source is especially welcome."
+      }
+    }
   }
 }
