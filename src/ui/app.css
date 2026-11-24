@@ -49,9 +49,9 @@ h1 { font-size: clamp(26px, 4vw, 38px); line-height: 1.05; }
 .txtop { display: flex; justify-content: space-between; align-items: center; font-size: 13px; color: var(--on-tx-2); }
 .txtop b { color: var(--on-overlay); font: 700 15px var(--display); letter-spacing: .3px; }
 .txtop.small { font-size: 12.5px; justify-content: flex-start; }
-.mode { display: flex; gap: 4px; }
-.mode button { min-height: 32px; padding: 0 10px; font-size: 13px; font-weight: 600; background: var(--tx-2); color: var(--on-tx); border: 0; border-radius: 8px; cursor: pointer; }
-.mode button[aria-pressed="true"] { background: var(--on-tx); color: var(--tx); }
+.modebtn { display: inline-flex; align-items: center; gap: 6px; min-height: 32px; padding: 0 10px; font-size: 13px; font-weight: 600; background: var(--tx-2); color: var(--on-tx); border: 0; border-radius: 8px; cursor: pointer; }
+.modebtn:hover { background: var(--on-tx); color: var(--tx); }
+.modebtn .icon { width: 15px; height: 15px; }
 .sticks { position: relative; flex: 1; min-height: 200px; }
 .sticks canvas { position: absolute; inset: 0; width: 100%; height: 100%; }
 .vals { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; font-size: 14px; }
@@ -114,3 +114,14 @@ summary.badge-level::before { content: ""; width: 10px; height: 10px; border-rad
 .legal h2 { font-size: 19px; margin: 20px 0 6px; }
 .legal p { margin: 0 0 10px; color: var(--ink); }
 .legal hr { border: 0; border-top: 1px solid var(--line); margin: 36px 0; }
+
+/* header gear, settings dialog, progress bar */
+.gear .icon { width: 20px; height: 20px; }
+.setdlg { width: min(460px, calc(100% - 32px)); }
+.setrow { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px 16px; padding: 6px 0; }
+.setrow > span { font-weight: 600; }
+.seg .segitem { padding: 5px 12px; color: var(--ink-2); font-weight: 600; font-size: 13.5px; text-decoration: none; }
+.seg .segitem:hover { background: var(--sunken); color: var(--ink); }
+.seg > * + * { border-left: 1px solid var(--line); }
+.progress { position: absolute; left: 0; right: 0; top: 0; height: 3px; background: color-mix(in srgb, var(--ink) 12%, transparent); pointer-events: none; z-index: 2; }
+.progress > span { display: block; height: 100%; background: var(--accent); transform: scaleX(0); transform-origin: left; }

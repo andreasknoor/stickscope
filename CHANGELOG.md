@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.2
+
+- Settings (language, colour scheme, stick mode) moved into a settings dialog; the header only shows a gear icon. The stick mode label at the transmitter opens it too.
+- Imprint and privacy policy are now separate pages: `/legal` (English) and `/de/legal` (German).
+- A thin progress bar at the top of the main view shows that the animation is running.
+
 ## 0.1
 
 - First version: seven figures (knife edge, elevator, harrier, hover, torque roll, rolling harrier, flat spin) with a 3D model and both transmitter sticks moving together in slow motion.

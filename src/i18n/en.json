@@ -10,7 +10,8 @@
     "theme": "Colour scheme",
     "themeSystem": "System",
     "themeLight": "Light",
-    "themeDark": "Dark"
+    "themeDark": "Dark",
+    "settings": "Settings"
   },
   "browser": {
     "title": "Choose a manoeuvre",
@@ -47,7 +48,8 @@
     "hideOverview": "Hide flight path",
     "showOverview": "Flight path",
     "hideControls": "Hide controls",
-    "showControls": "Controls"
+    "showControls": "Controls",
+    "progress": "Progress of the animation"
   },
   "schematic": {
     "aria": "Control schematic: which control surfaces are deflected right now",
@@ -74,7 +76,8 @@
     "aileronNeutral": "Aileron neutral",
     "elevator": "Elevator {dir} ({amount})",
     "elevatorNeutral": "Elevator neutral",
-    "throttle": "Throttle {word}"
+    "throttle": "Throttle {word}",
+    "change": "Change in settings"
   },
   "dir": {
     "left": "left",
@@ -478,5 +481,15 @@
         "illustration": "The animation shows no aileron, because the sources disagree on its direction and amount. The spin direction (to the left), the throttle level and the stick travel are illustrations."
       }
     }
+  },
+  "settings": {
+    "title": "Settings",
+    "close": "Close",
+    "language": "Language",
+    "english": "English",
+    "german": "Deutsch",
+    "theme": "Colour scheme",
+    "mode": "Stick mode",
+    "modeHint": "Mode 2: throttle on the left stick. Mode 1: throttle on the right stick."
   }
 }

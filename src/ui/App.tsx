@@ -9,13 +9,15 @@ import type { Category } from "../core/maneuvers/types.ts";
 import type { Mode } from "../core/model/sticks.ts";
 import { ErrorBoundary } from "../theme/ErrorBoundary.tsx";
 import { Wordmark } from "../theme/Brand.tsx";
-import { applyTheme, THEMES, type Theme } from "../theme/theme.ts";
+import { Icon } from "../theme/Icon.tsx";
+import { applyTheme } from "../theme/theme.ts";
 import de from "../i18n/de.json";
 import en from "../i18n/en.json";
 import { Browser } from "./Browser.tsx";
 import { ReliabilityPanel } from "./Instructions.tsx";
 import { OPERATOR, REPO_URL } from "../legal/contact.ts";
-import { hashStore, settingsStore } from "./settings.ts";
+import { hashStore, settingsDialog, settingsStore } from "./settings.ts";
+import { SettingsDialog } from "./SettingsDialog.tsx";
 
 // The animation parts are heavy: load them after the page shell has painted.
 const Trainer = dynamic(() => import("./Trainer.tsx").then((m) => m.Trainer), { ssr: false, loading: () => <div className="card" aria-busy="true">…</div> });
@@ -52,7 +54,6 @@ function Shell({ lang }: { lang: Lang }) {
   const index = maneuver ? siblings.findIndex((m) => m.id === maneuver.id) : -1;
   const prev = index > 0 ? siblings[index - 1] : null;
   const next = index >= 0 && index < siblings.length - 1 ? siblings[index + 1] : null;
-  const otherPath = lang === "en" ? "/de" : "/";
 
   return (
     <>
@@ -61,16 +62,7 @@ function Shell({ lang }: { lang: Lang }) {
         <small className="ver num">v{process.env.NEXT_PUBLIC_APP_VERSION ?? "dev"}</small>
         <span className="tagline">{t("app.subtitle")}</span>
         <span className="spacer" />
-        <div className="controls">
-          <div className="seg" role="group" aria-label={t("header.theme")}>
-            {THEMES.map((th: Theme) => (
-              <button key={th} aria-pressed={settings.theme === th} onClick={() => update({ theme: th })}>
-                {t(`header.theme${th[0].toUpperCase()}${th.slice(1)}`)}
-              </button>
-            ))}
-          </div>
-          <a className="btn sm" href={`${otherPath}${hash}`} hrefLang={lang === "en" ? "de" : "en"} lang={lang === "en" ? "de" : "en"} aria-label={t("header.language")}>{t("header.otherLanguage")}</a>
-        </div>
+        <button className="btn sm gear" onClick={() => settingsDialog.set(true)} aria-label={t("header.settings")} title={t("header.settings")}><Icon name="gear" /></button>
       </header>
       <main className="wrap">
         {maneuver ? (
@@ -87,7 +79,7 @@ function Shell({ lang }: { lang: Lang }) {
               <span className="pill">{t(`categories.${maneuver.category}.name`)}</span>
             </div>
             <ErrorBoundary resetKey={maneuver.id} fallback={(reset) => <div className="alert"><button className="btn" onClick={reset}>{t("browser.back")}</button></div>}>
-              <Trainer maneuver={maneuver} mode={settings.mode as Mode} onMode={(m) => update({ mode: m })} />
+              <Trainer maneuver={maneuver} mode={settings.mode as Mode} />
             </ErrorBoundary>
           </>
         ) : (
@@ -103,8 +95,9 @@ function Shell({ lang }: { lang: Lang }) {
       <footer className="sitefoot">
         <span>{t("app.title")} {t("footer.by", { name: OPERATOR.name })}</span>
         <a href={REPO_URL} target="_blank" rel="noopener noreferrer">{t("footer.source")}</a>
-        <a href={`/legal#${lang}`}>{t("footer.legal")}</a>
+        <a href={lang === "en" ? "/legal" : "/de/legal"}>{t("footer.legal")}</a>
       </footer>
+      <SettingsDialog lang={lang} hash={hash} />
     </>
   );
 }

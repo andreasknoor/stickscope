@@ -69,3 +69,19 @@ export const hashStore = {
   getSnapshot: (): string => location.hash,
   getServerSnapshot: (): string => "",
 };
+
+/** Whether the settings dialog is open. The header gear and the stick-mode label in the trainer both open it. */
+let dialogOpen = false;
+const dialogListeners = new Set<() => void>();
+export const settingsDialog = {
+  subscribe(fn: () => void): () => void {
+    dialogListeners.add(fn);
+    return () => dialogListeners.delete(fn);
+  },
+  getSnapshot: (): boolean => dialogOpen,
+  getServerSnapshot: (): boolean => false,
+  set(open: boolean): void {
+    dialogOpen = open;
+    dialogListeners.forEach((l) => l());
+  },
+};

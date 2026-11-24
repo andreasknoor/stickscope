@@ -10,7 +10,8 @@
     "theme": "Farbschema",
     "themeSystem": "System",
     "themeLight": "Hell",
-    "themeDark": "Dunkel"
+    "themeDark": "Dunkel",
+    "settings": "Einstellungen"
   },
   "browser": {
     "title": "Figur wählen",
@@ -47,7 +48,8 @@
     "hideOverview": "Flugbahn ausblenden",
     "showOverview": "Flugbahn",
     "hideControls": "Ruder ausblenden",
-    "showControls": "Ruder"
+    "showControls": "Ruder",
+    "progress": "Fortschritt der Animation"
   },
   "schematic": {
     "aria": "Ruder-Schema: Welche Ruder sind gerade ausgeschlagen",
@@ -74,7 +76,8 @@
     "aileronNeutral": "Quer neutral",
     "elevator": "Höhe {dir} ({amount})",
     "elevatorNeutral": "Höhe neutral",
-    "throttle": "Gas {word}"
+    "throttle": "Gas {word}",
+    "change": "In den Einstellungen ändern"
   },
   "dir": {
     "left": "links",
@@ -478,5 +481,15 @@
         "illustration": "Die Animation zeigt kein Querruder, weil die Quellen bei Richtung und Betrag nicht übereinstimmen. Drehrichtung (nach links), Gasstellung und Knüppelweg sind eine Darstellung."
       }
     }
+  },
+  "settings": {
+    "title": "Einstellungen",
+    "close": "Schließen",
+    "language": "Sprache",
+    "english": "English",
+    "german": "Deutsch",
+    "theme": "Farbschema",
+    "mode": "Knüppelbelegung",
+    "modeHint": "Mode 2: Gas links. Mode 1: Gas rechts."
   }
 }

@@ -17,18 +17,17 @@ import { drawStrip, type StripHit } from "../render/strip.ts";
 import { Icon } from "../theme/Icon.tsx";
 import { IllustrationNotes, PhaseCard } from "./Instructions.tsx";
 import { MotorSound } from "./motorSound.ts";
-import { settingsStore } from "./settings.ts";
+import { settingsDialog, settingsStore } from "./settings.ts";
 
 const SPEED_LABEL: Record<Speed, string> = { 0.25: "¼×", 0.5: "½×", 1: "1×" };
 
 interface Props {
   maneuver: Maneuver;
   mode: Mode;
-  onMode: (m: Mode) => void;
 }
 
 /** The trainer for one figure: 3D view, transmitter, playback, strip, flight path and instructions, all on one clock. */
-export function Trainer({ maneuver, mode, onMode }: Props) {
+export function Trainer({ maneuver, mode }: Props) {
   const t = useTranslations();
   const { miniOpen, schematicOpen } = useSyncExternalStore(settingsStore.subscribe, settingsStore.getSnapshot, settingsStore.getServerSnapshot);
   const tRef = useRef(t);
@@ -53,6 +52,7 @@ export function Trainer({ maneuver, mode, onMode }: Props) {
   const tlRef = useRef<HTMLInputElement>(null);
 
   const player = useRef<Player | null>(null);
+  const progRef = useRef<HTMLSpanElement>(null);
   const cam = useRef<CameraMode>("pilot");
   const orbit = useRef<Orbit>({ az: -90, el: 15 });
   const trail = useRef<StickSample[]>([]);
@@ -173,6 +173,7 @@ export function Trainer({ maneuver, mode, onMode }: Props) {
         shownSide = sd;
         setSide(sd);
       }
+      if (progRef.current) progRef.current.style.transform = `scaleX(${Math.min(1, f.t / m.duration)})`;
       if (tlRef.current && !scrubbing.current) tlRef.current.value = String(Math.round((f.t / m.duration) * 1000));
       raf = requestAnimationFrame(frame);
     };
@@ -255,6 +256,7 @@ export function Trainer({ maneuver, mode, onMode }: Props) {
       <div className="main">
         <div className="view" ref={viewRef} onPointerDown={onPointerDown} onPointerMove={onPointerMove} onPointerUp={endDrag} onPointerCancel={endDrag}>
           <canvas ref={cvRef} role="img" aria-label={t("view.aria")} />
+          <div className="progress" aria-hidden="true"><span ref={progRef} /></div>
           <div className="badge"><span className="sw" style={{ background: badge.color }} />{badge.text}</div>
           <div className="cam">
             <button aria-pressed={camMode === "pilot"} onClick={() => setCamera("pilot")}>{t("view.cameraPilot")}</button>
@@ -281,10 +283,9 @@ export function Trainer({ maneuver, mode, onMode }: Props) {
         <div className="tx" aria-label={t("transmitter.aria")}>
           <div className="txtop">
             <b>{t("transmitter.title")}</b>
-            <div className="mode" role="group" aria-label={t("transmitter.mode")}>
-              <button aria-pressed={mode === 2} onClick={() => onMode(2)}>{t("transmitter.mode2")}</button>
-              <button aria-pressed={mode === 1} onClick={() => onMode(1)}>{t("transmitter.mode1")}</button>
-            </div>
+            <button className="modebtn" onClick={() => settingsDialog.set(true)} title={t("transmitter.change")} aria-label={`${t("transmitter.mode")}: ${mode === 1 ? t("transmitter.mode1") : t("transmitter.mode2")}. ${t("transmitter.change")}`}>
+              {mode === 1 ? t("transmitter.mode1") : t("transmitter.mode2")} <Icon name="gear" />
+            </button>
           </div>
           <div className="sticks"><canvas ref={scRef} /></div>
           <div className="vals">
