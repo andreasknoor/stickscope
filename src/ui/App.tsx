@@ -68,6 +68,7 @@ function Shell({ lang }: { lang: Lang }) {
         {maneuver ? (
           <>
             <p className="intro">{t("app.intro")}</p>
+            {maneuver.category === "motorglider" && <p className="note gap">{t("categories.motorglider.notice")}</p>}
             <nav className="figurenav" aria-label={t("browser.title")}>
               <a className="btn sm" href={`#${maneuver.category}`}>← {t("browser.back")}</a>
               <span className="spacer" />

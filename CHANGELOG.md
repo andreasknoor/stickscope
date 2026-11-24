@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.6
+
+- New category "Motor glider" with four figures: loop, split S, roll and stall turn, each with its sources, a notice that motor gliders differ a lot, and German and English texts.
+
+## 0.5
+
+- The language you choose is remembered in your browser and applies on every page.
+- On first visit to the English start page, a German browser is taken to the German version.
+
 ## 0.4
 
 - Links shared in messengers and social networks now show a large preview image with the logo, in English and German.

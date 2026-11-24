@@ -32,8 +32,8 @@ export function SettingsDialog({ lang, hash }: { lang: "en" | "de"; hash: string
         <div className="setrow">
           <span id="set-lang">{t("settings.language")}</span>
           <div className="seg" role="group" aria-labelledby="set-lang">
-            {lang === "en" ? <button aria-pressed="true" lang="en">{t("settings.english")}</button> : <a className="segitem" href={`${other}${hash}`} hrefLang="en" lang="en">{t("settings.english")}</a>}
-            {lang === "de" ? <button aria-pressed="true" lang="de">{t("settings.german")}</button> : <a className="segitem" href={`${other}${hash}`} hrefLang="de" lang="de">{t("settings.german")}</a>}
+            {lang === "en" ? <button aria-pressed="true" lang="en" onClick={() => settingsStore.update({ lang: "en" })}>{t("settings.english")}</button> : <a className="segitem" href={`${other}${hash}`} hrefLang="en" lang="en" onClick={() => settingsStore.update({ lang: "en" })}>{t("settings.english")}</a>}
+            {lang === "de" ? <button aria-pressed="true" lang="de" onClick={() => settingsStore.update({ lang: "de" })}>{t("settings.german")}</button> : <a className="segitem" href={`${other}${hash}`} hrefLang="de" lang="de" onClick={() => settingsStore.update({ lang: "de" })}>{t("settings.german")}</a>}
           </div>
         </div>
         <div className="setrow">

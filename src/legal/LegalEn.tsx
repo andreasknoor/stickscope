@@ -39,8 +39,11 @@ export function LegalEn() {
 
       <h2>5. Saved settings</h2>
       <p>
-        Colour scheme, stick mode (Mode 1 or 2), the category you chose last and which of the small windows in the animation are folded away are kept in your browser&apos;s local storage
+        Colour scheme, language (only if you choose it yourself), stick mode (Mode 1 or 2), the category you chose last and which of the small windows in the animation are folded away are kept in your browser&apos;s local storage
         so they are still set on your next visit. This data does not leave your device, and you can delete it at any time in your browser settings (§ 25(2) no. 2 TDDDG).
+      </p>
+      <p>
+        On the English start page, a script in your browser reads the browser language and, if it is German, takes you to the German version. The browser language is not sent anywhere.
       </p>
 
       <h2>6. External links</h2>

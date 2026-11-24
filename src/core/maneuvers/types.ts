@@ -13,7 +13,7 @@ export interface Confidence {
   sources?: string[];
 }
 
-export type Category = "beginner" | "advanced" | "pro";
+export type Category = "beginner" | "advanced" | "pro" | "motorglider";
 
 /** [t, x, y, z] in seconds and metres. x runs left to right, y up, z towards the pilot. */
 export type PositionKey = [t: number, x: number, y: number, z: number];

@@ -1,5 +1,6 @@
 import type { Category } from "../core/maneuvers/types.ts";
 import type { Mode } from "../core/model/sticks.ts";
+import type { Lang } from "../seo/site.ts";
 import type { Theme } from "../theme/theme.ts";
 
 /** Light per-user settings, kept in localStorage only. Must match THEME_SCRIPT in src/theme/theme.ts. */
@@ -7,13 +8,15 @@ export interface Settings {
   theme: Theme;
   mode: Mode;
   category: Category;
+  /** The language the user chose explicitly (null = never chosen). Read by LANG_SCRIPT in RootShell before the page paints. */
+  lang: Lang | null;
   /** Small windows in the main view: the flight path (top right) and the control schematic (bottom left). */
   miniOpen: boolean;
   schematicOpen: boolean;
 }
 
 export const KEY = "stickscope.settings";
-export const DEFAULTS: Settings = { theme: "system", mode: 2, category: "beginner", miniOpen: true, schematicOpen: true };
+export const DEFAULTS: Settings = { theme: "system", mode: 2, category: "beginner", lang: null, miniOpen: true, schematicOpen: true };
 
 export function loadSettings(): Settings {
   try {
@@ -21,7 +24,8 @@ export function loadSettings(): Settings {
     return {
       theme: raw.theme === "light" || raw.theme === "dark" ? raw.theme : "system",
       mode: raw.mode === 1 ? 1 : 2,
-      category: raw.category === "advanced" || raw.category === "pro" ? raw.category : "beginner",
+      category: raw.category === "advanced" || raw.category === "pro" || raw.category === "motorglider" ? raw.category : "beginner",
+      lang: raw.lang === "de" || raw.lang === "en" ? raw.lang : null,
       miniOpen: raw.miniOpen !== false,
       schematicOpen: raw.schematicOpen !== false,
     };

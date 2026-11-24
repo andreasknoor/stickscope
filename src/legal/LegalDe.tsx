@@ -39,8 +39,11 @@ export function LegalDe() {
 
       <h2>5. Gespeicherte Einstellungen</h2>
       <p>
-        Farbschema, Knüppelbelegung (Mode 1 oder 2), zuletzt gewählte Kategorie und welche der kleinen Fenster in der Animation eingeklappt sind werden im lokalen Speicher deines Browsers (localStorage) abgelegt,
+        Farbschema, Sprache (nur wenn du sie selbst wählst), Knüppelbelegung (Mode 1 oder 2), zuletzt gewählte Kategorie und welche der kleinen Fenster in der Animation eingeklappt sind werden im lokalen Speicher deines Browsers (localStorage) abgelegt,
         damit sie beim nächsten Besuch erhalten bleiben. Diese Daten verlassen dein Gerät nicht und du kannst sie jederzeit über die Browser-Einstellungen löschen (§ 25 Abs. 2 Nr. 2 TDDDG).
+      </p>
+      <p>
+        Auf der englischen Startseite liest ein Skript in deinem Browser die Browsersprache und führt dich bei deutscher Einstellung zur deutschen Version. Die Browsersprache wird nirgendwohin übertragen.
       </p>
 
       <h2>6. Externe Links</h2>

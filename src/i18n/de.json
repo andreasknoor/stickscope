@@ -34,6 +34,11 @@
     "pro": {
       "name": "Profi",
       "description": "Die schwierigsten Figuren."
+    },
+    "motorglider": {
+      "name": "Motorsegler",
+      "description": "Figuren für Motorsegler.",
+      "notice": "Motorsegler unterscheiden sich stark in Leistung, Gewicht und Flugverhalten. Die Quellen beschreiben motorisierte Modellflugzeuge ganz allgemein, deshalb passen die Anleitungen nicht auf jeden Motorsegler."
     }
   },
   "view": {
@@ -481,6 +486,176 @@
       "illustration": {
         "illustration": "Die Animation zeigt kein Querruder, weil die Quellen bei Richtung und Betrag nicht übereinstimmen. Drehrichtung (nach links), Gasstellung und Knüppelweg sind eine Darstellung."
       }
+    },
+    "loop": {
+      "name": "Looping",
+      "idea": "Das Modell fliegt einen vollen Kreis in der senkrechten Ebene und ist danach wieder waagerecht.",
+      "phases": {
+        "approach": {
+          "title": "Anflug",
+          "instructions": {
+            "full-power": "Fliege geradeaus und waagerecht mit vollem <b>Gas</b> an."
+          },
+          "notes": {
+            "power": "Leistung: Eine Quelle sagt, jedes Flugzeug mit Höhenruder und genug Leistung kann einen Looping fliegen. Für Motorsegler ist nichts bestätigt.",
+            "min-height": "Mindesthöhe: Die Quellen nennen keinen gesicherten Wert."
+          }
+        },
+        "pull-up": {
+          "title": "Hochziehen",
+          "instructions": {
+            "up-elevator": "Ziehe das <b>Höhenruder</b> gleichmäßig und bestimmt, um den Steigflug einzuleiten.",
+            "vertical-plane": "Halte den Looping in einer Ebene: Korrigiere bei Bedarf mit kleinen <b>Seitenruder</b>- und <b>Querruder</b>-Ausschlägen."
+          }
+        },
+        "back": {
+          "title": "Über den Kopf und abwärts",
+          "instructions": {
+            "throttle-back": "Nimm auf dem Weg über den Kopf und abwärts <b>Gas</b> zurück, damit das Modell nicht zu schnell wird."
+          }
+        },
+        "exit": {
+          "title": "Ausleiten",
+          "instructions": {
+            "level-out": "Leite waagerecht aus, auf der Höhe, auf der du begonnen hast."
+          }
+        }
+      }
+    },
+    "split-s": {
+      "name": "Abschwung (Split S)",
+      "idea": "Aus dem aufrechten Geradeausflug rollt das Modell auf den Rücken und zieht dann durch einen halben Looping nach unten. Es endet waagerecht, in Gegenrichtung und tiefer als am Anfang.",
+      "illustration": {
+        "direction": "Die Quellen sagen nicht, in welche Richtung gerollt wird. Die Animation rollt nach rechts."
+      },
+      "phases": {
+        "approach": {
+          "title": "Anflug",
+          "instructions": {
+            "start-high": "Beginne hoch genug, um den halben Looping zu Ende zu fliegen.",
+            "level-entry": "Fliege aufrecht, geradeaus und waagerecht an."
+          },
+          "notes": {
+            "min-height": "Wie hoch genug ist: Die Quellen nennen keinen gesicherten Wert."
+          }
+        },
+        "half-roll": {
+          "title": "Halbe Rolle",
+          "instructions": {
+            "half-roll": "Rolle das Modell mit dem <b>Querruder</b> eine halbe Umdrehung auf den Rücken.",
+            "reduce-throttle": "Nimm <b>Gas</b> zurück."
+          }
+        },
+        "half-loop": {
+          "title": "Halber Looping abwärts",
+          "instructions": {
+            "pull-at-once": "Ziehe das <b>Höhenruder</b> sofort nach der Rolle, ohne lange auf dem Rücken zu fliegen.",
+            "altitude-for-speed": "Das Modell tauscht Höhe gegen Fahrt: Es wird auf dem Weg nach unten schneller."
+          }
+        },
+        "exit": {
+          "title": "Ausleiten",
+          "instructions": {
+            "level-reverse": "Das Modell endet aufrecht und waagerecht, in Gegenrichtung und tiefer als am Anfang."
+          }
+        }
+      }
+    },
+    "roll": {
+      "name": "Rolle",
+      "idea": "Das Modell dreht sich einmal um die Längsachse und bleibt dabei auf einer geraden Linie.",
+      "illustration": {
+        "direction": "Die Quellen sagen nicht, in welche Richtung gerollt wird. Die Animation rollt nach links.",
+        "rudder": "Die Animation zeigt kein Seitenruder, weil nur eine Quelle es beschreibt."
+      },
+      "phases": {
+        "approach": {
+          "title": "Anflug",
+          "instructions": {
+            "level-entry": "Beginne im geraden, waagerechten Flug mit gleichmäßiger Geschwindigkeit."
+          }
+        },
+        "roll-start": {
+          "title": "Rolle einleiten",
+          "instructions": {
+            "aileron-rolls": "Das <b>Querruder</b> rollt das Modell. Halte es in derselben Richtung, bis die Rolle fertig ist.",
+            "up-elevator": "Ziehe im ersten Teil der Rolle etwas <b>Höhenruder</b>."
+          },
+          "notes": {
+            "elevator-order": "Reihenfolge am Anfang: Eine Quelle gibt zuerst Höhenruder und dann Querruder, eine andere beginnt mit dem Querruder und zieht das Höhenruder ab etwa 45 Grad Schräglage.",
+            "rudder": "Seitenruder: Nur eine Quelle beschreibt es genauer."
+          }
+        },
+        "inverted": {
+          "title": "Rückenflug",
+          "instructions": {
+            "down-elevator-inverted": "Nimm auf dem Rücken das gezogene <b>Höhenruder</b> zurück und gib ein wenig gedrücktes <b>Höhenruder</b>, damit das Modell keine Höhe verliert."
+          }
+        },
+        "finish": {
+          "title": "Rolle beenden",
+          "instructions": {
+            "stop-upright": "Beende die Rolle, wenn das Modell wieder aufrecht liegt: Nimm das <b>Querruder</b> zurück in die Mitte."
+          }
+        },
+        "exit": {
+          "title": "Ausleiten",
+          "instructions": {
+            "level-flight": "Das Modell behält während der Rolle Höhe und Richtung."
+          }
+        }
+      }
+    },
+    "stall-turn": {
+      "name": "Männchen (Stall Turn)",
+      "idea": "Das Modell steigt senkrecht, dreht oben auf der Stelle, stürzt auf derselben Linie wieder ab und fliegt in Gegenrichtung weg. Auch Hammerhead genannt.",
+      "illustration": {
+        "direction": "Die Quellen sagen nicht, zu welcher Seite das Modell wegdreht. Die Animation dreht es mit vollem Seitenruder links vom Piloten weg.",
+        "aileron": "Die Animation zeigt kein Querruder, weil nur eine Quelle es beschreibt."
+      },
+      "phases": {
+        "approach": {
+          "title": "Anflug",
+          "instructions": {
+            "full-power": "Fliege mit vollem <b>Gas</b> an."
+          },
+          "notes": {
+            "min-height": "Mindesthöhe: Die Quellen nennen keinen gesicherten Wert."
+          }
+        },
+        "climb": {
+          "title": "Steigflug",
+          "instructions": {
+            "vertical-climb": "Ziehe einen Viertelkreis in den senkrechten Steigflug und halte ihn gerade.",
+            "throttle-not-closed": "Nimm zum Ende hin <b>Gas</b> zurück, aber nicht ganz: Das <b>Seitenruder</b> braucht Luftstrom."
+          },
+          "notes": {
+            "propwash": "Motorsegler: Die Quellen setzen voraus, dass der Propeller Luft über das Seitenruder bläst. Zu einem stehenden oder eingeklappten Propeller sagt keine etwas; eine Quelle schreibt, dann müsse das Seitenruder früher gegeben werden, solange das Modell noch Fahrt hat."
+          }
+        },
+        "pivot": {
+          "title": "Drehen",
+          "instructions": {
+            "full-rudder": "Gib oben, wenn der Steigflug ausläuft, vollen <b>Seitenruder</b>-Ausschlag.",
+            "tight-pivot": "Das Modell dreht fast auf der Stelle."
+          }
+        },
+        "dive": {
+          "title": "Sturz und Abfangen",
+          "instructions": {
+            "dive-and-pull-out": "Lass das Modell senkrecht nach unten stürzen und fange es dann mit dem <b>Höhenruder</b> ab."
+          },
+          "notes": {
+            "throttle-dive": "Gas im Sturz: Eine Quelle gibt beim Abfangen Gas, eine andere hält das Gas zu, bis der Sturz genug Fahrt aufgebaut hat."
+          }
+        },
+        "exit": {
+          "title": "Ausleiten",
+          "instructions": {
+            "opposite-direction": "Das Modell fliegt waagerecht in Gegenrichtung weg."
+          }
+        }
+      }
     }
   },
   "settings": {
@@ -537,7 +712,7 @@
       },
       "more": {
         "q": "Welche Figuren gibt es, und kommen weitere?",
-        "a": "Die Figuren sind in Anfänger, Fortgeschrittene und Profis eingeteilt und werden im Figurenbrowser ausgewählt. Der Umfang wächst Schritt für Schritt."
+        "a": "Die Figuren sind in Anfänger, Fortgeschrittene, Profis und Motorsegler eingeteilt und werden im Figurenbrowser ausgewählt. Der Umfang wächst Schritt für Schritt."
       },
       "mistake": {
         "q": "Mir ist ein Fehler aufgefallen oder ich habe einen Vorschlag.",

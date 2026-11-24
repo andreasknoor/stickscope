@@ -209,3 +209,72 @@ describe("rolling harrier and flat spin animation", () => {
     expect(Math.abs(e.elev)).toBeLessThan(1e-6);
   });
 });
+
+describe("motor glider figures", () => {
+  const nose = (m: ReturnType<typeof getManeuver> & object, t: number) => {
+    const R = stateAt(m, t).R;
+    return { nose: [R[0][0], R[1][0], R[2][0]], top: [R[0][1], R[1][1], R[2][1]] };
+  };
+  const loop = getManeuver("loop")!;
+  const splitS = getManeuver("split-s")!;
+  const roll = getManeuver("roll")!;
+  const stall = getManeuver("stall-turn")!;
+
+  it("are all in the motor glider category", () => {
+    for (const m of [loop, splitS, roll, stall]) expect(m.category).toBe("motorglider");
+    expect(inCategory("motorglider").map((m) => m.id)).toEqual(["loop", "split-s", "roll", "stall-turn"]);
+  });
+  it("loop: one full inside loop, upright and level at the end, nose up at a quarter and inverted on the top", () => {
+    expect(pchip(loop.attitude, 2)(loop.duration)).toBeCloseTo(360, 6);
+    expect(nose(loop, 6).top[1]).toBeLessThan(-0.9);
+    expect(nose(loop, 12).top[1]).toBeCloseTo(1, 6);
+    expect(stateAt(loop, 12).pos[1]).toBeCloseTo(stateAt(loop, 0).pos[1], 6);
+  });
+  it("loop: pulls (negative elevator) in the loop and has the throttle back on the way down", () => {
+    expect(stateAt(loop, 5).elev).toBeLessThan(-0.3);
+    expect(stateAt(loop, 7).thr).toBeLessThan(stateAt(loop, 2).thr);
+  });
+  it("split S: ends upright, level, flying the opposite way and lower; the half roll is aileron, the half loop is pull", () => {
+    const end = nose(splitS, splitS.duration);
+    expect(end.nose[0]).toBeCloseTo(-1, 6);
+    expect(end.top[1]).toBeCloseTo(1, 6);
+    expect(stateAt(splitS, splitS.duration).pos[1]).toBeLessThan(stateAt(splitS, 0).pos[1] - 10);
+    expect(nose(splitS, 4.5).top[1]).toBeCloseTo(-1, 6);
+    expect(Math.abs(stateAt(splitS, 3.8).ail)).toBeGreaterThan(0.5);
+    expect(stateAt(splitS, 6).elev).toBeLessThan(-0.3);
+  });
+  it("roll: one full roll to the left on a straight, level line, aileron held and centred afterwards", () => {
+    expect(rollAt(roll, roll.duration)).toBeCloseTo(-360, 6);
+    for (let t = 0; t <= roll.duration; t += 0.1) expect(stateAt(roll, t).pos[1]).toBeCloseTo(14, 6);
+    expect(stateAt(roll, 5).ail).toBeCloseTo(-0.8, 6);
+    expect(Math.abs(stateAt(roll, 9).ail)).toBeLessThan(1e-6);
+  });
+  it("stall turn: vertical climb, the nose swings over with the top kept facing backwards, vertical dive, level exit the other way", () => {
+    expect(nose(stall, 6).nose[1]).toBeCloseTo(1, 6);
+    expect(nose(stall, 6).top[0]).toBeCloseTo(-1, 6);
+    expect(nose(stall, 9).nose[1]).toBeCloseTo(-1, 6);
+    expect(nose(stall, 9).top[0]).toBeCloseTo(-1, 6);
+    const end = nose(stall, stall.duration);
+    expect(end.nose[0]).toBeCloseTo(-1, 6);
+    expect(end.top[1]).toBeCloseTo(1, 6);
+  });
+  it("stall turn: the switch of the angle description at the vertical does not move the model", () => {
+    const a = nose(stall, 6.2);
+    const b = nose(stall, 7.5);
+    for (let i = 0; i < 3; i++) {
+      expect(a.nose[i]).toBeCloseTo(b.nose[i], 6);
+      expect(a.top[i]).toBeCloseTo(b.top[i], 6);
+    }
+    const c = nose(stall, 10);
+    const d = nose(stall, 10.8);
+    for (let i = 0; i < 3; i++) {
+      expect(c.nose[i]).toBeCloseTo(d.nose[i], 3);
+      expect(c.top[i]).toBeCloseTo(d.top[i], 3);
+    }
+  });
+  it("stall turn: the throttle is reduced in the climb but not closed, full rudder in the pivot", () => {
+    expect(stateAt(stall, 7).thr).toBeGreaterThan(20);
+    expect(stateAt(stall, 7).thr).toBeLessThan(stateAt(stall, 2).thr);
+    expect(Math.abs(stateAt(stall, 8).rud)).toBeCloseTo(1, 6);
+  });
+});

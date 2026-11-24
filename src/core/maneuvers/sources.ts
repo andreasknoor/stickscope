@@ -1,6 +1,7 @@
 import type { Source } from "./types.ts";
 
 const D = "2026-11-23";
+const D2 = "2026-11-24";
 const en = "en" as const;
 const de = "de" as const;
 
@@ -55,7 +56,13 @@ export const SOURCES: Source[] = [
   { id: "rdrc-fs", title: "Flat Spin (Aerobatic Tips)", author: "RDRC club site (scootworks.com)", url: "https://www.scootworks.com/rdrc/aerobatics/fspin.html", accessed: D, language: en, independenceGroup: "scootworks" },
   { id: "rcn-flachtrudeln", title: "Flachtrudeln (Thread, 2005)", author: "Mehrere Forumsnutzer, rc-network.de", url: "https://www.rc-network.de/threads/flachtrudeln.32539/", accessed: D, language: de, independenceGroup: "rcn-flachtrudeln" },
   { id: "rcline-flachtrudeln", title: "Flachtrudeln, wie? (Thread)", author: "Mehrere Forumsnutzer, RCLine", url: "https://www.rclineforum.de/forum/board19-fl%C3%A4chenflugmodelle/board28-kunstflug-forum/64036-flachtrudeln-aber-wie/", accessed: D, language: de, independenceGroup: "rcline-flachtrudeln" },
-  { id: "rcn-wiki-trudeln", title: "Trudeln", author: "RC-Network Wiki", url: "https://wiki.rc-network.de/wiki/Trudeln", accessed: D, language: de, independenceGroup: "rcn-wiki" },
+  { id: "rcn-wiki-trudeln", title: "Trudeln", author: "RC-Network Wiki", url: "https://wiki.rc-network.de/wiki/Trudeln", accessed: D, language: de, independenceGroup: "rcn-wiki" },  // motor glider figures (loop, split S, roll, stall turn)
+  { id: "iac-figures", title: "Aerobatic Figures", author: "International Aerobatic Club (IAC)", url: "https://www.iac.org/aerobatic-figures", accessed: D2, language: en, independenceGroup: "iac" },
+  { id: "rcaw-basic", title: "Basic RC Airplane Aerobatics - Beginner Stunts", author: "RC Airplane World", url: "https://www.rc-airplane-world.com/basic-rc-airplane-aerobatics", accessed: D2, language: en, independenceGroup: "rcairplaneworld" },
+  { id: "rcaw-more", title: "Learn Some More RC Airplane Aerobatics", author: "RC Airplane World", url: "https://www.rc-airplane-world.com/more-rc-airplane-aerobatics.html", accessed: D2, language: en, independenceGroup: "rcairplaneworld" },
+  { id: "stevens-pattern", title: "An Introduction to Pattern Aerobatics: Eight Maneuvers Worth Learning", author: "Stevens Aeromodel", url: "https://www.stevensaero.com/an-introduction-to-pattern-aerobatics/", accessed: D2, language: en, independenceGroup: "stevens" },
+  { id: "wikipedia-split-s", title: "Split S", author: "Wikipedia", url: "https://en.wikipedia.org/wiki/Split_S", accessed: D2, language: en, independenceGroup: "wikipedia" },
+  { id: "wikipedia-stall-turn", title: "Stall turn", author: "Wikipedia", url: "https://en.wikipedia.org/wiki/Stall_turn", accessed: D2, language: en, independenceGroup: "wikipedia" },
 ];
 
 export const sourceById = (id: string): Source | undefined => SOURCES.find((s) => s.id === id);

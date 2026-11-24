@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 @AGENTS.md
 
-StickScope is a browser-only, animated 3D manoeuvre trainer for RC pilots. For each figure a 3D model and both transmitter sticks move together in slow motion. Each figure also gets an at-a-glance sketch, the flight path and step-by-step instructions, in English (default) and German. Deflected control surfaces glow yellow-orange on the model, in the control schematic and in the flight-path overview (stronger = more deflection). The sticks can be switched between Mode 1 and Mode 2. Figures are sorted into three categories (beginner, advanced, pro) and chosen in a manoeuvre browser; the set of figures grows step by step.
+StickScope is a browser-only, animated 3D manoeuvre trainer for RC pilots. For each figure a 3D model and both transmitter sticks move together in slow motion. Each figure also gets an at-a-glance sketch, the flight path and step-by-step instructions, in English (default) and German. Deflected control surfaces glow yellow-orange on the model, in the control schematic and in the flight-path overview (stronger = more deflection). The sticks can be switched between Mode 1 and Mode 2. Figures are sorted into four categories (beginner, advanced, pro, and motor glider as its own filter with a notice that motor gliders differ and the instructions do not fit every model) and chosen in a manoeuvre browser; the set of figures grows step by step.
 
 It is a sibling of TLMscope (`../tlmscope`), a separate app with its own repository, deployment, domain, version and changelog. Only the look and feel is shared, and it is copied, not linked (see `src/theme/README.md`).
 

@@ -4,7 +4,7 @@
 
 Live: https://stickscope.andreasknoor.com/
 
-An animated 3D manoeuvre trainer for RC pilots. A 3D model and both transmitter sticks move together in slow motion, with an at-a-glance sketch, the flight path and step-by-step instructions, in English (default) and German. Figures are sorted into three categories (beginner, advanced, pro) and chosen in a manoeuvre browser.
+An animated 3D manoeuvre trainer for RC pilots. A 3D model and both transmitter sticks move together in slow motion, with an at-a-glance sketch, the flight path and step-by-step instructions, in English (default) and German. Figures are sorted into four categories (beginner, advanced, pro and motor glider) and chosen in a manoeuvre browser.
 
 It is a static site: no backend, no accounts, no tracking, no external hosts.
 

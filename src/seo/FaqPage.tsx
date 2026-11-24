@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { LangLink } from "../ui/LangLink.tsx";
 import de from "../i18n/de.json";
 import en from "../i18n/en.json";
 import { JsonLd } from "./JsonLd.tsx";
@@ -12,7 +13,7 @@ export function FaqPage({ lang }: { lang: Lang }) {
   const items = FAQ_IDS.map((id) => ({ id, ...m.faq.items[id] }));
   return (
     <main className="legal wrap">
-      <p><Link href={pathOf(lang)}>← {m.faq.back}</Link> · <Link href={pathOf(lang === "en" ? "de" : "en", "faq")} hrefLang={lang === "en" ? "de" : "en"} lang={lang === "en" ? "de" : "en"}>{lang === "en" ? "Deutsch" : "English"}</Link></p>
+      <p><Link href={pathOf(lang)}>← {m.faq.back}</Link> · <LangLink to={lang === "en" ? "de" : "en"} href={pathOf(lang === "en" ? "de" : "en", "faq")}>{lang === "en" ? "Deutsch" : "English"}</LangLink></p>
       <h1>{m.faq.title}</h1>
       {items.map((it) => (
         <section key={it.id} id={it.id}>

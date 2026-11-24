@@ -8,6 +8,7 @@ const PATHS = {
   arrow: <path d="M5 12h14M13 6l6 6-6 6" />,
   level1: <><path d="M6 19v-4M12 19V9M18 19V5" strokeOpacity=".3" /><path d="M6 19v-4" /></>,
   level2: <><path d="M6 19v-4M12 19V9M18 19V5" strokeOpacity=".3" /><path d="M6 19v-4M12 19V9" /></>,
+  glider: <><path d="M2 10c7-3 13-3 20 0" /><path d="M12 8v9M9.5 17.5h5" /></>,
   level3: <path d="M6 19v-4M12 19V9M18 19V5" />,
   sound: <><path d="M4 9.5v5h3.5L12 18V6L7.5 9.5z" /><path d="M15.5 9a4 4 0 010 6M18 6.5a7.5 7.5 0 010 11" /></>,
   soundOff: <><path d="M4 9.5v5h3.5L12 18V6L7.5 9.5z" /><path d="M16 9.5l5 5M21 9.5l-5 5" /></>,

@@ -34,6 +34,11 @@
     "pro": {
       "name": "Pro",
       "description": "The hardest figures."
+    },
+    "motorglider": {
+      "name": "Motor glider",
+      "description": "Figures for motor gliders.",
+      "notice": "Motor gliders differ a lot in power, weight and behaviour. The sources describe powered model aeroplanes in general, so the instructions do not fit every motor glider."
     }
   },
   "view": {
@@ -481,6 +486,176 @@
       "illustration": {
         "illustration": "The animation shows no aileron, because the sources disagree on its direction and amount. The spin direction (to the left), the throttle level and the stick travel are illustrations."
       }
+    },
+    "loop": {
+      "name": "Loop",
+      "idea": "The model flies a full circle in the vertical plane and levels out where it started.",
+      "phases": {
+        "approach": {
+          "title": "Approach",
+          "instructions": {
+            "full-power": "Fly in straight and level with full <b>throttle</b>."
+          },
+          "notes": {
+            "power": "Power: one source says any plane with an elevator and enough power can loop. Nothing is confirmed for motor gliders.",
+            "min-height": "Minimum height: the sources give no confirmed value."
+          }
+        },
+        "pull-up": {
+          "title": "Pull up",
+          "instructions": {
+            "up-elevator": "Pull the <b>elevator</b> smoothly and firmly to start the climb.",
+            "vertical-plane": "Keep the loop in one plane: small <b>rudder</b> and <b>aileron</b> corrections as needed."
+          }
+        },
+        "back": {
+          "title": "Over the top and down",
+          "instructions": {
+            "throttle-back": "On the way over and down, reduce the <b>throttle</b> so the model does not get too fast."
+          }
+        },
+        "exit": {
+          "title": "Exit",
+          "instructions": {
+            "level-out": "Come out of the loop level, at the height where you started."
+          }
+        }
+      }
+    },
+    "split-s": {
+      "name": "Split S",
+      "idea": "From upright level flight the model rolls onto its back, then pulls through a half loop downwards. It ends level, flying the other way, lower than it started.",
+      "illustration": {
+        "direction": "The sources do not say which way to roll. The animation rolls to the right."
+      },
+      "phases": {
+        "approach": {
+          "title": "Approach",
+          "instructions": {
+            "start-high": "Start high enough to finish the half loop.",
+            "level-entry": "Fly in upright, straight and level."
+          },
+          "notes": {
+            "min-height": "How high is high enough: the sources give no confirmed value."
+          }
+        },
+        "half-roll": {
+          "title": "Half roll",
+          "instructions": {
+            "half-roll": "Roll the model half a turn onto its back with the <b>aileron</b>.",
+            "reduce-throttle": "Reduce the <b>throttle</b>."
+          }
+        },
+        "half-loop": {
+          "title": "Half loop down",
+          "instructions": {
+            "pull-at-once": "Pull the <b>elevator</b> straight after the roll, without flying inverted for long.",
+            "altitude-for-speed": "The model trades height for speed: it gets faster on the way down."
+          }
+        },
+        "exit": {
+          "title": "Exit",
+          "instructions": {
+            "level-reverse": "The model ends upright and level, flying the opposite way, lower than it started."
+          }
+        }
+      }
+    },
+    "roll": {
+      "name": "Roll",
+      "idea": "The model turns once around its long axis and stays on a straight line.",
+      "illustration": {
+        "direction": "The sources do not say which way to roll. The animation rolls to the left.",
+        "rudder": "The animation shows no rudder, because only one source describes it."
+      },
+      "phases": {
+        "approach": {
+          "title": "Approach",
+          "instructions": {
+            "level-entry": "Start from straight and level flight at a steady speed."
+          }
+        },
+        "roll-start": {
+          "title": "Start the roll",
+          "instructions": {
+            "aileron-rolls": "The <b>aileron</b> makes the roll. Hold it in the same direction until the roll is done.",
+            "up-elevator": "Add some up <b>elevator</b> in the first part of the roll."
+          },
+          "notes": {
+            "elevator-order": "Order at the start: one source adds the up elevator first and then the aileron, another starts with the aileron and adds the up elevator past 45 degrees of bank.",
+            "rudder": "Rudder: only one source describes it in detail."
+          }
+        },
+        "inverted": {
+          "title": "Inverted",
+          "instructions": {
+            "down-elevator-inverted": "When the model is inverted, release the up <b>elevator</b> and add a little down <b>elevator</b> so it does not lose height."
+          }
+        },
+        "finish": {
+          "title": "Finish the roll",
+          "instructions": {
+            "stop-upright": "Stop the roll when the model is upright again: bring the <b>aileron</b> back to centre."
+          }
+        },
+        "exit": {
+          "title": "Exit",
+          "instructions": {
+            "level-flight": "The model keeps its height and its heading through the roll."
+          }
+        }
+      }
+    },
+    "stall-turn": {
+      "name": "Stall turn",
+      "idea": "The model climbs straight up, pivots on the spot at the top, dives back down the same line and flies out the opposite way. Also called hammerhead.",
+      "illustration": {
+        "direction": "The sources do not say to which side the model swings round. The animation swings it away from the pilot, with full left rudder.",
+        "aileron": "The animation shows no aileron, because only one source describes it."
+      },
+      "phases": {
+        "approach": {
+          "title": "Approach",
+          "instructions": {
+            "full-power": "Fly in with full <b>throttle</b>."
+          },
+          "notes": {
+            "min-height": "Minimum height: the sources give no confirmed value."
+          }
+        },
+        "climb": {
+          "title": "Climb",
+          "instructions": {
+            "vertical-climb": "Pull a quarter loop into a vertical climb and keep the climb straight.",
+            "throttle-not-closed": "Reduce the <b>throttle</b> towards the top, but do not close it completely: the <b>rudder</b> needs airflow."
+          },
+          "notes": {
+            "propwash": "Motor gliders: the sources rely on the propeller blowing air over the rudder. None says what to do with a stopped or folded propeller; one source says the rudder must then be used earlier, while the model still has forward speed."
+          }
+        },
+        "pivot": {
+          "title": "Pivot",
+          "instructions": {
+            "full-rudder": "At the top, as the climb runs out, apply full <b>rudder</b>.",
+            "tight-pivot": "The model pivots almost on the spot."
+          }
+        },
+        "dive": {
+          "title": "Dive and pull out",
+          "instructions": {
+            "dive-and-pull-out": "Let the model dive straight down, then pull out with the <b>elevator</b>."
+          },
+          "notes": {
+            "throttle-dive": "Throttle in the dive: one source adds power when pulling out, another keeps the throttle closed until the dive has built up speed."
+          }
+        },
+        "exit": {
+          "title": "Exit",
+          "instructions": {
+            "opposite-direction": "The model flies out level, in the opposite direction."
+          }
+        }
+      }
     }
   },
   "settings": {
@@ -537,7 +712,7 @@
       },
       "more": {
         "q": "Which manoeuvres are there, and will there be more?",
-        "a": "The figures are sorted into beginner, advanced and pro and chosen in the manoeuvre browser. The set grows step by step."
+        "a": "The figures are sorted into beginner, advanced, pro and motor glider, and chosen in the manoeuvre browser. The set grows step by step."
       },
       "mistake": {
         "q": "I found a mistake or have a suggestion.",

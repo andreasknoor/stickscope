@@ -9,7 +9,7 @@ import { CssColors, watchColorScheme } from "../render/canvas.ts";
 import { drawStrip } from "../render/strip.ts";
 import { Icon, type IconName } from "../theme/Icon.tsx";
 
-const CATEGORY_ICON: Record<Category, IconName> = { beginner: "level1", advanced: "level2", pro: "level3" };
+const CATEGORY_ICON: Record<Category, IconName> = { beginner: "level1", advanced: "level2", pro: "level3", motorglider: "glider" };
 
 /** A small version of "The figure at a glance": the model drawn along the flight path. */
 function Thumb({ maneuver }: { maneuver: Maneuver }) {
@@ -56,6 +56,7 @@ export function Browser({ category, onCategory }: { category: Category; onCatego
         ))}
       </div>
       <p className="hint catdesc">{t(`categories.${category}.description`)} · {t("browser.count", { count: figures.length })}</p>
+      {category === "motorglider" && <p className="note gap">{t("categories.motorglider.notice")}</p>}
       {figures.length === 0 ? (
         <p className="card">{t("browser.empty")}</p>
       ) : (
