@@ -132,3 +132,15 @@ The article "Flying The Harrier" (Fly RC Staff byline, date 2011-01-12) is the s
 | Roughly 45 degrees, elevator holds the attitude, throttle holds the height, rudder steers, ailerons keep the wings level; much more thrust than slow flight; high rates; enough height; exit: thrust toward full and lower the pitch; emergency: full throttle. | Matches `height`, `rates`, `angle`, `elevator-attitude`, `more-thrust`, `rudder-steers`, `throttle-up`, `emergency`. |
 | Entry from level slow flight: as the model slows, add up elevator **and thrust** to hold altitude. | Differs from `reduce-and-pull` (Goldberg, njswede and, since the Atlanta Hobby pass, Atlanta: reduce the throttle). Already listed in the dossier as "different entries"; not shown as a disputed note. Owner to decide. |
 | The author usually holds some right aileron and right rudder against torque and P-factor ("most of my models"). | Compatible with `torque-rudder` and with the small-aileron side of the `aileron` note. |
+
+## Third pass 2026-11-24: Stevens, modelflying.co.uk (Stevens had not been cited for the harrier before)
+
+Sources re-read in full: `stevens-3d` (Stevens Aeromodel, installment 4, no byline or date, six sections: harrier, wall, parachute, elevator, hover, blender; the title says "five"), `man-somenzini-rh` (Quique Somenzini, Model Airplane News, updated 2015-08-10) and the new `modelflying-want-fly-3d` ("Want to fly 3D?", RCM&E Magazine on modelflying.co.uk, 2013-07-30, no byline, group `rcme-modelflying`). Paraphrases only. The earlier readings of the first two had been through fetch summaries.
+
+| Statement | Result |
+| --- | --- |
+| Stevens: about 45 degrees nose up; elevator sets the pitch attitude, throttle the height, rudder steers, ailerons damp wing rock; most models need right aileron and right rudder against torque and P-factor; exit: more throttle and less pitch; practise at altitude; high rates essential. | Added `stevens-3d` to `height`, `rates`, `angle`, `elevator-attitude`, `rudder-steers`, `torque-rudder`, `throttle-up` and the small-aileron side of the `aileron` note. |
+| modelflying: steer with rudder. | Added to `rudder-steers`. |
+| Entry from level cruise: Stevens increases throttle and up elevator to hold height as the model slows; Fly RC (Stoops) adds thrust too. Goldberg, njswede and Atlanta Hobby reduce the throttle. | Now two groups against three: shown as disputed note `throttle-entry`. |
+| modelflying: nose to about 60 degrees or more with maximum up elevator for most models. | Disagrees with the 45 degrees (Goldberg, Stoops, Scott, Stevens): disputed note `angle-value`. |
+| modelflying: wing rocking means the nose should go higher; spoileron mix to calm it. | Single-source, not shown. Stevens mentions a spoileron mix too (one source each is not a pair; the mix is a set-up, not a stick instruction). |

@@ -216,7 +216,8 @@
           "title": "Nase hoch",
           "instructions": {
             "slow-to-stall": "Bring das Modell bis zum Strömungsabriss langsam: <b>Gas</b> wegnehmen oder reduzieren und Höhenruder ziehen.",
-            "progressive": "Ziehe das Höhenruder gleichmäßig, nicht ruckartig."
+            "progressive": "Ziehe das Höhenruder gleichmäßig, nicht ruckartig.",
+            "from-downline": "Du kannst auch aus einer kurzen Fallinie einsteigen: Ziehe das <b>Höhenruder</b> schnell ganz, um die Fahrt abzubauen."
           }
         },
         "hold": {
@@ -261,6 +262,9 @@
           "instructions": {
             "reduce-and-pull": "Nimm das <b>Gas</b> zurück und gib dabei nach und nach Höhenruder (ziehen).",
             "from-elevator": "Aus dem Elevator heraus: Gib Gas, bis das Sinken aufhört und das Modell nach vorn fliegt."
+          },
+          "notes": {
+            "throttle-entry": "Gas beim Verlangsamen im Einstieg: Drei Quellen nehmen Gas weg und ziehen dabei das Höhenruder, zwei geben zusammen mit dem Höhenruder Gas, um die Höhe zu halten."
           }
         },
         "hold": {
@@ -275,7 +279,8 @@
             "torque-rudder": "Bei üblicher Propellerdrehrichtung hältst du etwas Seitenruder rechts gegen das Propellermoment."
           },
           "notes": {
-            "aileron": "Querruder im Harrier: Ein Herstellerhandbuch rät davon ab, weil das Modell abkippen kann. Andere Quellen halten die Flächen mit kleinen Querruder-Ausschlägen waagerecht."
+            "aileron": "Querruder im Harrier: Ein Herstellerhandbuch rät davon ab, weil das Modell abkippen kann. Andere Quellen halten die Flächen mit kleinen Querruder-Ausschlägen waagerecht.",
+            "angle-value": "Nasenwinkel: Vier Quellen sagen etwa 45 Grad, eine sagt etwa 60 Grad oder mehr, bei den meisten Modellen mit voll gezogenem Höhenruder."
           }
         },
         "exit": {
@@ -321,11 +326,11 @@
             "rudder-elevator": "<b>Seitenruder</b> und <b>Höhenruder</b> halten das Modell senkrecht: Seitenruder für links und rechts, Höhenruder für vor und zurück.",
             "small-early": "Korrekturen sollen klein, kurz und früh sein, nicht gehalten.",
             "belly-in-rudder": "Zeigt der Bauch zu dir, schiebe den Seitenruder-Knüppel zur Seite des absinkenden Flügels.",
-            "exit-throttle": "Zum Verlassen des Hovers gib <b>Gas</b>."
+            "exit-throttle": "Zum Verlassen des Hovers gib <b>Gas</b>.",
+            "exit-elevator": "Zum Verlassen des Hovers drücke das <b>Höhenruder</b> sanft, sodass die Nase durch die Harrier-Lage nach unten fällt, und beschleunige dann."
           },
           "notes": {
             "elevator-direction": "Wie das Höhenruder bei einer Neigung der Nase zu dir oder von dir weg bewegt wird: Die Quellen sagen es nicht.",
-            "exit": "Wie man darüber hinaus ausleitet: Die Quellen nennen keine gesicherte Anweisung.",
             "throttle-style": "Gasänderungen: Zwei Quellen geben nach jeder Korrektur kurze Gasstöße, eine sagt, man solle kleine, sanfte Änderungen machen, weil große Änderungen Drehmoment hinzufügen und das Modell rollen lassen."
           }
         }
@@ -396,7 +401,7 @@
         "entry": {
           "title": "Nase hoch, Rolle starten",
           "instructions": {
-            "from-harrier": "Starte aus einem stabilen Harrier mit hoher Nase. Nimm das Höhenruder leicht zurück, gib dann vollen Querruderausschlag und beginne zu rollen.",
+            "from-harrier": "Starte aus einem stabilen Harrier mit hoher Nase, gib dann vollen Querruderausschlag und beginne zu rollen.",
             "attitude": "Die Quellen nennen eine Nasenlage von etwa 35° bis 60° nach oben."
           }
         },
@@ -414,7 +419,7 @@
           "notes": {
             "throttle-start": "Gas zu Beginn der Rolle: Eine Quelle gibt ein paar Klicks mehr, eine nutzt mittleres bis niedriges Gas, eine nimmt das Gas weg. Es gibt keine einheitliche Regel.",
             "rudder-needed": "Braucht man das Seitenruder? Die meisten Quellen nutzen es. Manche sagen, mit Höhenruder allein gehe es, sehe aber schlecht aus, eine sagt, es funktioniere nicht.",
-            "rudder-direction": "In welche Richtung das Seitenruder im Verhältnis zur Rollrichtung geht und wie weit: Die Quellen sagen es nicht."
+            "rudder-direction": "In welche Richtung das Seitenruder im Verhältnis zur Rollrichtung geht: Nur eine Quelle sagt es (am ersten Messerflug gegen die Rolle, also rechtes Seitenruder bei einer Linksrolle, am zweiten dann links). Keine zweite Quelle bestätigt es, und keine nennt den Betrag."
           }
         },
         "exit": {
@@ -425,7 +430,7 @@
         }
       },
       "illustration": {
-        "direction": "Die Animation rollt das Modell nach links, mit dem Seitenruder zur Oberseite des Modells. Die Quellen nennen weder Rollrichtung noch Seitenruder-Richtung. Rollgeschwindigkeit, Knüppelweg und Gas sind ebenfalls Darstellung."
+        "direction": "Die Animation rollt das Modell nach links, mit dem Seitenruder zur Oberseite des Modells. Nur eine Quelle nennt eine Rollrichtung und eine Seitenruder-Richtung (Linksrolle mit rechtem Seitenruder am ersten Messerflug). Rollgeschwindigkeit, Knüppelweg und Gas sind ebenfalls Darstellung."
       }
     },
     "flat-spin": {

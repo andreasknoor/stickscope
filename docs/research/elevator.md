@@ -115,3 +115,13 @@ Values: neutral / little / half / strong / full. Only what sources state; otherw
 | Exit (fly out) | release / reduce toward neutral (speed: slowly per F, single source) | add throttle (amount NOT GIVEN; full per F, single source) | NOT GIVEN | NOT GIVEN | S21, S23 |
 | Exit into harrier (option) | reduce slightly (amount NOT GIVEN) | add slightly (amount NOT GIVEN) | NOT GIVEN | NOT GIVEN | S24 (inputs only in B, single source) |
 | Minimum height for exit | NOT GIVEN | NOT GIVEN | NOT GIVEN | NOT GIVEN | NOT GIVEN (S25 qualitative only) |
+
+## Third pass 2026-11-24: Stevens (parachute and elevator sections) and modelflying.co.uk
+
+Sources re-read in full: `stevens-3d` (Stevens Aeromodel, installment 4, no byline or date, six sections: harrier, wall, parachute, elevator, hover, blender; the title says "five"), `man-somenzini-rh` (Quique Somenzini, Model Airplane News, updated 2015-08-10) and the new `modelflying-want-fly-3d` ("Want to fly 3D?", RCM&E Magazine on modelflying.co.uk, 2013-07-30, no byline, group `rcme-modelflying`). Paraphrases only. The earlier readings of the first two had been through fetch summaries.
+
+| Statement | Result |
+| --- | --- |
+| Entry from a short downline at idle with a quick full pull (modelflying, which calls the parachute the elevator); Stevens enters the elevator from the parachute, which starts from a vertical downline with full up elevator. | Two groups: new instruction `from-downline` (alternative to the entry from level flight). Not animated. |
+| Full up elevator plus a little power, nose near level, steep descent; rudder for heading (prop wash), aileron for bank; exit with more throttle and less elevator or into a harrier. | Matches `full-up`, `throttle-little`, `rudder-heading`, `release`, `into-harrier` (modelflying added to the last two). |
+| The sources disagree on the names (Stevens: parachute and elevator are two connected figures; modelflying: parachute is also called elevator). | Noted only. |

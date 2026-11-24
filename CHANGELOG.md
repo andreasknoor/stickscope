@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.9
+
+- New source (modelflying.co.uk, "Want to fly 3D?") and the Stevens and Model Airplane News harrier roll articles re-read in full.
+- Harrier: the sources now disagree on the throttle in the entry and on the nose angle (both shown as notes); more sources back the harrier instructions.
+- Hover: leaving the hover is now confirmed (add throttle, push the elevator gently forward).
+- Elevator: starting from a short downline is added.
+- Rolling harrier: one source gives the rudder direction (against the roll), shown in the note; the entry text no longer claims an eased elevator.
+
 ## 0.8
 
 - New source (Atlanta Hobby) checked against the hover, harrier and torque roll: more instructions are now backed by additional sources.

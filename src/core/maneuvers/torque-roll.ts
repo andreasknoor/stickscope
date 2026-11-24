@@ -23,7 +23,7 @@ export const torqueRoll: Maneuver = {
       id: "hover", start: 0, end: 3,
       instructions: [
         est("hover-first", "parkpilot", "stevens-3d", "wikipedia-3d", "atlantahobby-3d-basics"),
-        est("calm-air", "man-cooper-torque", "rcn-torquen-25657", "parkpilot"),
+        est("calm-air", "man-cooper-torque", "rcn-torquen-25657", "parkpilot", "modelflying-want-fly-3d"),
         est("height", "parkpilot", "rcn-torquen-25657", "atlantahobby-3d-basics"),
         est("simulator", "parkpilot", "rcn-torquen-6090", "atlantahobby-3d-basics"),
       ],
@@ -43,7 +43,7 @@ export const torqueRoll: Maneuver = {
       instructions: [
         est("torque-turns", "parkpilot", "gsn-kris-3d", "wikipedia-3d"),
         est("turns-left", "parkpilot", "gsn-kris-3d", "flyrc-humpty-bump"),
-        est("rudder-elevator", "man-cooper-torque", "gsn-kris-3d", "parkpilot", "atlantahobby-3d-basics"),
+        est("rudder-elevator", "man-cooper-torque", "gsn-kris-3d", "parkpilot", "atlantahobby-3d-basics", "modelflying-want-fly-3d"),
         est("throttle-steps", "man-cooper-torque", "parkpilot", "atlantahobby-3d-basics"),
         est("large-throws", "rcn-torquen-6090", "rcline-torquen", "atlantahobby-3d-basics"),
         est("corrections-reverse", "parkpilot", "atlantahobby-3d-basics"),

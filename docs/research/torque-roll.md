@@ -129,3 +129,12 @@ Article: Flying The Humpty-Bump, Fly RC Staff, 2014-05-08 (new source `flyrc-hum
 | Statement | Result |
 | --- | --- |
 | At the top of the vertical line the torque rolls the model to the left; correct with right aileron. | Added as a third source of `turns-left` (the context is a vertical line, not a hover; the viewpoint is again not stated). |
+
+## Third pass 2026-11-24: modelflying.co.uk
+
+Sources re-read in full: `stevens-3d` (Stevens Aeromodel, installment 4, no byline or date, six sections: harrier, wall, parachute, elevator, hover, blender; the title says "five"), `man-somenzini-rh` (Quique Somenzini, Model Airplane News, updated 2015-08-10) and the new `modelflying-want-fly-3d` ("Want to fly 3D?", RCM&E Magazine on modelflying.co.uk, 2013-07-30, no byline, group `rcme-modelflying`). Paraphrases only. The earlier readings of the first two had been through fetch summaries.
+
+| Statement | Result |
+| --- | --- |
+| Easier in calm air; small aileron changes set the rotation speed, rudder stops the wag, elevator corrects. | Added to `calm-air` and `rudder-elevator`. |
+| Entry from ever-decreasing circles in a nose-high upright harrier, using rudder near the hover. | Single-source, not shown. |

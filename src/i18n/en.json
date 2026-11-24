@@ -216,7 +216,8 @@
           "title": "Nose up",
           "instructions": {
             "slow-to-stall": "Slow the model down to the stall: cut or reduce the <b>throttle</b> and pull up elevator.",
-            "progressive": "Pull the elevator smoothly, not abruptly."
+            "progressive": "Pull the elevator smoothly, not abruptly.",
+            "from-downline": "You can also start from a short downline: pull full up <b>elevator</b> quickly to shed the speed."
           }
         },
         "hold": {
@@ -261,6 +262,9 @@
           "instructions": {
             "reduce-and-pull": "Reduce the <b>throttle</b> while you feed in up elevator gradually.",
             "from-elevator": "Coming from an elevator: add throttle until the sinking stops and the model moves forward."
+          },
+          "notes": {
+            "throttle-entry": "Throttle as the model slows in the entry: three sources reduce the throttle while adding up elevator, two add throttle together with the up elevator to hold height."
           }
         },
         "hold": {
@@ -275,7 +279,8 @@
             "torque-rudder": "With a standard propeller rotation, hold some right rudder against the propeller torque."
           },
           "notes": {
-            "aileron": "Aileron in the harrier: one manufacturer manual says to avoid it because it may snap the model. Other sources use small aileron inputs to keep the wings level."
+            "aileron": "Aileron in the harrier: one manufacturer manual says to avoid it because it may snap the model. Other sources use small aileron inputs to keep the wings level.",
+            "angle-value": "Nose angle: four sources say about 45 degrees, one says about 60 degrees or more, with the elevator held at maximum for most models."
           }
         },
         "exit": {
@@ -321,11 +326,11 @@
             "rudder-elevator": "<b>Rudder</b> and <b>elevator</b> keep the model vertical: rudder for left and right, elevator for forward and back.",
             "small-early": "Corrections should be small, short and early, not held.",
             "belly-in-rudder": "With the belly toward you, push the rudder stick toward the wing that is dropping.",
-            "exit-throttle": "To leave the hover, add <b>throttle</b>."
+            "exit-throttle": "To leave the hover, add <b>throttle</b>.",
+            "exit-elevator": "To leave the hover, push the <b>elevator</b> gently forward so the nose falls through the harrier attitude, then accelerate away."
           },
           "notes": {
             "elevator-direction": "Which way to move the elevator when the nose tilts toward or away from you: the sources do not say.",
-            "exit": "How to exit beyond adding throttle: the sources give no confirmed instruction.",
             "throttle-style": "Throttle changes: two sources use short bursts after each correction, one says to make small, smooth changes because a big change adds torque and rolls the model."
           }
         }
@@ -396,7 +401,7 @@
         "entry": {
           "title": "Nose up and start the roll",
           "instructions": {
-            "from-harrier": "Start from an established nose-high harrier. Ease the elevator, then command full aileron and begin to roll.",
+            "from-harrier": "Start from an established nose-high harrier, then command full aileron and begin to roll.",
             "attitude": "The sources give a nose-up attitude of roughly 35° to 60°."
           }
         },
@@ -414,7 +419,7 @@
           "notes": {
             "throttle-start": "Throttle at the start of the roll: one source adds a few clicks, one uses medium-to-low throttle, one cuts the power. There is no agreed rule.",
             "rudder-needed": "Is the rudder needed? Most sources use it. Some say rolling with elevator only works but looks poor, and one says it is not workable.",
-            "rudder-direction": "Which way the rudder goes relative to the roll direction, and how far: the sources do not say."
+            "rudder-direction": "Which way the rudder goes relative to the roll direction: only one source says it (against the roll at the first knife edge, so right rudder for a left roll, then left rudder at the second). No second source confirms it, and none gives the amount."
           }
         },
         "exit": {
@@ -425,7 +430,7 @@
         }
       },
       "illustration": {
-        "direction": "The animation rolls the model to the left, with the rudder toward the top of the model. The sources do not give the roll direction or the rudder direction. Roll speed, stick travel and throttle are illustrations too."
+        "direction": "The animation rolls the model to the left, with the rudder toward the top of the model. Only one source gives a roll direction and a rudder direction (a left roll with right rudder at the first knife edge). Roll speed, stick travel and throttle are illustrations too."
       }
     },
     "flat-spin": {

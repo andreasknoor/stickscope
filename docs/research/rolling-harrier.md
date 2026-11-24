@@ -115,3 +115,14 @@ Values are qualitative and use only what sources state. "NOT GIVEN" means the so
 | Numeric deflections per phase | NOT GIVEN | NOT GIVEN | NOT GIVEN | NOT GIVEN | none |
 
 Caveat on rows 2 to 5: the elevator-neutral-at-knife-edge and rudder-fading-at-upright/inverted details come from A with B consistent in sequence only; B does not state the neutral points. Treat them as qualitative pattern (S5, S6), not as exact values.
+
+## Third pass 2026-11-24: Somenzini article re-read in full
+
+Sources re-read in full: `stevens-3d` (Stevens Aeromodel, installment 4, no byline or date, six sections: harrier, wall, parachute, elevator, hover, blender; the title says "five"), `man-somenzini-rh` (Quique Somenzini, Model Airplane News, updated 2015-08-10) and the new `modelflying-want-fly-3d` ("Want to fly 3D?", RCM&E Magazine on modelflying.co.uk, 2013-07-30, no byline, group `rcme-modelflying`). Paraphrases only. The earlier readings of the first two had been through fetch summaries.
+
+| Statement | Result |
+| --- | --- |
+| Left roll example: right rudder once the roll starts, full right rudder at the first knife edge, then less rudder and down elevator toward inverted, full left rudder at the second knife edge, then up elevator back to upright; torque makes a left roll faster at low speed; practise both directions. | **Rudder direction is now given by one source** (opposite to the roll). Gap note `rudder-direction` stays (one source), text and the illustration note updated. The animation already rolls left with right rudder at the first knife edge. |
+| Do not return the elevator to neutral until the first knife edge; keep the nose high until the first roll is complete. | The entry text "ease the elevator" is not confirmed by this source; `from-harrier` now says only "start from an established harrier, then full aileron". |
+| Nose above 35 degrees for a harrier roll; 30 to 35 at entry, 35 to 60 during the roll (not reconciled on the page). | Matches `attitude`. |
+| Roll rate about 1 to 1.5 seconds per roll at high rates; a few clicks of power at the start; add power if the roll slows. | Roll rate single-source, not shown (the animation takes about 2 seconds per roll at 1x). The others match `throttle-start`, `slow-roll`. |

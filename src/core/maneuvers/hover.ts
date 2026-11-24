@@ -21,7 +21,7 @@ export const hover: Maneuver = {
       id: "prepare", start: 0, end: 3,
       instructions: [
         est("simulator", "rcwithjim", "rcsky-torquen", "rcn-hoovern-2008", "atlantahobby-3d-basics"),
-        est("safe-height", "stevens-3d", "rcsky-torquen", "atlantahobby-3d-basics"),
+        est("safe-height", "stevens-3d", "rcsky-torquen", "atlantahobby-3d-basics", "modelflying-want-fly-3d"),
         est("large-throws", "rcsky-torquen", "rcn-hovern-2004", "atlantahobby-3d-basics"),
       ],
       notes: [disputed("start-height", "stevens-3d", "rcwithjim", "rcn-hovern-2004")],
@@ -29,8 +29,8 @@ export const hover: Maneuver = {
     },
     {
       id: "pull-up", start: 3, end: 5.1,
-      instructions: [est("from-harrier", "stevens-3d", "rcwithjim")],
-      notes: [gap("entry-orientation"), disputed("entry-start", "stevens-3d", "rcwithjim", "atlantahobby-3d-basics")],
+      instructions: [est("from-harrier", "stevens-3d", "rcwithjim", "modelflying-want-fly-3d")],
+      notes: [gap("entry-orientation"), disputed("entry-start", "stevens-3d", "rcwithjim", "modelflying-want-fly-3d", "atlantahobby-3d-basics")],
       values: { level: "guideline", illustrates: ["from-harrier"] },
     },
     {
@@ -38,13 +38,14 @@ export const hover: Maneuver = {
       instructions: [
         est("throttle-height", "stevens-3d", "rcwithjim", "rcsky-torquen", "rcn-hovern-2004", "man-hover", "atlantahobby-3d-basics"),
         est("throttle-bursts", "stevens-3d", "man-hover"),
-        est("aileron-torque", "stevens-3d", "rcsky-torquen", "rcn-hoovern-2008", "gsn-torque-roll", "atlantahobby-3d-basics"),
+        est("aileron-torque", "stevens-3d", "rcsky-torquen", "rcn-hoovern-2008", "gsn-torque-roll", "atlantahobby-3d-basics", "modelflying-want-fly-3d"),
         est("rudder-elevator", "stevens-3d", "rcwithjim", "rcsky-torquen", "atlantahobby-3d-basics"),
         est("small-early", "stevens-3d", "rcwithjim", "rcsky-torquen", "rcn-hovern-2004"),
-        est("belly-in-rudder", "pa-tips", "gsn-torque-roll"),
-        est("exit-throttle", "rcwithjim", "atlantahobby-3d-basics"),
+        est("belly-in-rudder", "pa-tips", "gsn-torque-roll", "modelflying-want-fly-3d"),
+        est("exit-throttle", "rcwithjim", "atlantahobby-3d-basics", "stevens-3d"),
+        est("exit-elevator", "stevens-3d", "atlantahobby-3d-basics"),
       ],
-      notes: [gap("elevator-direction"), gap("exit"), disputed("throttle-style", "stevens-3d", "man-hover", "atlantahobby-3d-basics")],
+      notes: [gap("elevator-direction"), disputed("throttle-style", "stevens-3d", "man-hover", "atlantahobby-3d-basics")],
       values: { level: "guideline", illustrates: ["throttle-height", "aileron-torque", "small-early"] },
       wobble: { pitch: 4, yaw: 4, roll: 6 },
     },

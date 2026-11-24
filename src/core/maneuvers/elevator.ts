@@ -23,6 +23,7 @@ export const elevator: Maneuver = {
       instructions: [
         est("slow-to-stall", "man-scott-elev", "gsn-njswede-elev", "goldberg-ex330", "ma-hurley-2001", "rcline-3d-figuren"),
         est("progressive", "man-scott-elev", "rcline-3d-figuren"),
+        est("from-downline", "stevens-3d", "modelflying-want-fly-3d"),
       ],
       values: { level: "guideline", illustrates: ["slow-to-stall", "progressive"] },
     },
@@ -32,7 +33,7 @@ export const elevator: Maneuver = {
         est("full-up", "man-scott-elev", "gsn-njswede-elev", "goldberg-ex330", "ma-hurley-2001", "stevens-3d", "rcline-3d-figuren"),
         est("steep-descent", "man-scott-elev", "goldberg-ex330", "ma-hurley-2001", "rcline-3d-figuren"),
         est("throttle-little", "man-scott-elev", "gsn-njswede-elev", "goldberg-ex330", "ma-hurley-2001", "stevens-3d"),
-        est("rudder-heading", "man-scott-elev", "gsn-njswede-elev", "goldberg-ex330", "ma-hurley-2001", "stevens-3d", "rcline-3d-figuren"),
+        est("rudder-heading", "man-scott-elev", "gsn-njswede-elev", "goldberg-ex330", "ma-hurley-2001", "stevens-3d", "rcline-3d-figuren", "modelflying-want-fly-3d"),
         est("aileron-small", "man-scott-elev", "gsn-njswede-elev", "ma-hurley-2001", "stevens-3d", "rcline-3d-figuren"),
       ],
       notes: [
@@ -46,7 +47,7 @@ export const elevator: Maneuver = {
       id: "exit", start: 9.5, end: 12,
       instructions: [
         est("release", "man-scott-elev", "gsn-njswede-elev", "goldberg-ex330", "stevens-3d", "rcline-3d-figuren"),
-        est("into-harrier", "gsn-njswede-elev", "stevens-3d", "rcline-3d-figuren"),
+        est("into-harrier", "gsn-njswede-elev", "stevens-3d", "rcline-3d-figuren", "modelflying-want-fly-3d"),
       ],
       notes: [gap("min-height")],
       values: { level: "guideline", illustrates: ["release"] },

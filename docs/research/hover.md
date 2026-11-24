@@ -122,3 +122,14 @@ New source: "3D RC Flying Basics: Hover, Harrier and Torque Roll", Captain Flaps
 | Make small, smooth throttle changes, because a big change adds big torque and rolls the model. | **Possible disagreement** with S8 (short bursts after each correction). Shown as a disputed note `throttle-style`; the owner may remove it if the sources are judged compatible. |
 | Exit: add throttle, push gently into a dive or level off, fly away with speed. | With RC with Jim ("throttle up to bail out") now two groups for "add throttle": new instruction `exit-throttle`. The dive or level-off part is single-source and not shown. The RC with Jim statement was read via a fetch summary; re-check it on the live page. |
 | Throws, expo and CG numbers for one model; SAFE settings; battery timer; AMA safety code. | Setup advice for one model, not used. |
+
+## Third pass 2026-11-24: Stevens and modelflying.co.uk
+
+Sources re-read in full: `stevens-3d` (Stevens Aeromodel, installment 4, no byline or date, six sections: harrier, wall, parachute, elevator, hover, blender; the title says "five"), `man-somenzini-rh` (Quique Somenzini, Model Airplane News, updated 2015-08-10) and the new `modelflying-want-fly-3d` ("Want to fly 3D?", RCM&E Magazine on modelflying.co.uk, 2013-07-30, no byline, group `rcme-modelflying`). Paraphrases only. The earlier readings of the first two had been through fetch summaries.
+
+| Statement | Result |
+| --- | --- |
+| Exit: increase throttle and push the elevator forward so the nose falls through the harrier attitude, then accelerate (Stevens); add throttle, push gently into a dive or level off, fly away with speed (Atlanta Hobby). | Two groups: new instruction `exit-elevator`; with RC with Jim the instruction `exit-throttle` has three. The gap note `exit` is removed. The animation does not show an exit. |
+| Enter from a low harrier by increasing the angle of attack until vertical (modelflying); from a wall for some models. | `modelflying-want-fly-3d` added to `from-harrier` and to the harrier side of the disputed note `entry-start`. |
+| Right rudder and right aileron against torque; belly-in: rudder toward the dropping wing; low hovers are riskier than high ones. | Added to `aileron-torque`, `belly-in-rudder`, `safe-height`. |
+| Stevens: continuous right aileron, about half to three quarters of the travel; short rapid rudder pulses; a brief throttle burst with each correction. | The amount is single-source and stays out; the rest confirms existing instructions. |
