@@ -42,7 +42,7 @@ export const flatSpin: Maneuver = {
     {
       id: "flatten", start: 5, end: 8,
       instructions: [
-        est("hold-inputs", "flyrc-ronge-fs", "rcline-flachtrudeln", "rcn-flachtrudeln"),
+        est("hold-inputs", "rcline-flachtrudeln", "rcn-flachtrudeln"),
         est("aileron-ease", "flyrc-ronge-fs", "rdrc-fs", "wikipedia-3d", "rcn-flachtrudeln", "rcline-flachtrudeln"),
         est("add-throttle", "flyrc-ronge-fs", "wikipedia-3d", "rcn-flachtrudeln"),
         est("tail-authority", "rcline-flachtrudeln", "rcn-flachtrudeln"),

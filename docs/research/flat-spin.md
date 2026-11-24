@@ -108,3 +108,16 @@ Channels: E elevator, R rudder, A aileron, T throttle. Model-dependent column: Y
 | Exit 1 | centre | centre | centre | NOT GIVEN (conflict) | S16, S21 |
 | Exit 2 (if still rotating) | NOT GIVEN (a little down: single, S20) | opposite to rotation, amount NOT GIVEN | neutral | NOT GIVEN (conflict) | S17, S21 |
 | Recovery | down then gentle level-out; no early hard up | neutral once rotation stops (R7 for normal spin; flat spin NOT GIVEN) | neutral | NOT GIVEN (conflict) | S19, S21 |
+
+## Second pass 2026-11-24: Fly RC Primary Training articles
+
+Read in full from https://www.flyrc.com/category/primary-training/ (seven articles listed on the page; no further pages). Paraphrases only.
+
+Article: Conquering the Flat Spin (source `flyrc-ronge-fs`). The article body prints "By Klaus Ronge"; the page metadata names the Fly RC poster as author. Re-read in full.
+
+| Statement | Result |
+| --- | --- |
+| Start high; large throws; CG at the aft end of the range; simulator helps but the real model may differ; start from a conventional spin and flatten it after about a turn; throttle to idle and raise the nose until the stall; at the stall full aileron and full rudder the same way, full up elevator; then add throttle slowly (to about half) and bring the aileron toward neutral; more power and/or opposite aileron if it is still falling; recover by centring the sticks and letting the nose drop; opposite rudder if it keeps turning. | Matches `height`, `cg`, `throws`, `simulator`, `from-spin`, `bleed-speed`, `full-inputs`, `aileron-ease`, `add-throttle`, `release`, `opposite-rudder`. The same-direction aileron at entry is the side of the `aileron-entry` note that this source takes. |
+| Rudder and elevator during the flat phase. | **Not stated** (only a warning that too much elevator with power can flip the model forward). `flyrc-ronge-fs` removed from `hold-inputs`; two independent sources remain. |
+| Throttle in the exit: idle until airspeed rebuilds, but also "adding power speeds the recovery". | The source speaks on both sides of the `exit-throttle` note; note text adjusted. |
+| Be proficient at conventional spins first; inverted flat spins optionally later; a 3D foamy is a low-risk way to practise. | Single-source advice, not shown. |

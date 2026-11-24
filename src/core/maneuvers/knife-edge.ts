@@ -29,7 +29,7 @@ export const knifeEdge: Maneuver = {
       id: "entry", start: 2.5, end: 3.4,
       instructions: [
         est("quarter-roll", "flyrc-ke", "man-scott-ke", "gsn-njswede-ke"),
-        est("rudder-opposite", "man-scott-ke", "gsn-njswede-ke", "scootworks-ke", "pa-tips"),
+        est("rudder-opposite", "man-scott-ke", "gsn-njswede-ke", "scootworks-ke", "pa-tips", "flyrc-ke"),
         est("two-steps", "man-scott-ke", "flyrc-ke"),
       ],
       values: { level: "guideline", illustrates: ["quarter-roll", "rudder-opposite"] },

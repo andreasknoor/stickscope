@@ -128,3 +128,16 @@ Values use neutral / little / half / strong / full. Only values a source gives a
 | Turn in the knife-edge plane (optional) | NOT GIVEN | NOT GIVEN | up/down elevator steers toward canopy/belly side (R5; only 1 group) | NOT GIVEN | S13 |
 | Exit (quarter roll back) | roll back to upright (or onward to inverted); amount NOT GIVEN | return to neutral (R2 on entry cue only; neutral on exit is implied, NOT GIVEN as text) | neutral (NOT GIVEN as text) | NOT GIVEN | S24 |
 | Duration of the hold | not applicable | not applicable | not applicable | not applicable | NOT GIVEN (only R-S Eferding snippet gives 5 s for a competition-style hold; not usable) |
+
+## Second pass 2026-11-24: Fly RC Primary Training articles
+
+Read in full from https://www.flyrc.com/category/primary-training/ (seven articles listed on the page; no further pages). Paraphrases only.
+
+Article: Ins And Outs Of Knife-Edge Flight, Fly RC Staff, 2010-01-01 (source `flyrc-ke`, already in the registry). Re-read in full.
+
+| Statement | Result |
+| --- | --- |
+| Pass in front of you; start "two mistakes high"; throttle about half to three quarters; roll 90 degrees with the aileron; practise the aileron-only roll and return first, then add rudder. | Matches `across`, `height`, `throttle`, `quarter-roll`, `two-steps`. |
+| The stick rule: the rudder stick follows the aileron stick (aileron stick in, rudder stick in; out, out). With the sticks as pictured this is rudder opposite to the roll. | Supports `rudder-opposite`: `flyrc-ke` added as a source. |
+| Altitude is held with the rudder (on its side the rudder acts as the elevator); nearly all models couple toward the landing gear, fix with slight up elevator or a rudder-to-elevator mix. | Matches `rudder-holds`, `tuck-elevator` and the sides of the `altitude` note. |
+| Exit from the knife edge. | **Not described.** `flyrc-ke` only supports "roll back to level" (in the practice step); `quarter-back` still has three other independent sources. |

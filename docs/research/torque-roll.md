@@ -105,3 +105,27 @@ Totals: 31 statements; 13 CONFIRMED, 17 SINGLE-SOURCE, 1 CONFLICT. Exit/stop-rot
 | Rotation, belly toward pilot | NOT GIVEN | effect relative to pilot reversed (SINGLE-SOURCE, S8) | effect reversed (SINGLE-SOURCE, S8) | NOT GIVEN | S8 (single), S9 (single) |
 | Rotation speed control | right aileron slows/stops; release speeds up; amounts NOT GIVEN | NOT GIVEN | NOT GIVEN | NOT GIVEN | S5, S6 |
 | Exit / stop rotation | opposite (right) aileron stops rotation (mechanism only); amount NOT GIVEN | NOT GIVEN | NOT GIVEN | NOT GIVEN (climb-out not given) | S5 only |
+
+## Second pass 2026-11-24: Atlanta Hobby (atlantahobby-3d-basics)
+
+New source: "3D RC Flying Basics: Hover, Harrier and Torque Roll", Captain Flaps (RC Aircraft Pilot Desk), Atlanta Hobby, 2026-08-29, https://www.atlantahobby.com/blogs/rc-aircraft/3d-rc-flying-basics-hover-harrier-torque-roll (read via the `?view=print` address, in full). Group `atlantahobby`: retailer staff text, cites E-flite manuals and the FAA handbook, not a copy of the other sources. Paraphrases only.
+
+| Statement | Result |
+| --- | --- |
+| Hover first, then the harrier and the torque roll; practise high and on a simulator; large control surfaces and throws. | Confirms `hover-first`, `height`, `simulator`, `large-throws` (added as source). |
+| A torque roll is a hover where the model is allowed to rotate about its vertical axis. | Matches the idea text. |
+| Entry from a stable hover: ease off some of the aileron held against the torque, or add a little aileron in the direction the torque turns the model. | Supports `let-it-turn` (added as source). The second option (add aileron in the torque direction) is a single-source remark, not shown. |
+| Elevator and rudder keep the model vertical; throttle holds the height. | Confirms `rudder-elevator`; `throttle-steps` (small throttle changes, from the hover section). |
+| The elevator and rudder corrections change direction as the model turns: correct by the lean of the nose, not by the stick labels. | **Now two groups** (with Park Pilot, S8): the gap note `belly-in` became the instruction `corrections-reverse`. |
+| Aileron stops the spin. | Supports `aileron-stops` (mechanism; the page gives no direction). |
+| Exit from the torque roll. | The page gives none; the `exit` gap note stays. |
+
+## Second pass 2026-11-24: Fly RC Primary Training articles
+
+Read in full from https://www.flyrc.com/category/primary-training/ (seven articles listed on the page; no further pages). Paraphrases only.
+
+Article: Flying The Humpty-Bump, Fly RC Staff, 2014-05-08 (new source `flyrc-humpty-bump`, group `flyrc-staff`). The article is about another figure; one statement applies.
+
+| Statement | Result |
+| --- | --- |
+| At the top of the vertical line the torque rolls the model to the left; correct with right aileron. | Added as a third source of `turns-left` (the context is a vertical line, not a hover; the viewpoint is again not stated). |

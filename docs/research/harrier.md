@@ -107,3 +107,28 @@ Direction words: "up/down" elevator, "left/right" rudder and aileron.
 | Wing rock correction | NOT GIVEN | NOT GIVEN | NOT GIVEN | cyclic, opposing the roll; size NOT GIVEN | S4 (B, C) |
 | Exit | up toward full | down (ease off, lower nose) | NOT GIVEN | NOT GIVEN | S15 |
 | Emergency | full | down toward normal flying attitude | NOT GIVEN | NOT GIVEN | S16 |
+
+## Second pass 2026-11-24: Atlanta Hobby (atlantahobby-3d-basics)
+
+New source: "3D RC Flying Basics: Hover, Harrier and Torque Roll", Captain Flaps (RC Aircraft Pilot Desk), Atlanta Hobby, 2026-08-29, https://www.atlantahobby.com/blogs/rc-aircraft/3d-rc-flying-basics-hover-harrier-torque-roll (read via the `?view=print` address, in full). Group `atlantahobby`: retailer staff text, cites E-flite manuals and the FAA handbook, not a copy of the other sources. Paraphrases only.
+
+| Statement | Result |
+| --- | --- |
+| Always practise with plenty of height; use the high rate only at altitude when attempting a manoeuvre (first flights on low rate). | Confirms `height` and `rates` (added as source). |
+| Entry: fly level into the wind, reduce throttle, feed in up elevator as the model slows. | Confirms `reduce-and-pull`. |
+| Elevator holds the nose angle, throttle controls the height, rudder steers, aileron keeps the wings level. | Confirms `elevator-attitude` and `rudder-steers`. |
+| Wing rock is calmed with small, quick aileron inputs and a little more throttle. | Added to the side of the disputed `aileron` note that uses small aileron inputs. The conflict with the Goldberg manual remains. |
+| Nose "high but not vertical" (no angle). | No change; the 45 degrees stay as illustration from the other sources. |
+| The page teaches hover first, then harrier. | The app lists the harrier as beginner and the hover as advanced. Not changed; reported to the owner. |
+
+## Second pass 2026-11-24: Fly RC Primary Training articles
+
+Read in full from https://www.flyrc.com/category/primary-training/ (seven articles listed on the page; no further pages). Paraphrases only.
+
+The article "Flying The Harrier" (Fly RC Staff byline, date 2011-01-12) is the same text as `flyrc-stoops-harrier` (https://www.flyrc.com/?p=1878): an editor note names Scott Stoops as the author. Re-read in full; no change to the registry or the data.
+
+| Statement | Result |
+| --- | --- |
+| Roughly 45 degrees, elevator holds the attitude, throttle holds the height, rudder steers, ailerons keep the wings level; much more thrust than slow flight; high rates; enough height; exit: thrust toward full and lower the pitch; emergency: full throttle. | Matches `height`, `rates`, `angle`, `elevator-attitude`, `more-thrust`, `rudder-steers`, `throttle-up`, `emergency`. |
+| Entry from level slow flight: as the model slows, add up elevator **and thrust** to hold altitude. | Differs from `reduce-and-pull` (Goldberg, njswede and, since the Atlanta Hobby pass, Atlanta: reduce the throttle). Already listed in the dossier as "different entries"; not shown as a disputed note. Owner to decide. |
+| The author usually holds some right aileron and right rudder against torque and P-factor ("most of my models"). | Compatible with `torque-rudder` and with the small-aileron side of the `aileron` note. |

@@ -308,7 +308,8 @@
             "from-harrier": "Gehe aus einem Harrier hinein: Gib weiter Höhenruder (ziehen), bis das Modell senkrecht steht."
           },
           "notes": {
-            "entry-orientation": "In welche Richtung du beim Einstieg fliegst und welche Seite des Modells zu dir zeigt: Die Quellen sagen es nicht."
+            "entry-orientation": "In welche Richtung du beim Einstieg fliegst und welche Seite des Modells zu dir zeigt: Die Quellen sagen es nicht.",
+            "entry-start": "Wo das Hochziehen beginnt: Zwei Quellen starten aus einem Harrier, eine aus dem Geradeausflug bei mäßiger Geschwindigkeit."
           }
         },
         "hold": {
@@ -319,11 +320,13 @@
             "aileron-torque": "Das Propellermoment will das Modell um die Längsachse drehen. <b>Querruder</b> gegen das Moment stoppt das. Bei den Modellen in den Quellen ist das Querruder rechts.",
             "rudder-elevator": "<b>Seitenruder</b> und <b>Höhenruder</b> halten das Modell senkrecht: Seitenruder für links und rechts, Höhenruder für vor und zurück.",
             "small-early": "Korrekturen sollen klein, kurz und früh sein, nicht gehalten.",
-            "belly-in-rudder": "Zeigt der Bauch zu dir, schiebe den Seitenruder-Knüppel zur Seite des absinkenden Flügels."
+            "belly-in-rudder": "Zeigt der Bauch zu dir, schiebe den Seitenruder-Knüppel zur Seite des absinkenden Flügels.",
+            "exit-throttle": "Zum Verlassen des Hovers gib <b>Gas</b>."
           },
           "notes": {
             "elevator-direction": "Wie das Höhenruder bei einer Neigung der Nase zu dir oder von dir weg bewegt wird: Die Quellen sagen es nicht.",
-            "exit": "Wie man den Hover beendet: Die Quellen geben keine gesicherte Anleitung."
+            "exit": "Wie man darüber hinaus ausleitet: Die Quellen nennen keine gesicherte Anweisung.",
+            "throttle-style": "Gasänderungen: Zwei Quellen geben nach jeder Korrektur kurze Gasstöße, eine sagt, man solle kleine, sanfte Änderungen machen, weil große Änderungen Drehmoment hinzufügen und das Modell rollen lassen."
           }
         }
       },
@@ -358,10 +361,8 @@
             "turns-left": "Das Moment dreht das Modell nach links.",
             "rudder-elevator": "<b>Seitenruder</b> und <b>Höhenruder</b> halten die Längsachse des Modells senkrecht.",
             "throttle-steps": "Passe das <b>Gas</b> in kleinen Schritten an, damit das Modell weder steigt noch sinkt.",
-            "large-throws": "Große Ruderflächen und große Ausschläge helfen."
-          },
-          "notes": {
-            "belly-in": "Die Steuerung kann vertauscht wirken, solange der Bauch zu dir zeigt. Nur eine Quelle beschreibt das, deshalb steht es nicht als Anleitung da."
+            "large-throws": "Große Ruderflächen und große Ausschläge helfen.",
+            "corrections-reverse": "Wenn sich das Modell dreht, wechseln die Korrekturen mit <b>Höhenruder</b> und <b>Seitenruder</b> die Richtung: Korrigiere danach, wohin die Nase kippt, nicht nach der Knüppelrichtung."
           }
         },
         "stop": {
@@ -478,7 +479,7 @@
             "more-turns": "Das Loslassen stoppt nicht immer sofort. Es können noch einige Umdrehungen folgen."
           },
           "notes": {
-            "exit-throttle": "Gas beim Ausleiten: Eine Quelle sagt Leerlauf, bis die Fahrt aufgebaut ist, zwei Forennutzer sagen, Gas mache das Ausleiten erst möglich.",
+            "exit-throttle": "Gas beim Ausleiten: Eine Quelle sagt Leerlauf, bis Fahrt aufgebaut ist, schreibt aber auch, dass Gas das Ausleiten beschleunigt; zwei Forenbeiträge sagen, Gas macht das Ausleiten erst möglich.",
             "recoverable": "Lässt sich ein flacher Trudler überhaupt beenden? Ein Wiki sagt, flaches Trudeln bedeute den Verlust des Modells. Andere Quellen sagen, mit passendem Modell und richtigen Eingaben sei das Ausleiten Routine."
           }
         }

@@ -106,3 +106,19 @@ Channel names are mode-independent. "Model-dependent?" = depends on model, wind 
 | Hanging | rudder | small short corrections; direction depends on drift; belly-in: toward dropping wing | S5, S6, S9 |
 | Hanging | elevator | small short corrections; direction for nose tilt NOT GIVEN | S5, S6 |
 | Exit | all | NOT GIVEN | NOT GIVEN |
+
+## Second pass 2026-11-24: Atlanta Hobby (atlantahobby-3d-basics)
+
+New source: "3D RC Flying Basics: Hover, Harrier and Torque Roll", Captain Flaps (RC Aircraft Pilot Desk), Atlanta Hobby, 2026-08-29, https://www.atlantahobby.com/blogs/rc-aircraft/3d-rc-flying-basics-hover-harrier-torque-roll (read via the `?view=print` address, in full). Group `atlantahobby`: retailer staff text, cites E-flite manuals and the FAA handbook, not a copy of the other sources. Paraphrases only.
+
+| Statement | Result |
+| --- | --- |
+| Practise on a simulator first; practise high, over open grass, at a height from which a tail slide could be recovered (no number). | Confirms `simulator` and `safe-height` (added as source). The start-height conflict is unchanged: the page gives no value. |
+| Use large control surfaces and throws. | Confirms `large-throws`. |
+| Throttle controls the height; more climbs, less descends. | Confirms `throttle-height`. |
+| Aileron stops the spin; the model wants to rotate opposite to the propeller. | Confirms `aileron-torque` (mechanism). The page gives no aileron direction, so the "right aileron" remark still rests on the other sources. |
+| Elevator keeps the nose from tipping toward or away from the pilot, rudder left and right. | Confirms `rudder-elevator`. |
+| Entry: fly level at moderate speed, pull up into a vertical line, reduce throttle as the model slows. | **New disagreement** with S7 (from a harrier; Stevens, RC with Jim). Shown as a disputed note `entry-start`. Not decided. The page also teaches the hover before the harrier. |
+| Make small, smooth throttle changes, because a big change adds big torque and rolls the model. | **Possible disagreement** with S8 (short bursts after each correction). Shown as a disputed note `throttle-style`; the owner may remove it if the sources are judged compatible. |
+| Exit: add throttle, push gently into a dive or level off, fly away with speed. | With RC with Jim ("throttle up to bail out") now two groups for "add throttle": new instruction `exit-throttle`. The dive or level-off part is single-source and not shown. The RC with Jim statement was read via a fetch summary; re-check it on the live page. |
+| Throws, expo and CG numbers for one model; SAFE settings; battery timer; AMA safety code. | Setup advice for one model, not used. |

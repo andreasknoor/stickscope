@@ -17,15 +17,15 @@ export const harrier: Maneuver = {
     {
       id: "prepare", start: 0, end: 2.5,
       instructions: [
-        est("height", "goldberg-ex330", "flyrc-stoops-harrier", "gsn-3dnater"),
-        est("rates", "goldberg-ex330", "flyrc-stoops-harrier"),
+        est("height", "goldberg-ex330", "flyrc-stoops-harrier", "gsn-3dnater", "atlantahobby-3d-basics"),
+        est("rates", "goldberg-ex330", "flyrc-stoops-harrier", "atlantahobby-3d-basics"),
       ],
       values: { level: "guideline", illustrates: ["height"] },
     },
     {
       id: "entry", start: 2.5, end: 5,
       instructions: [
-        est("reduce-and-pull", "goldberg-ex330", "gsn-njswede-harrier"),
+        est("reduce-and-pull", "goldberg-ex330", "gsn-njswede-harrier", "atlantahobby-3d-basics"),
         est("from-elevator", "goldberg-ex330", "gsn-njswede-harrier"),
       ],
       values: { level: "guideline", illustrates: ["reduce-and-pull"] },
@@ -33,15 +33,15 @@ export const harrier: Maneuver = {
     {
       id: "hold", start: 5, end: 10,
       instructions: [
-        est("elevator-attitude", "goldberg-ex330", "flyrc-stoops-harrier", "man-scott-harrier"),
+        est("elevator-attitude", "goldberg-ex330", "flyrc-stoops-harrier", "man-scott-harrier", "atlantahobby-3d-basics"),
         est("angle", "goldberg-ex330", "flyrc-stoops-harrier", "man-scott-harrier"),
         est("more-thrust", "flyrc-stoops-harrier", "man-scott-harrier"),
         est("throttle-pumps", "goldberg-ex330", "man-scott-harrier"),
-        est("rudder-steers", "goldberg-ex330", "flyrc-stoops-harrier", "gsn-njswede-harrier"),
+        est("rudder-steers", "goldberg-ex330", "flyrc-stoops-harrier", "gsn-njswede-harrier", "atlantahobby-3d-basics"),
         est("rudder-rolls", "flyrc-stoops-harrier", "man-scott-harrier", "gsn-njswede-harrier"),
         est("torque-rudder", "flyrc-stoops-harrier", "man-scott-harrier"),
       ],
-      notes: [disputed("aileron", "goldberg-ex330", "flyrc-stoops-harrier", "man-scott-harrier", "gsn-njswede-harrier")],
+      notes: [disputed("aileron", "goldberg-ex330", "flyrc-stoops-harrier", "man-scott-harrier", "gsn-njswede-harrier", "atlantahobby-3d-basics")],
       values: { level: "guideline", illustrates: ["elevator-attitude", "angle", "throttle-pumps"] },
       wobble: { roll: 5, yaw: 2.5 },
     },

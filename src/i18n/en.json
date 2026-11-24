@@ -308,7 +308,8 @@
             "from-harrier": "Enter from a harrier: keep adding up elevator until the model is vertical."
           },
           "notes": {
-            "entry-orientation": "Which way you fly at entry and which side of the model faces you: the sources do not say."
+            "entry-orientation": "Which way you fly at entry and which side of the model faces you: the sources do not say.",
+            "entry-start": "Where the pull-up starts: two sources start from a harrier, one from level flight at moderate speed."
           }
         },
         "hold": {
@@ -319,11 +320,13 @@
             "aileron-torque": "The propeller torque tries to turn the model about its long axis. <b>Aileron</b> against the torque stops it. In the models these sources describe, that is right aileron.",
             "rudder-elevator": "<b>Rudder</b> and <b>elevator</b> keep the model vertical: rudder for left and right, elevator for forward and back.",
             "small-early": "Corrections should be small, short and early, not held.",
-            "belly-in-rudder": "With the belly toward you, push the rudder stick toward the wing that is dropping."
+            "belly-in-rudder": "With the belly toward you, push the rudder stick toward the wing that is dropping.",
+            "exit-throttle": "To leave the hover, add <b>throttle</b>."
           },
           "notes": {
             "elevator-direction": "Which way to move the elevator when the nose tilts toward or away from you: the sources do not say.",
-            "exit": "How to exit the hover: the sources give no confirmed instruction."
+            "exit": "How to exit beyond adding throttle: the sources give no confirmed instruction.",
+            "throttle-style": "Throttle changes: two sources use short bursts after each correction, one says to make small, smooth changes because a big change adds torque and rolls the model."
           }
         }
       },
@@ -358,10 +361,8 @@
             "turns-left": "The torque turns the model to the left.",
             "rudder-elevator": "<b>Rudder</b> and <b>elevator</b> keep the long axis of the model vertical.",
             "throttle-steps": "Adjust the <b>throttle</b> in small steps so the model neither climbs nor sinks.",
-            "large-throws": "Large control surfaces and large throws help."
-          },
-          "notes": {
-            "belly-in": "The controls may seem reversed while the belly faces you. Only one source describes this, so it is not given as an instruction."
+            "large-throws": "Large control surfaces and large throws help.",
+            "corrections-reverse": "As the model turns, the <b>elevator</b> and <b>rudder</b> corrections change direction: correct by which way the nose leans, not by the stick labels."
           }
         },
         "stop": {
@@ -478,7 +479,7 @@
             "more-turns": "Releasing the sticks does not always stop it at once. Several more turns are possible."
           },
           "notes": {
-            "exit-throttle": "Throttle during the exit: one source says idle until airspeed builds, two forum posters say power is what makes the exit possible.",
+            "exit-throttle": "Throttle during the exit: one source says idle until airspeed builds, but also that adding power speeds the recovery; two forum posters say power is what makes the exit possible.",
             "recoverable": "Can a flat spin be exited at all? One wiki says a flat spin means losing the model. Other sources say the exit is routine with a suitable model and correct inputs."
           }
         }

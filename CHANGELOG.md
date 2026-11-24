@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.8
+
+- New source (Atlanta Hobby) checked against the hover, harrier and torque roll: more instructions are now backed by additional sources.
+- Hover: the sources disagree on where the pull-up starts and on how to change the throttle (both shown as notes); leaving the hover is "add throttle".
+- Fly RC articles re-read: the knife edge rudder rule gets one more source, the flat spin no longer cites one article for holding the elevator and rudder, and the throttle note of the flat spin exit says that the source speaks on both sides.
+- Torque roll: that the elevator and rudder corrections change direction as the model turns is now confirmed by two sources and shown as an instruction.
+
 ## 0.7
 
 - The small previews of the motor glider figures show smaller models, so they no longer overlap.
