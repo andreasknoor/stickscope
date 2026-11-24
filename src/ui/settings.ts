@@ -13,10 +13,13 @@ export interface Settings {
   /** Small windows in the main view: the flight path (top right) and the control schematic (bottom left). */
   miniOpen: boolean;
   schematicOpen: boolean;
+  /** Speed cues in the main view: fixed particles in the air and a trail behind the model. */
+  particles: boolean;
+  trail: boolean;
 }
 
 export const KEY = "stickscope.settings";
-export const DEFAULTS: Settings = { theme: "system", mode: 2, category: "beginner", lang: null, miniOpen: true, schematicOpen: true };
+export const DEFAULTS: Settings = { theme: "system", mode: 2, category: "beginner", lang: null, miniOpen: true, schematicOpen: true, particles: true, trail: true };
 
 export function loadSettings(): Settings {
   try {
@@ -28,6 +31,8 @@ export function loadSettings(): Settings {
       lang: raw.lang === "de" || raw.lang === "en" ? raw.lang : null,
       miniOpen: raw.miniOpen !== false,
       schematicOpen: raw.schematicOpen !== false,
+      particles: raw.particles !== false,
+      trail: raw.trail !== false,
     };
   } catch {
     return DEFAULTS;

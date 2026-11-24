@@ -29,16 +29,18 @@ interface Props {
 /** The trainer for one figure: 3D view, transmitter, playback, strip, flight path and instructions, all on one clock. */
 export function Trainer({ maneuver, mode }: Props) {
   const t = useTranslations();
-  const { miniOpen, schematicOpen } = useSyncExternalStore(settingsStore.subscribe, settingsStore.getSnapshot, settingsStore.getServerSnapshot);
+  const { miniOpen, schematicOpen, particles, trail: trailOn } = useSyncExternalStore(settingsStore.subscribe, settingsStore.getSnapshot, settingsStore.getServerSnapshot);
   const tRef = useRef(t);
   const modeRef = useRef(mode);
   const miniRefOpen = useRef(miniOpen);
   const schematicRefOpen = useRef(schematicOpen);
+  const cuesRef = useRef({ particles, trail: trailOn });
   useEffect(() => {
     tRef.current = t;
     modeRef.current = mode;
     miniRefOpen.current = miniOpen;
     schematicRefOpen.current = schematicOpen;
+    cuesRef.current = { particles, trail: trailOn };
   });
 
   const wrapRef = useRef<HTMLDivElement>(null);
@@ -135,7 +137,7 @@ export function Trainer({ maneuver, mode }: Props) {
       const now = nowMs / 1000;
       const deflect = colors.rgb("--deflect");
 
-      if (cvRef.current) drawModelView(cvRef.current, f.state, f.glow, cam.current, orbit.current, colors, now);
+      if (cvRef.current) drawModelView(cvRef.current, f.state, f.glow, cam.current, orbit.current, colors, now, { ...cuesRef.current, maneuver: m, t: f.t });
       if (rsRef.current && schematicRefOpen.current) drawSchematic(rsRef.current, f.state, f.glow, deflect, { title: tt("schematic.title"), neutral: tt("schematic.neutral"), full: tt("schematic.full") });
       if (scRef.current) {
         const values = { rudder: f.state.rud, throttle: f.state.thr, aileron: f.state.ail, elevator: f.state.elev };
@@ -153,8 +155,8 @@ export function Trainer({ maneuver, mode }: Props) {
         }
       }
       const pi = phaseIndexAt(m, f.t);
-      if (ocRef.current) drawOverview(ocRef.current, m, f.t, f.glow, colors, now, { title: tt("overview.title"), modelFrac: 0.09 });
-      if (miniRef.current && miniRefOpen.current) drawOverview(miniRef.current, m, f.t, f.glow, colors, now, { modelFrac: 0.16 });
+      if (ocRef.current) drawOverview(ocRef.current, m, f.t, f.glow, colors, now, { title: tt("overview.title"), modelFrac: 0.09, markRadius: 3.2 });
+      if (miniRef.current && miniRefOpen.current) drawOverview(miniRef.current, m, f.t, f.glow, colors, now, { modelFrac: 0.16, markRadius: 2 });
       if (skRef.current) {
         const b = skRef.current.getBoundingClientRect();
         const key = `${m.id}|${pi}|${Math.round(b.width)}x${Math.round(b.height)}|${themeVersion}`;
@@ -261,6 +263,10 @@ export function Trainer({ maneuver, mode }: Props) {
           <div className="cam">
             <button aria-pressed={camMode === "pilot"} onClick={() => setCamera("pilot")}>{t("view.cameraPilot")}</button>
             <button aria-pressed={camMode === "orbit"} onClick={() => setCamera("orbit")}>{t("view.cameraOrbit")}</button>
+          </div>
+          <div className="cues" title={t("view.cuesHint")}>
+            <button aria-pressed={particles} onClick={() => settingsStore.update({ particles: !particles })}>{t("view.particles")}</button>
+            <button aria-pressed={trailOn} onClick={() => settingsStore.update({ trail: !trailOn })}>{t("view.trail")}</button>
           </div>
           <div className="viewhint">{camMode === "pilot" ? t("view.hintPilot") : t("view.hintOrbit")}</div>
           <div className="pip pip-rs">

@@ -5,6 +5,7 @@ import type { Deflections } from "../core/model/highlight.ts";
 import { camFrom } from "./camera.ts";
 import { fit, type CssColors } from "./canvas.ts";
 import { drawPlane } from "./plane.ts";
+import { MARK_INTERVAL } from "./speedcues.ts";
 import { drawEnvironment } from "./scene.ts";
 
 const SAMPLES = 160;
@@ -27,6 +28,8 @@ export interface OverviewOptions {
   title?: string;
   /** Length of the model on screen as a fraction of the canvas width. */
   modelFrac: number;
+  /** Radius of the time marks in pixels. */
+  markRadius: number;
 }
 
 /**
@@ -69,6 +72,17 @@ export function drawOverview(cv: HTMLCanvasElement, m: Maneuver, t: number, glow
   c.strokeStyle = colors.get("--accent");
   c.lineWidth = 2.5;
   trace(t);
+  // Time marks: one dot per MARK_INTERVAL seconds, so they sit close together where the model is slow and far apart where it is fast.
+  c.lineWidth = 1;
+  c.strokeStyle = colors.get("--surface");
+  for (let tm = 0; tm <= m.duration; tm += MARK_INTERVAL) {
+    const q = cam.pr(stateAt(m, tm).pos);
+    c.fillStyle = tm <= t ? colors.get("--accent") : colors.get("--ink-2");
+    c.beginPath();
+    c.arc(q[0], q[1], opt.markRadius, 0, 7);
+    c.fill();
+    c.stroke();
+  }
   const s = stateAt(m, t);
   // Scale so that the model is `modelFrac` of the width long on screen.
   const scale = (opt.modelFrac * W * depth) / cam.F;

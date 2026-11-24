@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.11
+
+- Speed cues in the main 3D view: fixed particles in the air and a trail behind the model show how fast it flies. Both are on by default and can be switched off in the view.
+- Flight path overview (large and small window): time marks on the path, close together where the model is slow and far apart where it is fast.
+
 ## 0.10
 
 - New motor glider figure: inverted flight (half roll onto the back, hold with a little forward elevator, roll back), with its sources, notes on motor gliders and German and English texts.

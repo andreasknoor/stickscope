@@ -31,6 +31,9 @@ h1 { font-size: clamp(26px, 4vw, 38px); line-height: 1.05; }
 .cam { position: absolute; right: 10px; bottom: 10px; display: flex; gap: 6px; }
 .cam button { min-height: 36px; padding: 0 10px; font-size: 13px; font-weight: 600; border: 0; border-radius: 8px; background: var(--surface); color: var(--ink); cursor: pointer; }
 .cam button[aria-pressed="true"] { background: var(--ink); color: var(--bg); }
+.cues { position: absolute; right: 10px; bottom: 54px; display: flex; gap: 6px; }
+.cues button { min-height: 32px; padding: 0 10px; font-size: 13px; font-weight: 600; border: 0; border-radius: 8px; background: var(--overlay); color: var(--on-overlay); cursor: pointer; opacity: .65; }
+.cues button[aria-pressed="true"] { opacity: 1; }
 .viewhint { position: absolute; left: 12px; top: 48px; font-size: 13px; color: var(--ink-2); }
 /* small windows in the main view: flight path (top right) and control schematic (bottom left), each can be folded away */
 .pip { position: absolute; z-index: 2; pointer-events: none; }

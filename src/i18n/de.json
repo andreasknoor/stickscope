@@ -54,6 +54,9 @@
     "showOverview": "Flugbahn",
     "hideControls": "Ruder ausblenden",
     "showControls": "Ruder",
+    "particles": "Teilchen",
+    "trail": "Spur",
+    "cuesHint": "Tempo-Hinweise sind eine Illustration: sie zeigen das relative Tempo, keine gemessenen Werte.",
     "progress": "Fortschritt der Animation"
   },
   "schematic": {

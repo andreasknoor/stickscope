@@ -54,6 +54,9 @@
     "showOverview": "Flight path",
     "hideControls": "Hide controls",
     "showControls": "Controls",
+    "particles": "Particles",
+    "trail": "Trail",
+    "cuesHint": "Speed cues are an illustration: they show relative speed, not measured values.",
     "progress": "Progress of the animation"
   },
   "schematic": {
