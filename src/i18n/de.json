@@ -662,6 +662,50 @@
           }
         }
       }
+    },
+    "inverted-flight": {
+      "name": "Rückenflug",
+      "idea": "Das Modell rollt auf den Rücken, fliegt eine gerade Linie kopfüber und rollt wieder aufrecht.",
+      "illustration": {
+        "direction": "Die Quellen sagen nicht, in welche Richtung gerollt wird. Die Animation rollt nach rechts und auf demselben Weg zurück. Wie lange das Modell auf dem Rücken bleibt, und der Knüppelweg sind ebenfalls Darstellung."
+      },
+      "phases": {
+        "approach": {
+          "title": "Anflug",
+          "instructions": {
+            "level-add-power": "Beginne im geraden, waagerechten Flug und gib bei Bedarf etwas <b>Gas</b>."
+          }
+        },
+        "half-roll-in": {
+          "title": "Halbe Rolle auf den Rücken",
+          "instructions": {
+            "half-roll": "Rolle das Modell mit dem <b>Querruder</b> eine halbe Umdrehung auf den Rücken.",
+            "centre-aileron": "Wenn die Flächen auf dem Rücken waagerecht sind, nimm das <b>Querruder</b> zurück in die Mitte."
+          }
+        },
+        "inverted": {
+          "title": "Rückenflug",
+          "instructions": {
+            "hold-elevator": "Drücke das <b>Höhenruder</b> ein wenig, um die Höhe zu halten.",
+            "reversed": "<b>Höhenruder</b> und <b>Seitenruder</b> wirken aus deiner Sicht umgekehrt, das <b>Querruder</b> nicht.",
+            "push-amount": "Zu viel gedrücktes Höhenruder lässt das Modell abreißen oder abkippen, zu wenig verliert Höhe.",
+            "stall-speed": "Die Abrissgeschwindigkeit ist auf dem Rücken höher: Fliege nicht zu langsam.",
+            "dihedral": "Modelle mit Dihedral oder V-Form wollen zurück in die Normallage, steuere deshalb aktiv."
+          },
+          "notes": {
+            "duration": "Wie lange man hält: Eine Quelle sagt, am Anfang nur 2 bis 3 Sekunden; keine zweite Quelle.",
+            "motor-glider": "Motorsegler: Keine Quelle behandelt sie. Eine Quelle sagt, Segler und gewölbte Trainer brauchen auf dem Rücken viel gedrücktes Höhenruder und Geschwindigkeit.",
+            "amount": "Wie viel Höhenruder gedrückt wird: Die Quellen nennen keinen Wert."
+          }
+        },
+        "roll-out": {
+          "title": "Zurückrollen",
+          "instructions": {
+            "roll-out": "Rolle das Modell mit dem <b>Querruder</b> wieder aufrecht. Ziehe nicht heraus.",
+            "enough-height": "Übe mit genug Höhe, um das Modell abzufangen."
+          }
+        }
+      }
     }
   },
   "settings": {

@@ -662,6 +662,50 @@
           }
         }
       }
+    },
+    "inverted-flight": {
+      "name": "Inverted flight",
+      "idea": "The model rolls onto its back, flies a straight line upside down and rolls back upright.",
+      "illustration": {
+        "direction": "The sources do not say which way to roll. The animation rolls to the right and back the same way. How long the model stays inverted, and the stick travel, are illustrations too."
+      },
+      "phases": {
+        "approach": {
+          "title": "Approach",
+          "instructions": {
+            "level-add-power": "Start from straight and level flight and add some <b>throttle</b> if needed."
+          }
+        },
+        "half-roll-in": {
+          "title": "Half roll onto the back",
+          "instructions": {
+            "half-roll": "Roll half a turn onto the back with the <b>aileron</b>.",
+            "centre-aileron": "When the wings are level, inverted, bring the <b>aileron</b> back to centre."
+          }
+        },
+        "inverted": {
+          "title": "Inverted",
+          "instructions": {
+            "hold-elevator": "Push the <b>elevator</b> forward a little to hold the height.",
+            "reversed": "<b>Elevator</b> and <b>rudder</b> work the other way round from your view; the <b>aileron</b> does not.",
+            "push-amount": "Too much forward elevator stalls or dives the model, too little loses height.",
+            "stall-speed": "The stall speed is higher inverted: do not fly too slowly.",
+            "dihedral": "Models with dihedral or V-form want to roll back upright, so fly actively."
+          },
+          "notes": {
+            "duration": "How long to hold: one source says only 2 to 3 seconds at first; no second source.",
+            "motor-glider": "Motor gliders: no source covers them. One source says gliders and cambered trainers need a lot of forward elevator and speed inverted.",
+            "amount": "How much forward elevator: the sources give no value."
+          }
+        },
+        "roll-out": {
+          "title": "Roll back",
+          "instructions": {
+            "roll-out": "Roll the model back upright with the <b>aileron</b>. Do not pull out of it.",
+            "enough-height": "Practise with enough height to recover."
+          }
+        }
+      }
     }
   },
   "settings": {

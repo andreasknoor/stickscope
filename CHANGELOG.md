@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.10
+
+- New motor glider figure: inverted flight (half roll onto the back, hold with a little forward elevator, roll back), with its sources, notes on motor gliders and German and English texts.
+
 ## 0.9
 
 - New source (modelflying.co.uk, "Want to fly 3D?") and the Stevens and Model Airplane News harrier roll articles re-read in full.

@@ -219,10 +219,11 @@ describe("motor glider figures", () => {
   const splitS = getManeuver("split-s")!;
   const roll = getManeuver("roll")!;
   const stall = getManeuver("stall-turn")!;
+  const inverted = getManeuver("inverted-flight")!;
 
   it("are all in the motor glider category", () => {
-    for (const m of [loop, splitS, roll, stall]) expect(m.category).toBe("motorglider");
-    expect(inCategory("motorglider").map((m) => m.id)).toEqual(["loop", "split-s", "roll", "stall-turn"]);
+    for (const m of [loop, splitS, roll, stall, inverted]) expect(m.category).toBe("motorglider");
+    expect(inCategory("motorglider").map((m) => m.id)).toEqual(["loop", "split-s", "roll", "stall-turn", "inverted-flight"]);
   });
   it("loop: one full inside loop, upright and level at the end, nose up at a quarter and inverted on the top", () => {
     expect(pchip(loop.attitude, 2)(loop.duration)).toBeCloseTo(360, 6);
@@ -276,5 +277,18 @@ describe("motor glider figures", () => {
     expect(stateAt(stall, 7).thr).toBeGreaterThan(20);
     expect(stateAt(stall, 7).thr).toBeLessThan(stateAt(stall, 2).thr);
     expect(Math.abs(stateAt(stall, 8).rud)).toBeCloseTo(1, 6);
+  });
+  it("inverted flight: half roll onto the back, a straight and level line inverted with a little forward elevator and the aileron centred, half roll back the same way", () => {
+    expect(nose(inverted, 3).top[1]).toBeCloseTo(1, 6);
+    // the small-corrections wobble keeps it a few degrees off exactly inverted
+    expect(nose(inverted, 7).top[1]).toBeLessThan(-0.99);
+    expect(nose(inverted, 7).nose[0]).toBeGreaterThan(0.99);
+    expect(rollAt(inverted, inverted.duration)).toBeCloseTo(360, 6);
+    for (let t = 0; t <= inverted.duration; t += 0.1) expect(stateAt(inverted, t).pos[1]).toBeCloseTo(16, 6);
+    // the wobble adds small corrections of up to about 0.13 stick units
+    expect(Math.abs(stateAt(inverted, 7).ail)).toBeLessThan(0.14);
+    expect(stateAt(inverted, 7).elev).toBeGreaterThan(0.03);
+    expect(stateAt(inverted, 3.7).ail).toBeGreaterThan(0.5);
+    expect(stateAt(inverted, 10).ail).toBeGreaterThan(0.5);
   });
 });

@@ -57,6 +57,10 @@ export const SOURCES: Source[] = [
   { id: "rcn-flachtrudeln", title: "Flachtrudeln (Thread, 2005)", author: "Mehrere Forumsnutzer, rc-network.de", url: "https://www.rc-network.de/threads/flachtrudeln.32539/", accessed: D, language: de, independenceGroup: "rcn-flachtrudeln" },
   { id: "rcline-flachtrudeln", title: "Flachtrudeln, wie? (Thread)", author: "Mehrere Forumsnutzer, RCLine", url: "https://www.rclineforum.de/forum/board19-fl%C3%A4chenflugmodelle/board28-kunstflug-forum/64036-flachtrudeln-aber-wie/", accessed: D, language: de, independenceGroup: "rcline-flachtrudeln" },
   { id: "rcn-wiki-trudeln", title: "Trudeln", author: "RC-Network Wiki", url: "https://wiki.rc-network.de/wiki/Trudeln", accessed: D, language: de, independenceGroup: "rcn-wiki" },  { id: "modelflying-want-fly-3d", title: "Want to fly 3D?", author: "RCM&E Magazine (no byline, 2013-07-30), modelflying.co.uk", url: "https://www.modelflying.co.uk/want-fly-3d/", accessed: D2, language: en, independenceGroup: "rcme-modelflying" },
+  // inverted flight
+  { id: "wikipedia-rc-aerobatics", title: "Radio-controlled aerobatics", author: "Wikipedia", url: "https://en.wikipedia.org/wiki/Radio-controlled_aerobatics", accessed: D2, language: en, independenceGroup: "wikipedia" },
+  { id: "flitetest-inverted", title: "Flying Inverted - Flite Tip", author: "FliteTest, 2012-08-20", url: "https://flitetest.com/articles/Flying_Inverted_Flite_Tip", accessed: D2, language: en, independenceGroup: "flitetest" },
+  { id: "rcsky-rueckenflug", title: "Rückenflug lernen: So fliegt dein RC-Modell auf dem Kopf", author: "RCSKY.de Glossar", url: "https://rcsky.de/glossar/rueckenflug-flugtechnik-rc-modellbau-195", accessed: D2, language: de, independenceGroup: "rcsky" },
   // Fly RC "Primary Training" category (the knife edge, harrier and flat spin articles are listed above)
   { id: "flyrc-humpty-bump", title: "Flying The Humpty-Bump", author: "Fly RC Staff, FlyRC", url: "https://www.flyrc.com/flying-the-humpty-bump/", accessed: D2, language: en, independenceGroup: "flyrc-staff" },
   // second pass over hover, harrier and torque roll
