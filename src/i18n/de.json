@@ -786,10 +786,10 @@
     "seeAlso": "Siehe auch",
     "count": "{count, plural, one {# Begriff} other {# Begriffe}}",
     "groups": {
-      "controls": "Sender und Steuerung (Transmitter and controls)",
-      "model": "Modell und Aufbau (Model and parts)",
-      "flight": "Flug und Fluglage (Flight and attitude)",
-      "figures": "Figuren und Manöver (Figures and manoeuvres)"
+      "controls": "Sender und Steuerung",
+      "model": "Modell und Aufbau",
+      "flight": "Flug und Fluglage",
+      "figures": "Figuren und Manöver"
     },
     "terms": {
       "transmitter": {

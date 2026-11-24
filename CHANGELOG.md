@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.13
+
+- Glossary: the German group names (tabs and headings) no longer carry the English term in brackets; the terms below them still do.
+
 ## 0.12
 
 - New glossary (header button "Glossary" / "Glossar"): 80 terms for RC and 3D flying in four groups (transmitter and controls, model and parts, flight and attitude, figures), searchable. German names always show the English term in brackets.
