@@ -71,6 +71,6 @@ export const roll: Maneuver = {
     },
   ],
   strip: {
-    ...stripFrom(position, { scale: 11, x0: -42, y0: 14, ox: 40, oy: 230, pathTimes: [0, 10], snapshotTimes: [0, 3.2, 5.25, 7.5, 9.8], rolls: { 3.2: -1 } }),
+    ...stripFrom(position, { scale: 9.5, x0: -42, y0: 14, ox: 90, oy: 230, pathTimes: [0, 10], snapshotTimes: [0, 3.2, 5.25, 7.5, 9.8], rolls: { 3.2: -1 }, compactSize: 135 }),
   },
 };

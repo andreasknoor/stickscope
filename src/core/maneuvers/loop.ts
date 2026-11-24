@@ -68,5 +68,5 @@ export const loop: Maneuver = {
       values: { level: "guideline", illustrates: ["level-out"] },
     },
   ],
-  strip: stripFrom(position, { scale: 9.4, x0: -42, y0: Y0, ox: 90, oy: 100, pathTimes: [0, 3, 3.5, 4, 4.5, 5, 5.5, 6, 6.5, 7, 7.5, 8, 8.5, 9, 10, 12], snapshotTimes: [0, 3.2, 4.5, 6, 7.5, 9.6, 11.8] }),
+  strip: stripFrom(position, { scale: 9.4, x0: -42, y0: Y0, ox: 90, oy: 100, pathTimes: [0, 3, 3.5, 4, 4.5, 5, 5.5, 6, 6.5, 7, 7.5, 8, 8.5, 9, 10, 12], snapshotTimes: [0, 4.5, 6, 7.5, 9.8, 12], compactSize: 100 }),
 };

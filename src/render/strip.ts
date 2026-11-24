@@ -114,7 +114,7 @@ export function drawStrip(cv: HTMLCanvasElement, m: Maneuver, t: number, colors:
       c.fill();
       c.restore();
     }
-    drawPlane(c, cam, s, compact ? 160 : W < 520 ? 140 : 110, { deflect, now });
+    drawPlane(c, cam, s, compact ? d.compactSize ?? 160 : W < 520 ? 140 : 110, { deflect, now });
     if (compact) {
       hits.push({ x: X(x), y: Y(y), t: ts });
       continue;

@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.7
+
+- The small previews of the motor glider figures show smaller models, so they no longer overlap.
+
 ## 0.6
 
 - New category "Motor glider" with four figures: loop, split S, roll and stall turn, each with its sources, a notice that motor gliders differ a lot, and German and English texts.

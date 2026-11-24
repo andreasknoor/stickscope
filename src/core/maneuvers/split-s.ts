@@ -70,5 +70,5 @@ export const splitS: Maneuver = {
       values: { level: "guideline", illustrates: ["level-reverse"] },
     },
   ],
-  strip: stripFrom(position, { scale: 9.4, x0: -46, y0: Y0 - 2 * R, ox: 60, oy: 60, pathTimes: [0, 3, 4.5, 5, 5.5, 6, 6.5, 7, 7.5, 8, 8.5, 9.5, 12], snapshotTimes: [0, 3.2, 4.5, 6.5, 8.5, 11], rolls: { 3.2: 1 } }),
+  strip: stripFrom(position, { scale: 9.4, x0: -46, y0: Y0 - 2 * R, ox: 60, oy: 60, pathTimes: [0, 3, 4.5, 5, 5.5, 6, 6.5, 7, 7.5, 8, 8.5, 9.5, 12], snapshotTimes: [0, 3.6, 6.5, 8.6, 11.5], rolls: { 3.6: 1 }, compactSize: 108 }),
 };

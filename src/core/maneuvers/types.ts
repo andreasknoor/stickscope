@@ -68,6 +68,8 @@ export interface StripLayout {
   view: "front" | "side";
   path: [x: number, y: number][];
   snapshots: StripSnapshot[];
+  /** Size of the models in the small thumbnail (default 160). Smaller where the snapshots lie close together, so they do not overlap. */
+  compactSize?: number;
 }
 
 export interface Maneuver {
